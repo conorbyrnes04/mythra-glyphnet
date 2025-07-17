@@ -71,3 +71,4 @@ uploads/
 # /private_data/
 # /api_keys/
 
+.env
