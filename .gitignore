@@ -72,3 +72,4 @@ uploads/
 # /api_keys/
 
 .env
+.env
