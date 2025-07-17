@@ -1,0 +1,4 @@
+# LoRA training config
+trigger_word: MYTHRA
+lora_type: concept
+subject: object
