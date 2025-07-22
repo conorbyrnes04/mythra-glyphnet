@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌌 Cosmic Archetypal Constellation</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: radial-gradient(ellipse at bottom, #0c1421 0%, #020812 50%, #000408 100%);
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* Animated Starfield Background */
+        .starfield {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
+
+        .star.small { width: 1px; height: 1px; opacity: 0.4; }
+        .star.medium { width: 2px; height: 2px; opacity: 0.6; }
+        .star.large { width: 3px; height: 3px; opacity: 0.8; }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        /* Nebula Effect */
+        .nebula {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 30%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 70%, rgba(30, 144, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(255, 20, 147, 0.05) 0%, transparent 60%);
+            z-index: -1;
+        }
+
+        /* Control Panel */
+        .control-panel {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 195, 247, 0.3);
+            border-radius: 16px;
+            padding: 20px;
+            min-width: 280px;
+            box-shadow: 0 8px 32px rgba(79, 195, 247, 0.2);
+        }
+
+        .panel-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #4fc3f7;
+            text-align: center;
+            border-bottom: 1px solid rgba(79, 195, 247, 0.3);
+            padding-bottom: 12px;
+        }
+
+        .control-group {
+            margin-bottom: 16px;
+        }
+
+        .control-label {
+            font-size: 12px;
+            font-weight: 500;
+            color: #b0bec5;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .control-btn {
+            background: linear-gradient(135deg, #2196f3, #21cbf3);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
+        }
+
+        .control-btn.active {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+        }
+
+        .control-btn.inactive {
+            background: linear-gradient(135deg, #757575, #9e9e9e);
+            box-shadow: 0 2px 8px rgba(117, 117, 117, 0.3);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-btn {
+            background: linear-gradient(135deg, #673ab7, #9c27b0);
+            border: none;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(103, 58, 183, 0.3);
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin-top: 4px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .dropdown.open .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .dropdown-item:hover {
+            background: rgba(79, 195, 247, 0.2);
+        }
+
+        /* Status Display */
+        .status-display {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(79, 195, 247, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            min-width: 250px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        /* Graph Styles */
+        .links line {
+            stroke-opacity: 0.6;
+            stroke-width: 2px;
+            pointer-events: none;
+            filter: drop-shadow(0 0 3px rgba(79, 195, 247, 0.4));
+        }
+
+        .links line.elemental { stroke: #4fc3f7; stroke-width: 3px; }
+        .links line.archetypal { stroke: #e91e63; stroke-width: 2.5px; }
+        .links line.natural { stroke: #4caf50; stroke-width: 2px; }
+        .links line.celestial { stroke: #ffc107; stroke-width: 2.5px; }
+        .links line.symbolic { stroke: #9c27b0; stroke-width: 2px; }
+
+        .nodes circle {
+            fill: rgba(79, 195, 247, 0.1);
+            stroke: rgba(79, 195, 247, 0.6);
+            stroke-width: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0 8px rgba(79, 195, 247, 0.3));
+        }
+
+        .nodes circle:hover {
+            stroke-width: 4px;
+            r: 35;
+            filter: drop-shadow(0 0 15px rgba(79, 195, 247, 0.8));
+        }
+
+        .node-svg {
+            pointer-events: none;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+        }
+
+        .node-svg.colored {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)) saturate(1.2) brightness(1.1);
+        }
+
+        .node-svg.white {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)) brightness(2) saturate(0);
+        }
+
+        .node-svg.black {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)) brightness(0) saturate(0);
+        }
+
+        .node-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-anchor: middle;
+            fill: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            pointer-events: none;
+            letter-spacing: 0.3px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            margin: 3% auto;
+            padding: 0;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 85vh;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(79, 195, 247, 0.3);
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin: 0;
+        }
+
+        .close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .modal-body {
+            padding: 24px;
+            max-height: 60vh;
+            overflow-y: auto;
+            color: #e0e0e0;
+        }
+
+        .symbol-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+            padding: 16px;
+            background: rgba(79, 195, 247, 0.1);
+            border-radius: 12px;
+        }
+
+        .meanings-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0;
+        }
+
+        .meaning-tag {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .interpretation-section {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #4fc3f7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Starfield Background -->
+    <div class="starfield" id="starfield"></div>
+    <div class="nebula"></div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <div class="panel-title">🌌 Cosmic Controls</div>
+        
+        <div class="control-group">
+            <div class="control-label">Display Options</div>
+            <div class="control-buttons">
+                <button class="control-btn active" id="toggleSVGs">
+                    🎨 Glyph Icons
+                </button>
+                <button class="control-btn active" id="toggleLabels">
+                    📝 Labels
+                </button>
+                <button class="control-btn active" id="toggleLinks">
+                    🔗 Connections
+                </button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Glyph Style</div>
+            <div class="dropdown" id="glyphDropdown">
+                <button class="dropdown-btn">
+                    <span id="glyphModeText">🌈 Emotion Colors</span>
+                    <span>▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" data-mode="emotion">🌈 Emotion Colors</div>
+                    <div class="dropdown-item" data-mode="white">⚪ White Glyphs</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Connection Types</div>
+            <div class="control-buttons">
+                <button class="control-btn active" id="toggleElemental">
+                    🌊 Elemental
+                </button>
+                <button class="control-btn active" id="toggleArchetypal">
+                    👑 Archetypal
+                </button>
+                <button class="control-btn active" id="toggleNatural">
+                    🌿 Natural
+                </button>
+                <button class="control-btn active" id="toggleCelestial">
+                    ⭐ Celestial
+                </button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="control-label">Simulation</div>
+            <div class="control-buttons">
+                <button class="control-btn" id="restartBtn">
+                    🔄 Restart
+                </button>
+                <button class="control-btn" id="pauseBtn">
+                    ⏸️ Pause
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Display -->
+    <div class="status-display">
+        <div id="statusContent">
+            <strong>🌌 Cosmic Constellation</strong><br>
+            <span id="nodeCount">Loading...</span><br>
+            <span id="linkCount">Loading...</span><br>
+            <small>Click any symbol for cosmic wisdom</small>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="symbolModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Symbol Details</h2>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <svg id="constellation"></svg>
+
+    <script>
+        // Global variables
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        let showSVGs = true;
+        let showLabels = true;
+        let showLinks = true;
+        let glyphMode = 'emotion'; // 'emotion', 'white'
+        let connectionTypes = {
+            elemental: true,
+            archetypal: true,
+            natural: true,
+            celestial: true
+        };
+        let symbolCodex = {};
+        let currentData = null;
+        let simulation = null;
+        let isPaused = false;
+
+        // Create starfield
+        function createStarfield() {
+            const starfield = document.getElementById('starfield');
+            const numStars = 200;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.className = `star ${['small', 'medium', 'large'][Math.floor(Math.random() * 3)]}`;
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starfield.appendChild(star);
+            }
+        }
+
+        // Create SVG
+        const svg = d3.select("#constellation")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Create groups
+        const linkGroup = svg.append("g").attr("class", "links");
+        const nodeGroup = svg.append("g").attr("class", "nodes");
+
+        // Load data and create visualization
+        Promise.all([
+            d3.json("archetypal_symbol_codex_complete.json")
+        ]).then(([codexData]) => {
+            console.log(`✅ Data loaded: ${codexData.length} symbols`);
+            
+            // Build codex lookup
+            codexData.forEach(symbol => {
+                symbolCodex[symbol.name] = symbol;
+            });
+
+            // Create intelligent relationships
+            const intelligentData = createIntelligentRelationships(codexData);
+            currentData = intelligentData;
+            updateStatus();
+            createForceDirectedGraph(intelligentData);
+        }).catch(error => {
+            console.error("❌ Error loading data:", error);
+        });
+
+        function createIntelligentRelationships(symbols) {
+            const nodes = symbols.map(symbol => ({
+                id: symbol.name,
+                name: symbol.name,
+                category: symbol.category,
+                subcategory: symbol.subcategory,
+                emotion_category: symbol.emotion_category,
+                emotion_hex: symbol.emotion_hex,
+                meanings: symbol.meanings
+            }));
+
+            const links = [];
+
+            // Elemental connections
+            const elementalMap = {
+                'Fire': ['Sun', 'Lightning', 'Volcano', 'Dragon', 'Lion', 'Warrior'],
+                'Water': ['Moon', 'Ocean', 'Rain', 'Whale', 'Dolphin', 'Turtle'],
+                'Earth': ['Mountain', 'Tree', 'Bear', 'Stone', 'Cave', 'Mushroom', 'Oak', 'Vine', 'Desert'],
+                'Air': ['Wind', 'Sky', 'Eagle', 'Raven', 'Owl', 'Butterfly', 'Storm', 'Rainbow']
+            };
+
+            Object.entries(elementalMap).forEach(([element, related]) => {
+                const elementNode = nodes.find(n => n.id === element);
+                if (elementNode) {
+                    related.forEach(relatedName => {
+                        const relatedNode = nodes.find(n => n.id === relatedName);
+                        if (relatedNode) {
+                            links.push({
+                                source: element,
+                                target: relatedName,
+                                strength: 0.8,
+                                type: 'elemental',
+                                description: `${element} energy connection`
+                            });
+                        }
+                    });
+                }
+            });
+
+            // Archetypal human connections
+            const archetypes = ['King', 'Warrior', 'Sage', 'Mother', 'Maiden', 'Hermit', 'Fool', 'Shaman'];
+            for (let i = 0; i < archetypes.length; i++) {
+                for (let j = i + 1; j < archetypes.length; j++) {
+                    const arch1 = nodes.find(n => n.id === archetypes[i]);
+                    const arch2 = nodes.find(n => n.id === archetypes[j]);
+                    if (arch1 && arch2) {
+                        links.push({
+                            source: archetypes[i],
+                            target: archetypes[j],
+                            strength: 0.6,
+                            type: 'archetypal',
+                            description: `Archetypal relationship`
+                        });
+                    }
+                }
+            }
+
+            // Natural world connections
+            const naturalGroups = [
+                ['Tree', 'Oak', 'Vine', 'Lotus', 'Rose', 'Mushroom'],
+                ['Wolf', 'Bear', 'Lion', 'Fox', 'Stag', 'Horse'],
+                ['Eagle', 'Raven', 'Owl'],
+                ['Whale', 'Dolphin', 'Turtle', 'Serpent'],
+                ['Butterfly', 'Spider']
+            ];
+
+            naturalGroups.forEach(group => {
+                for (let i = 0; i < group.length; i++) {
+                    for (let j = i + 1; j < group.length; j++) {
+                        const node1 = nodes.find(n => n.id === group[i]);
+                        const node2 = nodes.find(n => n.id === group[j]);
+                        if (node1 && node2) {
+                            links.push({
+                                source: group[i],
+                                target: group[j],
+                                strength: 0.5,
+                                type: 'natural',
+                                description: `Natural kinship`
+                            });
+                        }
+                    }
+                }
+            });
+
+            // Celestial connections
+            const celestialBodies = ['Sun', 'Moon', 'Star', 'Comet', 'Constellation'];
+            for (let i = 0; i < celestialBodies.length; i++) {
+                for (let j = i + 1; j < celestialBodies.length; j++) {
+                    const cel1 = nodes.find(n => n.id === celestialBodies[i]);
+                    const cel2 = nodes.find(n => n.id === celestialBodies[j]);
+                    if (cel1 && cel2) {
+                        links.push({
+                            source: celestialBodies[i],
+                            target: celestialBodies[j],
+                            strength: 0.7,
+                            type: 'celestial',
+                            description: `Cosmic harmony`
+                        });
+                    }
+                }
+            }
+
+            // Special symbolic connections
+            const symbolicPairs = [
+                ['Sun', 'Lion'], ['Moon', 'Wolf'], ['Eagle', 'King'], ['Owl', 'Sage'],
+                ['Bear', 'Mother'], ['Serpent', 'Shaman'], ['Tree', 'Hermit'],
+                ['Circle', 'Infinity'], ['Triangle', 'Cross'], ['Mandala', 'Yin Yang'],
+                ['Lightning', 'Storm'], ['Rainbow', 'Storm'], ['Spiral', 'Labyrinth']
+            ];
+
+            symbolicPairs.forEach(([sym1, sym2]) => {
+                const node1 = nodes.find(n => n.id === sym1);
+                const node2 = nodes.find(n => n.id === sym2);
+                if (node1 && node2) {
+                    links.push({
+                        source: sym1,
+                        target: sym2,
+                        strength: 0.9,
+                        type: 'symbolic',
+                        description: `Symbolic resonance`
+                    });
+                }
+            });
+
+            return { nodes, links };
+        }
+
+        function createForceDirectedGraph(data) {
+            // Initial positioning
+            data.nodes.forEach((d, i) => {
+                const angle = i * 0.618 * 2 * Math.PI;
+                const radius = Math.sqrt(i) * 45;
+                
+                d.x = width/2 + Math.cos(angle) * radius;
+                d.y = height/2 + Math.sin(angle) * radius;
+                
+                d.x = Math.max(80, Math.min(width - 80, d.x));
+                d.y = Math.max(80, Math.min(height - 80, d.y));
+            });
+
+            // Create force simulation
+            simulation = d3.forceSimulation(data.nodes)
+                .force("link", d3.forceLink(data.links)
+                    .id(d => d.id)
+                    .distance(d => d.type === 'elemental' ? 120 : d.type === 'celestial' ? 140 : 100)
+                    .strength(d => d.strength * 0.4)
+                )
+                .force("charge", d3.forceManyBody()
+                    .strength(-800)
+                    .distanceMin(50)
+                    .distanceMax(300)
+                )
+                .force("collision", d3.forceCollide()
+                    .radius(45)
+                    .strength(0.9)
+                )
+                .force("center", d3.forceCenter(width/2, height/2)
+                    .strength(0.03)
+                )
+                .alpha(0.8)
+                .alphaDecay(0.01)
+                .velocityDecay(0.4);
+
+            // Create links
+            const link = linkGroup.selectAll("line")
+                .data(data.links)
+                .enter().append("line")
+                .attr("class", d => d.type)
+                .attr("stroke-width", d => Math.sqrt(d.strength * 4))
+                .style("opacity", 0.6);
+
+            // Create nodes
+            const node = nodeGroup.selectAll("g")
+                .data(data.nodes)
+                .enter().append("g")
+                .attr("class", "node")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            // Add circles (always white)
+            node.append("circle")
+                .attr("r", 28)
+                .on("click", handleNodeClick)
+                .on("mouseenter", handleNodeHover)
+                .on("mouseleave", handleNodeOut);
+
+            // Add SVG icons
+            node.each(function(d) {
+                loadSymbolSVG(d.id, d3.select(this));
+            });
+
+            // Add labels
+            const labels = node.append("text")
+                .attr("class", "node-label")
+                .attr("dy", 45)
+                .text(d => d.id)
+                .style("display", showLabels ? "block" : "none");
+
+            // Update positions on tick
+            simulation.on("tick", () => {
+                data.nodes.forEach(d => {
+                    d.x = Math.max(60, Math.min(width - 60, d.x));
+                    d.y = Math.max(60, Math.min(height - 60, d.y));
+                });
+
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+            });
+
+            updateLinkVisibility();
+            console.log("✅ Cosmic constellation created!");
+        }
+
+        function loadSymbolSVG(symbolName, nodeElement) {
+            if (!showSVGs) return;
+            
+            const svgPath = `archetypal_53/svg_normalized/${symbolName.toLowerCase()}_graph.svg`;
+            
+            fetch(svgPath)
+                .then(response => response.text())
+                .then(svgContent => {
+                    const parser = new DOMParser();
+                    const svgDoc = parser.parseFromString(svgContent, "image/svg+xml");
+                    const svgElement = svgDoc.documentElement;
+                    
+                    if (svgElement) {
+                        const clonedSVG = svgElement.cloneNode(true);
+                        clonedSVG.setAttribute("width", "35");
+                        clonedSVG.setAttribute("height", "35");
+                        clonedSVG.setAttribute("x", "-17.5");
+                        clonedSVG.setAttribute("y", "-17.5");
+                        clonedSVG.classList.add("node-svg");
+                        
+                        updateGlyphStyle(clonedSVG, symbolName);
+                        nodeElement.node().appendChild(clonedSVG);
+                    }
+                })
+                .catch(() => {
+                    // Fallback to text
+                    nodeElement.append("text")
+                        .attr("text-anchor", "middle")
+                        .attr("dy", "0.3em")
+                        .style("font-size", "16px")
+                        .style("font-weight", "bold")
+                        .style("fill", "#fff")
+                        .style("pointer-events", "none")
+                        .text(symbolName.charAt(0));
+                });
+        }
+
+        function updateGlyphStyle(svgElement, symbolName) {
+            const symbol = symbolCodex[symbolName];
+            if (glyphMode === 'white') {
+                // Apply white color
+                svgElement.classList.remove('colored');
+                svgElement.classList.add('white');
+                const paths = svgElement.querySelectorAll('path, g');
+                paths.forEach(path => {
+                    path.setAttribute('fill', '#ffffff');
+                });
+            } else {
+                // Default to emotion color or white if no emotion color available
+                svgElement.classList.remove('white');
+                svgElement.classList.add('colored');
+                const paths = svgElement.querySelectorAll('path, g');
+                paths.forEach(path => {
+                    if (symbol?.emotion_hex) {
+                        path.setAttribute('fill', symbol.emotion_hex);
+                    } else {
+                        path.setAttribute('fill', '#ffffff');
+                    }
+                });
+            }
+        }
+
+        function updateAllGlyphStyles() {
+            nodeGroup.selectAll('.node-svg').each(function() {
+                const svgElement = this;
+                const nodeData = d3.select(svgElement.parentNode).datum();
+                updateGlyphStyle(svgElement, nodeData.id);
+            });
+        }
+
+        function updateLinkVisibility() {
+            linkGroup.selectAll('line').style('opacity', function(d) {
+                if (!showLinks) return 0;
+                return connectionTypes[d.type] ? 0.6 : 0;
+            });
+        }
+
+        function updateStatus() {
+            if (currentData) {
+                const visibleLinks = currentData.links.filter(link => connectionTypes[link.type]).length;
+                document.getElementById('nodeCount').textContent = `${currentData.nodes.length} cosmic symbols`;
+                document.getElementById('linkCount').textContent = `${visibleLinks} active connections`;
+            }
+        }
+
+        // Event handlers
+        function handleNodeClick(event, d) {
+            const symbol = symbolCodex[d.id];
+            if (symbol) {
+                showSymbolModal(symbol);
+            }
+        }
+
+        function handleNodeHover(event, d) {
+            const symbol = symbolCodex[d.id];
+            if (symbol) {
+                document.getElementById('statusContent').innerHTML = `
+                    <strong>${symbol.name}</strong><br>
+                    ${symbol.category} • ${symbol.subcategory}<br>
+                    <small>Click for cosmic wisdom</small>
+                `;
+            }
+        }
+
+        function handleNodeOut() {
+            updateStatus();
+        }
+
+        function showSymbolModal(symbol) {
+            document.getElementById('modalTitle').textContent = symbol.name;
+            
+            document.getElementById('modalBody').innerHTML = `
+                <div class="symbol-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">${symbol.category}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Subcategory</div>
+                        <div class="meta-value">${symbol.subcategory}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Cosmic Energy</div>
+                        <div class="meta-value" style="color: ${symbol.emotion_hex}">${symbol.emotion_category}</div>
+                    </div>
+                </div>
+
+                <div class="section-title">Universal Meanings</div>
+                <div class="meanings-list">
+                    ${symbol.meanings.map(meaning => `<span class="meaning-tag">${meaning}</span>`).join('')}
+                </div>
+
+                <div class="interpretation-section">
+                    <div class="section-title">Cosmic Interpretation</div>
+                    <div style="line-height: 1.6; font-size: 14px;">
+                        ${symbol.interpretation || 'No interpretation available.'}
+                    </div>
+                </div>
+
+                <div class="section-title">Ancient Sources</div>
+                <ul class="sources-list">
+                    ${symbol.sources ? symbol.sources.map(source => `<li>${source}</li>`).join('') : '<li>No sources available</li>'}
+                </ul>
+            `;
+            
+            document.getElementById('symbolModal').style.display = 'block';
+        }
+
+        // Control handlers
+        document.getElementById('toggleSVGs').addEventListener('click', function() {
+            showSVGs = !showSVGs;
+            this.classList.toggle('active');
+            this.classList.toggle('inactive');
+            
+            nodeGroup.selectAll('.node-svg').style('display', showSVGs ? 'block' : 'none');
+            if (showSVGs) {
+                nodeGroup.selectAll('.node').each(function(d) {
+                    if (!d3.select(this).select('.node-svg').node()) {
+                        loadSymbolSVG(d.id, d3.select(this));
+                    }
+                });
+            }
+        });
+
+        document.getElementById('toggleLabels').addEventListener('click', function() {
+            showLabels = !showLabels;
+            this.classList.toggle('active');
+            this.classList.toggle('inactive');
+            
+            nodeGroup.selectAll('.node-label').style('display', showLabels ? 'block' : 'none');
+        });
+
+        document.getElementById('toggleLinks').addEventListener('click', function() {
+            showLinks = !showLinks;
+            this.classList.toggle('active');
+            this.classList.toggle('inactive');
+            
+            updateLinkVisibility();
+        });
+
+        // Connection type toggles
+        ['elemental', 'archetypal', 'natural', 'celestial'].forEach(type => {
+            const toggleId = 'toggle' + type.charAt(0).toUpperCase() + type.slice(1);
+            document.getElementById(toggleId).addEventListener('click', function() {
+                connectionTypes[type] = !connectionTypes[type];
+                this.classList.toggle('active');
+                this.classList.toggle('inactive');
+                
+                updateLinkVisibility();
+                updateStatus();
+            });
+        });
+
+        document.getElementById('restartBtn').addEventListener('click', function() {
+            if (simulation && currentData) {
+                currentData.nodes.forEach((d, i) => {
+                    const angle = i * 0.618 * 2 * Math.PI;
+                    const radius = Math.sqrt(i) * 45 + Math.random() * 30;
+                    
+                    d.x = width/2 + Math.cos(angle) * radius;
+                    d.y = height/2 + Math.sin(angle) * radius;
+                    
+                    d.fx = null;
+                    d.fy = null;
+                });
+                
+                simulation.alpha(1).restart();
+            }
+        });
+
+        document.getElementById('pauseBtn').addEventListener('click', function() {
+            isPaused = !isPaused;
+            if (isPaused) {
+                simulation.stop();
+                this.innerHTML = '▶️ Resume';
+            } else {
+                simulation.restart();
+                this.innerHTML = '⏸️ Pause';
+            }
+        });
+
+        // Glyph style dropdown
+        document.getElementById('glyphDropdown').addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function() {
+            document.getElementById('glyphDropdown').classList.remove('open');
+        });
+
+        document.querySelectorAll('#glyphDropdown .dropdown-item').forEach(item => {
+            item.addEventListener('click', function() {
+                glyphMode = this.dataset.mode;
+                document.getElementById('glyphModeText').textContent = this.textContent;
+                document.getElementById('glyphDropdown').classList.remove('open');
+                updateAllGlyphStyles();
+            });
+        });
+
+        // Drag functions
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Modal controls
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('symbolModal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('symbolModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                document.getElementById('symbolModal').style.display = 'none';
+            }
+        });
+
+        // Resize handler
+        window.addEventListener('resize', function() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            svg.attr("width", width).attr("height", height);
+            
+            if (simulation) {
+                simulation.force("center", d3.forceCenter(width/2, height/2).strength(0.03));
+            }
+        });
+
+        // Initialize
+        createStarfield();
+    </script>
+</body>
+</html> 

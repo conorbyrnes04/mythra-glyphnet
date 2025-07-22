@@ -1,0 +1,1220 @@
+[
+  {
+    "name": "Wolf",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Proud",
+    "emotion_hex": "#B5E549",
+    "prompt": "meru archetypal symbol of a wolf, bold angular silhouette of a wolf's head in profile, prominent pointed ears, elongated snout, open howling mouth, upward energy, primal wildness, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable wolf archetype",
+    "meanings": [
+      "Instinct",
+      "Protection",
+      "Wildness",
+      "Loyalty"
+    ],
+    "icon": "wolf.svg",
+    "interpretation": "Dreaming of a wolf might invite you to reconnect with instinct, courage, or the wilder edges of your nature. Jung and Hillman might suggest the wolf points toward autonomous, untamed energies within—the parts of yourself that know how to survive and protect. Mythologically, as Campbell and Estés show, the wolf often appears as a companion in the dark woods of the soul, a guide to intuition and hidden knowing. In some traditions, the wolf may act as an initiator or psychopomp, ushering you into a new level of awareness or testing your authenticity. Esoteric sources might associate the wolf with the threshold between worlds, a being at home in both light and shadow. In nondual teachings, the wolf’s howl could be a call to recognize your own fierce presence as both form and emptiness. If the wolf visits your dream, you might ask what is calling for courage or protection in your life—and consider how you relate to both solitude and belonging.\n\n— Inspired by Jung, Hillman, Estés, Grof, Campbell, Meade, Wilber, ARAS, and others.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "Clarissa Pinkola Estés, Women Who Run With the Wolves",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols",
+      "Joseph Campbell, The Power of Myth"
+    ]
+  },
+  {
+    "name": "Lion",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Triumphant",
+    "emotion_hex": "#c2e294",
+    "prompt": "meru archetypal symbol of a lion, bold frontal or profile silhouette with a flowing mane radiating outward, prominent nose and eyes, sense of regality and strength, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable lion archetype",
+    "meanings": [
+      "Courage",
+      "Leadership",
+      "Royalty",
+      "Power"
+    ],
+    "icon": "lion.svg",
+    "interpretation": "Encountering a lion in a dream may suggest the stirring of dignity, creative power, or leadership. Jung might see the lion as an image of the Self, expressing both animal vitality and a unifying radiance. Hillman could point to the lion’s presence as an opportunity to embody majesty or to reflect on your place of sovereignty. In myth, lions often stand as guardians or challengers—sometimes inviting you to face the forces that test your worthiness. Esoteric and alchemical perspectives sometimes link the lion to gold, sunlight, or the transformative fire of the soul. Tantric and Dzogchen traditions may view the lion as a symbol of awareness’s natural nobility and confidence. If a lion appears to you, it may be worth asking where your strength wishes to express itself, or where you are called to stand your ground and claim your place in the sun.\n\n— Inspired by Jung, Hillman, Campbell, Grof, Crowley, Chevalier & Gheerbrant, Kṣemarāja, Longchenpa, et al.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "Chevalier & Gheerbrant, Dictionary of Symbols",
+      "Joseph Campbell, The Power of Myth",
+      "Aleister Crowley, The Book of Thoth",
+      "Longchenpa, The Practice of Dzogchen"
+    ]
+  },
+  {
+    "name": "Bear",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Caring",
+    "emotion_hex": "#9e964d",
+    "prompt": "meru archetypal symbol of a bear, powerful compact body, broad head with rounded ears, posture of stability and readiness, protective and nurturing energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, rounded strong edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable bear archetype",
+    "meanings": [
+      "Strength",
+      "Protection",
+      "Motherhood",
+      "Introspection"
+    ],
+    "icon": "bear.svg",
+    "interpretation": "Meeting the bear in dreams might point to a time for retreat, protection, or inner healing. Jung and Hillman might interpret the bear as an invitation to draw on your own rooted strength and to honor the wisdom found in solitude. Across cultures, the bear is sometimes seen as an ancestor, a healer, or a guardian of hidden knowledge. Myths might depict the bear as a teacher of boundaries, renewal, or the cyclical rhythms of life and rest. Esoteric writers sometimes see the bear as a symbol of deep transformation—of returning to the earth to emerge renewed. Nondual traditions may recognize in the bear a spaciousness or luminous holding, inviting you to rest in the fullness of being. If bear energy appears to you, consider where you might need to honor cycles of activity and retreat, or how you might draw upon protective or nurturing instincts.\n\n— Inspired by Jung, Hillman, Estés, Campbell, Grof, ARAS, Mindell, and others.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "Marie-Louise von Franz, Archetypal Patterns in Fairy Tales",
+      "Chevalier & Gheerbrant, Dictionary of Symbols",
+      "Archive for Research in Archetypal Symbolism (ARAS)"
+    ]
+  },
+  {
+    "name": "Fox",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Clever",
+    "emotion_hex": "#F98D8D",
+    "prompt": "meru archetypal symbol of a fox, slender pointed snout, bushy tail, sly posture, sense of cunning and adaptability, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable fox archetype",
+    "meanings": [
+      "Cleverness",
+      "Adaptability",
+      "Cunning",
+      "Survival"
+    ],
+    "icon": "fox.svg",
+    "interpretation": "The fox in dreams may signal adaptability, resourcefulness, or the spirit of the trickster. Jung and Hillman might suggest the fox represents subtle intelligence—an aspect of psyche that thrives in complexity and paradox. In myth and folklore, the fox often appears as a shapeshifter or teacher of reversals, sometimes leading you to question appearances or to laugh at your own seriousness. Esoteric traditions might frame the fox as a guide through illusions, an initiator into the mysteries of transformation. Tantric and Dzogchen perspectives may point to the playful, elusive quality of awareness mirrored in the fox’s movements. If fox energy visits you, you could reflect on where adaptation or cunning might serve you—or whether a touch of humor and shapeshifting is needed in your present situation.\n\n— Inspired by Jung, Hillman, Campbell, Meade, ARAS, Crowley, and others.",
+    "sources": [
+      "C.G. Jung, The Archetypes and The Collective Unconscious",
+      "James Hillman, The Dream and the Underworld",
+      "Chevalier & Gheerbrant, Dictionary of Symbols",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Marie-Louise von Franz, Shadow and Evil in Fairy Tales"
+    ]
+  },
+  {
+    "name": "Eagle",
+    "category": "Animal",
+    "subcategory": "Bird",
+    "emotion_category": "Free",
+    "emotion_hex": "#87CEEB",
+    "prompt": "meru archetypal symbol of a eagle, majestic spread wings, sharp curved beak, keen eyes, soaring posture, sense of freedom and vision, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable eagle archetype",
+    "meanings": [
+      "Vision",
+      "Freedom",
+      "Perspective",
+      "Spirit"
+    ],
+    "icon": "eagle.svg",
+    "interpretation": "Encountering the eagle in dreams or visions may signal a call to explore visionary perspective and spiritual transcendence. Jung might see the eagle as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the eagle appears across cultures as a symbol of vision, freedom. Esoteric traditions might frame it as a key to understanding visionary perspective and spiritual transcendence. If the eagle appears in your experience, consider what aspects of visionary perspective and spiritual transcendence are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Raven",
+    "category": "Animal",
+    "subcategory": "Bird",
+    "emotion_category": "Mysterious",
+    "emotion_hex": "#483D8B",
+    "prompt": "meru archetypal symbol of a raven, dark angular profile, prominent black beak, piercing eye, wings with detailed feathers, mysterious presence, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable raven archetype",
+    "meanings": [
+      "Mystery",
+      "Magic",
+      "Death",
+      "Transformation"
+    ],
+    "icon": "raven.svg",
+    "interpretation": "Encountering the raven in dreams or visions may signal a call to explore messenger between worlds and transformation. Jung might see the raven as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the raven appears across cultures as a symbol of mystery, magic. Esoteric traditions might frame it as a key to understanding messenger between worlds and transformation. If the raven appears in your experience, consider what aspects of messenger between worlds and transformation are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Owl",
+    "category": "Animal",
+    "subcategory": "Bird",
+    "emotion_category": "Wise",
+    "emotion_hex": "#4a4419",
+    "prompt": "meru archetypal symbol of a owl, large round eyes, facial disc, compact rounded body, perched alertly, nocturnal wisdom, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable owl archetype",
+    "meanings": [
+      "Wisdom",
+      "Intuition",
+      "Night",
+      "Knowledge"
+    ],
+    "icon": "owl.svg",
+    "interpretation": "Encountering the owl in dreams or visions may signal a call to explore nocturnal wisdom and hidden knowledge. Jung might see the owl as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the owl appears across cultures as a symbol of wisdom, intuition. Esoteric traditions might frame it as a key to understanding nocturnal wisdom and hidden knowledge. If the owl appears in your experience, consider what aspects of nocturnal wisdom and hidden knowledge are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Serpent",
+    "category": "Animal",
+    "subcategory": "Reptile",
+    "emotion_category": "Transformative",
+    "emotion_hex": "#FF4500",
+    "prompt": "meru archetypal symbol of a serpent, sinuous coiled form, triangular head, forked tongue, scales suggested by texture, hypnotic curves, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable serpent archetype",
+    "meanings": [
+      "Transformation",
+      "Kundalini",
+      "Healing",
+      "Rebirth"
+    ],
+    "icon": "serpent.svg",
+    "interpretation": "Encountering the serpent in dreams or visions may signal a call to explore cyclical transformation and healing wisdom. Jung might see the serpent as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the serpent appears across cultures as a symbol of transformation, kundalini. Esoteric traditions might frame it as a key to understanding cyclical transformation and healing wisdom. If the serpent appears in your experience, consider what aspects of cyclical transformation and healing wisdom are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Turtle",
+    "category": "Animal",
+    "subcategory": "Reptile",
+    "emotion_category": "Grounded",
+    "emotion_hex": "#8B4513",
+    "prompt": "meru archetypal symbol of a turtle, domed shell with geometric patterns, small head and limbs, slow steady posture, ancient wisdom, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable turtle archetype",
+    "meanings": [
+      "Patience",
+      "Wisdom",
+      "Endurance",
+      "Earth"
+    ],
+    "icon": "turtle.svg",
+    "interpretation": "Encountering the turtle in dreams or visions may signal a call to explore patient endurance and earth wisdom. Jung might see the turtle as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the turtle appears across cultures as a symbol of patience, wisdom. Esoteric traditions might frame it as a key to understanding patient endurance and earth wisdom. If the turtle appears in your experience, consider what aspects of patient endurance and earth wisdom are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Stag",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Noble",
+    "emotion_hex": "#FFD700",
+    "prompt": "meru archetypal symbol of a stag, noble profile with elaborate branching antlers, alert ears, graceful neck, forest king energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable stag archetype",
+    "meanings": [
+      "Nobility",
+      "Renewal",
+      "Forest",
+      "Masculinity"
+    ],
+    "icon": "stag.svg",
+    "interpretation": "Encountering the stag in dreams or visions may signal a call to explore forest nobility and cyclical renewal. Jung might see the stag as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the stag appears across cultures as a symbol of nobility, renewal. Esoteric traditions might frame it as a key to understanding forest nobility and cyclical renewal. If the stag appears in your experience, consider what aspects of forest nobility and cyclical renewal are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Horse",
+    "category": "Animal",
+    "subcategory": "Mammal",
+    "emotion_category": "Free",
+    "emotion_hex": "#87CEEB",
+    "prompt": "meru archetypal symbol of a horse, powerful muscular body, flowing mane, arched neck, running or rearing posture, wild freedom, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable horse archetype",
+    "meanings": [
+      "Freedom",
+      "Power",
+      "Journey",
+      "Spirit"
+    ],
+    "icon": "horse.svg",
+    "interpretation": "Encountering the horse in dreams or visions may signal a call to explore untamed freedom and spiritual journey. Jung might see the horse as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the horse appears across cultures as a symbol of freedom, power. Esoteric traditions might frame it as a key to understanding untamed freedom and spiritual journey. If the horse appears in your experience, consider what aspects of untamed freedom and spiritual journey are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Dolphin",
+    "category": "Animal",
+    "subcategory": "Marine",
+    "emotion_category": "Joy",
+    "emotion_hex": "#A3DD36",
+    "prompt": "meru archetypal symbol of a dolphin, sleek curved body, prominent beak, playful leaping posture, water splashes, joyful energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable dolphin archetype",
+    "meanings": [
+      "Joy",
+      "Intelligence",
+      "Play",
+      "Communication"
+    ],
+    "icon": "dolphin.svg",
+    "interpretation": "Encountering the dolphin in dreams or visions may signal a call to explore playful intelligence and emotional communication. Jung might see the dolphin as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the dolphin appears across cultures as a symbol of joy, intelligence. Esoteric traditions might frame it as a key to understanding playful intelligence and emotional communication. If the dolphin appears in your experience, consider what aspects of playful intelligence and emotional communication are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Butterfly",
+    "category": "Animal",
+    "subcategory": "Insect",
+    "emotion_category": "Transformative",
+    "emotion_hex": "#FF4500",
+    "prompt": "meru archetypal symbol of a butterfly, symmetrical detailed wings, delicate body, wings spread in flight, transformation energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable butterfly archetype",
+    "meanings": [
+      "Transformation",
+      "Soul",
+      "Beauty",
+      "Rebirth"
+    ],
+    "icon": "butterfly.svg",
+    "interpretation": "Encountering the butterfly in dreams or visions may signal a call to explore soul transformation and beauty emerging. Jung might see the butterfly as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the butterfly appears across cultures as a symbol of transformation, soul. Esoteric traditions might frame it as a key to understanding soul transformation and beauty emerging. If the butterfly appears in your experience, consider what aspects of soul transformation and beauty emerging are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Spider",
+    "category": "Animal",
+    "subcategory": "Arachnid",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a spider, eight legs arranged symmetrically, compact body, web strands, geometric precision, creative energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable spider archetype",
+    "meanings": [
+      "Creativity",
+      "Fate",
+      "Patience",
+      "Web"
+    ],
+    "icon": "spider.svg",
+    "interpretation": "Encountering the spider in dreams or visions may signal a call to explore weaving fate and creative manifestation. Jung might see the spider as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the spider appears across cultures as a symbol of creativity, fate. Esoteric traditions might frame it as a key to understanding weaving fate and creative manifestation. If the spider appears in your experience, consider what aspects of weaving fate and creative manifestation are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Whale",
+    "category": "Animal",
+    "subcategory": "Marine",
+    "emotion_category": "Ancient",
+    "emotion_hex": "#696969",
+    "prompt": "meru archetypal symbol of a whale, massive rounded body, small eye, tail fluke, deep ocean presence, ancient wisdom, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable whale archetype",
+    "meanings": [
+      "Ancient",
+      "Memory",
+      "Depth",
+      "Song"
+    ],
+    "icon": "whale.svg",
+    "interpretation": "Encountering the whale in dreams or visions may signal a call to explore ancient memory and deep emotional currents. Jung might see the whale as an expression of instinctual wisdom, while Hillman could point to its role as a guide through specific emotional or psychological territories. Mythologically, the whale appears across cultures as a symbol of ancient, memory. Esoteric traditions might frame it as a key to understanding ancient memory and deep emotional currents. If the whale appears in your experience, consider what aspects of ancient memory and deep emotional currents are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Sun",
+    "category": "Celestial",
+    "subcategory": "Star",
+    "emotion_category": "Powerful",
+    "emotion_hex": "#8B0000",
+    "prompt": "meru archetypal symbol of a sun, perfect circle with radiating rays extending outward, multiple ray lengths, central disk, solar energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable sun archetype",
+    "meanings": [
+      "Life",
+      "Consciousness",
+      "Energy",
+      "Day"
+    ],
+    "icon": "sun.svg",
+    "interpretation": "Encountering the sun in dreams or visions may signal a call to explore conscious solar energy and vital force. Jung might interpret the sun as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the sun appears across cultures as a symbol of life, consciousness. Esoteric traditions might frame it as a key to understanding conscious solar energy and vital force. If the sun appears in your experience, consider what aspects of conscious solar energy and vital force are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Moon",
+    "category": "Celestial",
+    "subcategory": "Lunar",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a moon, crescent shape with subtle surface texture, gentle curves, feminine energy, night mystery, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable moon archetype",
+    "meanings": [
+      "Intuition",
+      "Cycles",
+      "Feminine",
+      "Night"
+    ],
+    "icon": "moon.svg",
+    "interpretation": "Encountering the moon in dreams or visions may signal a call to explore lunar cycles and intuitive feminine wisdom. Jung might interpret the moon as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the moon appears across cultures as a symbol of intuition, cycles. Esoteric traditions might frame it as a key to understanding lunar cycles and intuitive feminine wisdom. If the moon appears in your experience, consider what aspects of lunar cycles and intuitive feminine wisdom are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Star",
+    "category": "Celestial",
+    "subcategory": "Star",
+    "emotion_category": "Hopeful",
+    "emotion_hex": "#c2e294",
+    "prompt": "meru archetypal symbol of a star, five or eight-pointed star with radiating points, central bright core, twinkling energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable star archetype",
+    "meanings": [
+      "Guidance",
+      "Hope",
+      "Destiny",
+      "Navigation"
+    ],
+    "icon": "star.svg",
+    "interpretation": "Encountering the star in dreams or visions may signal a call to explore guiding light and destined navigation. Jung might interpret the star as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the star appears across cultures as a symbol of guidance, hope. Esoteric traditions might frame it as a key to understanding guiding light and destined navigation. If the star appears in your experience, consider what aspects of guiding light and destined navigation are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Spiral",
+    "category": "Cosmic",
+    "subcategory": "Sacred Geometry",
+    "emotion_category": "Transformative",
+    "emotion_hex": "#FF4500",
+    "prompt": "meru archetypal symbol of a spiral, perfect spiral curve expanding outward from center, mathematical precision, dynamic movement, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable spiral archetype",
+    "meanings": [
+      "Evolution",
+      "Time",
+      "Growth",
+      "Cosmos"
+    ],
+    "icon": "spiral.svg",
+    "interpretation": "Encountering the spiral in dreams or visions may signal a call to explore cosmic evolution and spiral growth. Jung might see the spiral as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the spiral appears across cultures as a symbol of evolution, time. Esoteric traditions might frame it as a key to understanding cosmic evolution and spiral growth. If the spiral appears in your experience, consider what aspects of cosmic evolution and spiral growth are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Lightning",
+    "category": "Celestial",
+    "subcategory": "Storm",
+    "emotion_category": "Powerful",
+    "emotion_hex": "#8B0000",
+    "prompt": "meru archetypal symbol of a lightning, jagged zigzag bolt with multiple branches, electric energy, downward striking force, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable lightning archetype",
+    "meanings": [
+      "Inspiration",
+      "Power",
+      "Sudden",
+      "Divine"
+    ],
+    "icon": "lightning.svg",
+    "interpretation": "Encountering the lightning in dreams or visions may signal a call to explore divine inspiration and sudden illumination. Jung might interpret the lightning as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the lightning appears across cultures as a symbol of inspiration, power. Esoteric traditions might frame it as a key to understanding divine inspiration and sudden illumination. If the lightning appears in your experience, consider what aspects of divine inspiration and sudden illumination are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Rainbow",
+    "category": "Celestial",
+    "subcategory": "Atmospheric",
+    "emotion_category": "Hopeful",
+    "emotion_hex": "#c2e294",
+    "prompt": "meru archetypal symbol of a rainbow, perfect arc with seven bands indicated by line weights, bridge between earth and sky, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable rainbow archetype",
+    "meanings": [
+      "Promise",
+      "Bridge",
+      "Hope",
+      "Unity"
+    ],
+    "icon": "rainbow.svg",
+    "interpretation": "Encountering the rainbow in dreams or visions may signal a call to explore divine promise and unity bridge. Jung might interpret the rainbow as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the rainbow appears across cultures as a symbol of promise, bridge. Esoteric traditions might frame it as a key to understanding divine promise and unity bridge. If the rainbow appears in your experience, consider what aspects of divine promise and unity bridge are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Constellation",
+    "category": "Celestial",
+    "subcategory": "Star",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a constellation, geometric pattern of connected points, lines forming mythic shapes, stellar navigation, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable constellation archetype",
+    "meanings": [
+      "Pattern",
+      "Mythology",
+      "Navigation",
+      "Story"
+    ],
+    "icon": "constellation.svg",
+    "interpretation": "Encountering the constellation in dreams or visions may signal a call to explore mythic patterns and stellar storytelling. Jung might interpret the constellation as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the constellation appears across cultures as a symbol of pattern, mythology. Esoteric traditions might frame it as a key to understanding mythic patterns and stellar storytelling. If the constellation appears in your experience, consider what aspects of mythic patterns and stellar storytelling are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Comet",
+    "category": "Celestial",
+    "subcategory": "Cosmic",
+    "emotion_category": "Transformative",
+    "emotion_hex": "#FF4500",
+    "prompt": "meru archetypal symbol of a comet, bright head with flowing tail streaking across space, movement and change energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable comet archetype",
+    "meanings": [
+      "Change",
+      "Omen",
+      "Journey",
+      "Transformation"
+    ],
+    "icon": "comet.svg",
+    "interpretation": "Encountering the comet in dreams or visions may signal a call to explore transformative omens and cosmic journeys. Jung might interpret the comet as a symbol of the transcendent function, while Hillman could see it as an invitation to recognize cosmic patterns in personal experience. Mythologically, the comet appears across cultures as a symbol of change, omen. Esoteric traditions might frame it as a key to understanding transformative omens and cosmic journeys. If the comet appears in your experience, consider what aspects of transformative omens and cosmic journeys are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Fire",
+    "category": "Element",
+    "subcategory": "Classical",
+    "emotion_category": "Fierce",
+    "emotion_hex": "#DC143C",
+    "prompt": "meru archetypal symbol of a fire, upward pointed triangular flames with flickering edges, multiple flame tongues, passionate energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable fire archetype",
+    "meanings": [
+      "Passion",
+      "Transformation",
+      "Energy",
+      "Purification"
+    ],
+    "icon": "fire.svg",
+    "interpretation": "Encountering the fire in dreams or visions may signal a call to explore transformative passion and purifying fire. Jung would likely connect the fire to fundamental psychic energies, while Hillman might explore its role in emotional alchemy and transformation. Mythologically, the fire appears across cultures as a symbol of passion, transformation. Esoteric traditions might frame it as a key to understanding transformative passion and purifying fire. If the fire appears in your experience, consider what aspects of transformative passion and purifying fire are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Water",
+    "category": "Element",
+    "subcategory": "Classical",
+    "emotion_category": "Peaceful",
+    "emotion_hex": "#98FB98",
+    "prompt": "meru archetypal symbol of a water, flowing curves suggesting waves or streams, droplets, fluid movement, cleansing energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable water archetype",
+    "meanings": [
+      "Emotion",
+      "Flow",
+      "Cleansing",
+      "Life"
+    ],
+    "icon": "water.svg",
+    "interpretation": "Encountering the water in dreams or visions may signal a call to explore emotional flow and life-giving cleansing. Jung would likely connect the water to fundamental psychic energies, while Hillman might explore its role in emotional alchemy and transformation. Mythologically, the water appears across cultures as a symbol of emotion, flow. Esoteric traditions might frame it as a key to understanding emotional flow and life-giving cleansing. If the water appears in your experience, consider what aspects of emotional flow and life-giving cleansing are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Earth",
+    "category": "Element",
+    "subcategory": "Classical",
+    "emotion_category": "Grounded",
+    "emotion_hex": "#8B4513",
+    "prompt": "meru archetypal symbol of a earth, solid geometric forms, square or hexagonal shapes, stable foundation, grounding energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable earth archetype",
+    "meanings": [
+      "Stability",
+      "Foundation",
+      "Material",
+      "Growth"
+    ],
+    "icon": "earth.svg",
+    "interpretation": "Encountering the earth in dreams or visions may signal a call to explore stable foundation and material manifestation. Jung would likely connect the earth to fundamental psychic energies, while Hillman might explore its role in emotional alchemy and transformation. Mythologically, the earth appears across cultures as a symbol of stability, foundation. Esoteric traditions might frame it as a key to understanding stable foundation and material manifestation. If the earth appears in your experience, consider what aspects of stable foundation and material manifestation are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Air",
+    "category": "Element",
+    "subcategory": "Classical",
+    "emotion_category": "Free",
+    "emotion_hex": "#87CEEB",
+    "prompt": "meru archetypal symbol of a air, flowing lines suggesting wind patterns, spirals and curves, invisible movement made visible, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable air archetype",
+    "meanings": [
+      "Intellect",
+      "Communication",
+      "Freedom",
+      "Breath"
+    ],
+    "icon": "air.svg",
+    "interpretation": "Encountering the air in dreams or visions may signal a call to explore intellectual freedom and breath of life. Jung would likely connect the air to fundamental psychic energies, while Hillman might explore its role in emotional alchemy and transformation. Mythologically, the air appears across cultures as a symbol of intellect, communication. Esoteric traditions might frame it as a key to understanding intellectual freedom and breath of life. If the air appears in your experience, consider what aspects of intellectual freedom and breath of life are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Storm",
+    "category": "Natural",
+    "subcategory": "Weather",
+    "emotion_category": "Powerful",
+    "emotion_hex": "#8B0000",
+    "prompt": "meru archetypal symbol of a storm, swirling cloud forms with lightning elements, dynamic circular motion, chaotic energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable storm archetype",
+    "meanings": [
+      "Change",
+      "Chaos",
+      "Power",
+      "Cleansing"
+    ],
+    "icon": "storm.svg",
+    "interpretation": "Encountering the storm in dreams or visions may signal a call to explore chaotic transformation and cleansing power. Jung might see the storm as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the storm appears across cultures as a symbol of change, chaos. Esoteric traditions might frame it as a key to understanding chaotic transformation and cleansing power. If the storm appears in your experience, consider what aspects of chaotic transformation and cleansing power are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Volcano",
+    "category": "Natural",
+    "subcategory": "Geological",
+    "emotion_category": "Fierce",
+    "emotion_hex": "#DC143C",
+    "prompt": "meru archetypal symbol of a volcano, triangular mountain with erupting peak, lava flows, creative destruction energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable volcano archetype",
+    "meanings": [
+      "Creation",
+      "Destruction",
+      "Passion",
+      "Birth"
+    ],
+    "icon": "volcano.svg",
+    "interpretation": "Encountering the volcano in dreams or visions may signal a call to explore creative destruction and passionate birth. Jung might see the volcano as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the volcano appears across cultures as a symbol of creation, destruction. Esoteric traditions might frame it as a key to understanding creative destruction and passionate birth. If the volcano appears in your experience, consider what aspects of creative destruction and passionate birth are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Ocean",
+    "category": "Natural",
+    "subcategory": "Water",
+    "emotion_category": "Mysterious",
+    "emotion_hex": "#483D8B",
+    "prompt": "meru archetypal symbol of a ocean, vast waves with foam crests, horizontal flow, infinite depth suggested, vast mystery, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable ocean archetype",
+    "meanings": [
+      "Vast",
+      "Unconscious",
+      "Mystery",
+      "Depth"
+    ],
+    "icon": "ocean.svg",
+    "interpretation": "Encountering the ocean in dreams or visions may signal a call to explore vast unconscious and mysterious depths. Jung might see the ocean as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the ocean appears across cultures as a symbol of vast, unconscious. Esoteric traditions might frame it as a key to understanding vast unconscious and mysterious depths. If the ocean appears in your experience, consider what aspects of vast unconscious and mysterious depths are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Desert",
+    "category": "Natural",
+    "subcategory": "Landscape",
+    "emotion_category": "Spiritual",
+    "emotion_hex": "#9370DB",
+    "prompt": "meru archetypal symbol of a desert, flowing sand dunes with wind patterns, minimalist curves, emptiness and space, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable desert archetype",
+    "meanings": [
+      "Solitude",
+      "Purification",
+      "Emptiness",
+      "Vision"
+    ],
+    "icon": "desert.svg",
+    "interpretation": "Encountering the desert in dreams or visions may signal a call to explore purifying solitude and visionary emptiness. Jung might see the desert as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the desert appears across cultures as a symbol of solitude, purification. Esoteric traditions might frame it as a key to understanding purifying solitude and visionary emptiness. If the desert appears in your experience, consider what aspects of purifying solitude and visionary emptiness are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Tree",
+    "category": "Plant",
+    "subcategory": "Tree",
+    "emotion_category": "Grounded",
+    "emotion_hex": "#8B4513",
+    "prompt": "meru archetypal symbol of a tree, strong trunk with spreading branches above and roots below, life axis, connection energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable tree archetype",
+    "meanings": [
+      "Growth",
+      "Connection",
+      "Wisdom",
+      "Life"
+    ],
+    "icon": "tree.svg",
+    "interpretation": "Encountering the tree in dreams or visions may signal a call to explore rooted wisdom and life axis connection. Jung might see the tree as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the tree appears across cultures as a symbol of growth, connection. Esoteric traditions might frame it as a key to understanding rooted wisdom and life axis connection. If the tree appears in your experience, consider what aspects of rooted wisdom and life axis connection are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Lotus",
+    "category": "Plant",
+    "subcategory": "Flower",
+    "emotion_category": "Spiritual",
+    "emotion_hex": "#9370DB",
+    "prompt": "meru archetypal symbol of a lotus, layered petals in perfect symmetry, emerging from water, enlightenment bloom, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable lotus archetype",
+    "meanings": [
+      "Enlightenment",
+      "Purity",
+      "Rebirth",
+      "Beauty"
+    ],
+    "icon": "lotus.svg",
+    "interpretation": "Encountering the lotus in dreams or visions may signal a call to explore spiritual emergence and pure enlightenment. Jung might see the lotus as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the lotus appears across cultures as a symbol of enlightenment, purity. Esoteric traditions might frame it as a key to understanding spiritual emergence and pure enlightenment. If the lotus appears in your experience, consider what aspects of spiritual emergence and pure enlightenment are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Rose",
+    "category": "Plant",
+    "subcategory": "Flower",
+    "emotion_category": "Caring",
+    "emotion_hex": "#9e964d",
+    "prompt": "meru archetypal symbol of a rose, complex layered petals with thorned stem, beauty and protection combined, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable rose archetype",
+    "meanings": [
+      "Love",
+      "Beauty",
+      "Passion",
+      "Protection"
+    ],
+    "icon": "rose.svg",
+    "interpretation": "Encountering the rose in dreams or visions may signal a call to explore protective love and passionate beauty. Jung might see the rose as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the rose appears across cultures as a symbol of love, beauty. Esoteric traditions might frame it as a key to understanding protective love and passionate beauty. If the rose appears in your experience, consider what aspects of protective love and passionate beauty are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Oak",
+    "category": "Plant",
+    "subcategory": "Tree",
+    "emotion_category": "Ancient",
+    "emotion_hex": "#696969",
+    "prompt": "meru archetypal symbol of a oak, mighty trunk with characteristic lobed leaves, acorns, ancient strength, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable oak archetype",
+    "meanings": [
+      "Strength",
+      "Endurance",
+      "Wisdom",
+      "Time"
+    ],
+    "icon": "oak.svg",
+    "interpretation": "Encountering the oak in dreams or visions may signal a call to explore ancient strength and enduring wisdom. Jung might see the oak as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the oak appears across cultures as a symbol of strength, endurance. Esoteric traditions might frame it as a key to understanding ancient strength and enduring wisdom. If the oak appears in your experience, consider what aspects of ancient strength and enduring wisdom are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Vine",
+    "category": "Plant",
+    "subcategory": "Climbing",
+    "emotion_category": "Balanced",
+    "emotion_hex": "#F0E68C",
+    "prompt": "meru archetypal symbol of a vine, spiraling tendrils with leaves, climbing upward motion, adaptive growth, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable vine archetype",
+    "meanings": [
+      "Growth",
+      "Adaptation",
+      "Connection",
+      "Spiral"
+    ],
+    "icon": "vine.svg",
+    "interpretation": "Encountering the vine in dreams or visions may signal a call to explore adaptive growth and spiral connections. Jung might see the vine as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the vine appears across cultures as a symbol of growth, adaptation. Esoteric traditions might frame it as a key to understanding adaptive growth and spiral connections. If the vine appears in your experience, consider what aspects of adaptive growth and spiral connections are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Mushroom",
+    "category": "Plant",
+    "subcategory": "Fungus",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a mushroom, dome cap on slender stem, mysterious woodland presence, hidden network, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable mushroom archetype",
+    "meanings": [
+      "Mystery",
+      "Network",
+      "Decomposition",
+      "Magic"
+    ],
+    "icon": "mushroom.svg",
+    "interpretation": "Encountering the mushroom in dreams or visions may signal a call to explore hidden networks and decomposing magic. Jung might see the mushroom as connecting us to natural wisdom, while Hillman could explore its role in re-enchanting our relationship with the living world. Mythologically, the mushroom appears across cultures as a symbol of mystery, network. Esoteric traditions might frame it as a key to understanding hidden networks and decomposing magic. If the mushroom appears in your experience, consider what aspects of hidden networks and decomposing magic are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Warrior",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Fierce",
+    "emotion_hex": "#DC143C",
+    "prompt": "meru archetypal symbol of a warrior, strong standing figure with shield and spear, protective stance, disciplined energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable warrior archetype",
+    "meanings": [
+      "Courage",
+      "Protection",
+      "Discipline",
+      "Battle"
+    ],
+    "icon": "warrior.svg",
+    "interpretation": "Encountering the warrior in dreams or visions may signal a call to explore disciplined courage and protective battle. Jung might see the warrior as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the warrior appears across cultures as a symbol of courage, protection. Esoteric traditions might frame it as a key to understanding disciplined courage and protective battle. If the warrior appears in your experience, consider what aspects of disciplined courage and protective battle are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Sage",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Wise",
+    "emotion_hex": "#4a4419",
+    "prompt": "meru archetypal symbol of a sage, seated figure with scroll or book, contemplative posture, wisdom energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable sage archetype",
+    "meanings": [
+      "Wisdom",
+      "Knowledge",
+      "Teaching",
+      "Truth"
+    ],
+    "icon": "sage.svg",
+    "interpretation": "Encountering the sage in dreams or visions may signal a call to explore accumulated wisdom and truth teaching. Jung might see the sage as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the sage appears across cultures as a symbol of wisdom, knowledge. Esoteric traditions might frame it as a key to understanding accumulated wisdom and truth teaching. If the sage appears in your experience, consider what aspects of accumulated wisdom and truth teaching are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Mother",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Caring",
+    "emotion_hex": "#9e964d",
+    "prompt": "meru archetypal symbol of a mother, nurturing figure with embracing arms, protective circle, caring energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable mother archetype",
+    "meanings": [
+      "Nurturing",
+      "Protection",
+      "Creation",
+      "Love"
+    ],
+    "icon": "mother.svg",
+    "interpretation": "Encountering the mother in dreams or visions may signal a call to explore nurturing protection and creative love. Jung might see the mother as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the mother appears across cultures as a symbol of nurturing, protection. Esoteric traditions might frame it as a key to understanding nurturing protection and creative love. If the mother appears in your experience, consider what aspects of nurturing protection and creative love are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Fool",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Joy",
+    "emotion_hex": "#A3DD36",
+    "prompt": "meru archetypal symbol of a fool, dancing figure with cap and bells, carefree posture, innocent joy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable fool archetype",
+    "meanings": [
+      "Innocence",
+      "Joy",
+      "Spontaneity",
+      "New Beginning"
+    ],
+    "icon": "fool.svg",
+    "interpretation": "Encountering the fool in dreams or visions may signal a call to explore innocent joy and spontaneous new beginnings. Jung might see the fool as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the fool appears across cultures as a symbol of innocence, joy. Esoteric traditions might frame it as a key to understanding innocent joy and spontaneous new beginnings. If the fool appears in your experience, consider what aspects of innocent joy and spontaneous new beginnings are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Shaman",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a shaman, figure with ritual items, feathers or staff, bridging posture, mystical energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable shaman archetype",
+    "meanings": [
+      "Healing",
+      "Bridge",
+      "Spirit",
+      "Ritual"
+    ],
+    "icon": "shaman.svg",
+    "interpretation": "Encountering the shaman in dreams or visions may signal a call to explore spirit bridging and ritual healing. Jung might see the shaman as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the shaman appears across cultures as a symbol of healing, bridge. Esoteric traditions might frame it as a key to understanding spirit bridging and ritual healing. If the shaman appears in your experience, consider what aspects of spirit bridging and ritual healing are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "King",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Noble",
+    "emotion_hex": "#FFD700",
+    "prompt": "meru archetypal symbol of a king, crowned figure on throne, scepter of power, regal posture, authority energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable king archetype",
+    "meanings": [
+      "Authority",
+      "Leadership",
+      "Order",
+      "Responsibility"
+    ],
+    "icon": "king.svg",
+    "interpretation": "Encountering the king in dreams or visions may signal a call to explore responsible authority and ordered leadership. Jung might see the king as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the king appears across cultures as a symbol of authority, leadership. Esoteric traditions might frame it as a key to understanding responsible authority and ordered leadership. If the king appears in your experience, consider what aspects of responsible authority and ordered leadership are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Maiden",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Hopeful",
+    "emotion_hex": "#c2e294",
+    "prompt": "meru archetypal symbol of a maiden, youthful figure with flowing hair, flower crown, innocent beauty, potential energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable maiden archetype",
+    "meanings": [
+      "Innocence",
+      "Potential",
+      "Beauty",
+      "Spring"
+    ],
+    "icon": "maiden.svg",
+    "interpretation": "Encountering the maiden in dreams or visions may signal a call to explore innocent potential and spring beauty. Jung might see the maiden as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the maiden appears across cultures as a symbol of innocence, potential. Esoteric traditions might frame it as a key to understanding innocent potential and spring beauty. If the maiden appears in your experience, consider what aspects of innocent potential and spring beauty are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Hermit",
+    "category": "Human",
+    "subcategory": "Archetype",
+    "emotion_category": "Spiritual",
+    "emotion_hex": "#9370DB",
+    "prompt": "meru archetypal symbol of a hermit, robed figure with lantern, walking staff, solitary journey, inner light, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable hermit archetype",
+    "meanings": [
+      "Solitude",
+      "Inner Light",
+      "Seeking",
+      "Wisdom"
+    ],
+    "icon": "hermit.svg",
+    "interpretation": "Encountering the hermit in dreams or visions may signal a call to explore solitary seeking and inner illumination. Jung might see the hermit as an archetypal pattern of human development, while Hillman could explore its role in personal myth-making and soul-work. Mythologically, the hermit appears across cultures as a symbol of solitude, inner light. Esoteric traditions might frame it as a key to understanding solitary seeking and inner illumination. If the hermit appears in your experience, consider what aspects of solitary seeking and inner illumination are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Yin Yang",
+    "category": "Abstract",
+    "subcategory": "Symbol",
+    "emotion_category": "Balanced",
+    "emotion_hex": "#F0E68C",
+    "prompt": "meru archetypal symbol of a yin yang, perfect circle divided by S-curve, opposing dots, balanced duality, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable yin yang archetype",
+    "meanings": [
+      "Balance",
+      "Duality",
+      "Harmony",
+      "Completion"
+    ],
+    "icon": "yin yang.svg",
+    "interpretation": "Encountering the yin yang in dreams or visions may signal a call to explore dynamic balance and harmonious completion. Jung might interpret the yin yang as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the yin yang appears across cultures as a symbol of balance, duality. Esoteric traditions might frame it as a key to understanding dynamic balance and harmonious completion. If the yin yang appears in your experience, consider what aspects of dynamic balance and harmonious completion are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Cross",
+    "category": "Spiritual",
+    "subcategory": "Sacred",
+    "emotion_category": "Sacred",
+    "emotion_hex": "#DDA0DD",
+    "prompt": "meru archetypal symbol of a cross, vertical and horizontal lines intersecting, four directions, cosmic axis, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable cross archetype",
+    "meanings": [
+      "Intersection",
+      "Sacred",
+      "Directions",
+      "Center"
+    ],
+    "icon": "cross.svg",
+    "interpretation": "Encountering the cross in dreams or visions may signal a call to explore sacred intersection and cosmic centering. Jung might interpret the cross as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the cross appears across cultures as a symbol of intersection, sacred. Esoteric traditions might frame it as a key to understanding sacred intersection and cosmic centering. If the cross appears in your experience, consider what aspects of sacred intersection and cosmic centering are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Mandala",
+    "category": "Spiritual",
+    "subcategory": "Sacred Geometry",
+    "emotion_category": "Sacred",
+    "emotion_hex": "#DDA0DD",
+    "prompt": "meru archetypal symbol of a mandala, perfect circular pattern with geometric divisions, sacred center, radiating symmetry, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable mandala archetype",
+    "meanings": [
+      "Wholeness",
+      "Center",
+      "Unity",
+      "Cosmos"
+    ],
+    "icon": "mandala.svg",
+    "interpretation": "Encountering the mandala in dreams or visions may signal a call to explore cosmic wholeness and sacred centering. Jung might interpret the mandala as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the mandala appears across cultures as a symbol of wholeness, center. Esoteric traditions might frame it as a key to understanding cosmic wholeness and sacred centering. If the mandala appears in your experience, consider what aspects of cosmic wholeness and sacred centering are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Infinity",
+    "category": "Abstract",
+    "subcategory": "Mathematical",
+    "emotion_category": "Mystical",
+    "emotion_hex": "#2d1a5c",
+    "prompt": "meru archetypal symbol of a infinity, figure-eight lying horizontally, endless loop, continuous flow, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable infinity archetype",
+    "meanings": [
+      "Eternal",
+      "Endless",
+      "Cycle",
+      "Boundless"
+    ],
+    "icon": "infinity.svg",
+    "interpretation": "Encountering the infinity in dreams or visions may signal a call to explore eternal cycles and boundless continuity. Jung might interpret the infinity as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the infinity appears across cultures as a symbol of eternal, endless. Esoteric traditions might frame it as a key to understanding eternal cycles and boundless continuity. If the infinity appears in your experience, consider what aspects of eternal cycles and boundless continuity are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Triangle",
+    "category": "Abstract",
+    "subcategory": "Geometric",
+    "emotion_category": "Balanced",
+    "emotion_hex": "#F0E68C",
+    "prompt": "meru archetypal symbol of a triangle, perfect equilateral triangle, three points, stable foundation, unity of three, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable triangle archetype",
+    "meanings": [
+      "Trinity",
+      "Stability",
+      "Ascension",
+      "Unity"
+    ],
+    "icon": "triangle.svg",
+    "interpretation": "Encountering the triangle in dreams or visions may signal a call to explore trinitarian stability and ascending unity. Jung might interpret the triangle as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the triangle appears across cultures as a symbol of trinity, stability. Esoteric traditions might frame it as a key to understanding trinitarian stability and ascending unity. If the triangle appears in your experience, consider what aspects of trinitarian stability and ascending unity are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Circle",
+    "category": "Abstract",
+    "subcategory": "Geometric",
+    "emotion_category": "Peaceful",
+    "emotion_hex": "#98FB98",
+    "prompt": "meru archetypal symbol of a circle, perfect unbroken circle, unity and completion, eternal round, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable circle archetype",
+    "meanings": [
+      "Unity",
+      "Completion",
+      "Eternal",
+      "Wholeness"
+    ],
+    "icon": "circle.svg",
+    "interpretation": "Encountering the circle in dreams or visions may signal a call to explore unified completion and eternal wholeness. Jung might interpret the circle as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the circle appears across cultures as a symbol of unity, completion. Esoteric traditions might frame it as a key to understanding unified completion and eternal wholeness. If the circle appears in your experience, consider what aspects of unified completion and eternal wholeness are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Labyrinth",
+    "category": "Spiritual",
+    "subcategory": "Sacred Path",
+    "emotion_category": "Spiritual",
+    "emotion_hex": "#9370DB",
+    "prompt": "meru archetypal symbol of a labyrinth, circular maze with single path, center destination, spiritual journey, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable labyrinth archetype",
+    "meanings": [
+      "Journey",
+      "Center",
+      "Meditation",
+      "Process"
+    ],
+    "icon": "labyrinth.svg",
+    "interpretation": "Encountering the labyrinth in dreams or visions may signal a call to explore centering journey and meditative process. Jung might interpret the labyrinth as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the labyrinth appears across cultures as a symbol of journey, center. Esoteric traditions might frame it as a key to understanding centering journey and meditative process. If the labyrinth appears in your experience, consider what aspects of centering journey and meditative process are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  },
+  {
+    "name": "Eye",
+    "category": "Abstract",
+    "subcategory": "Consciousness",
+    "emotion_category": "Wise",
+    "emotion_hex": "#4a4419",
+    "prompt": "meru archetypal symbol of a eye, almond-shaped eye with pupil and iris, seeing consciousness, awareness symbol, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable eye archetype",
+    "meanings": [
+      "Consciousness",
+      "Seeing",
+      "Awareness",
+      "Knowledge"
+    ],
+    "icon": "eye.svg",
+    "interpretation": "Encountering the eye in dreams or visions may signal a call to explore conscious seeing and aware knowledge. Jung might interpret the eye as a symbol of individuation and wholeness, while Hillman could see it as an invitation to engage with the sacred dimensions of psyche. Mythologically, the eye appears across cultures as a symbol of consciousness, seeing. Esoteric traditions might frame it as a key to understanding conscious seeing and aware knowledge. If the eye appears in your experience, consider what aspects of conscious seeing and aware knowledge are seeking attention in your life.\n\n— Inspired by Jung, Hillman, Campbell, Grof, ARAS, and archetypal wisdom traditions.",
+    "sources": [
+      "C.G. Jung, Man and His Symbols",
+      "James Hillman, Re-Visioning Psychology",
+      "Joseph Campbell, The Hero with a Thousand Faces",
+      "Archive for Research in Archetypal Symbolism (ARAS)",
+      "Chevalier & Gheerbrant, Dictionary of Symbols"
+    ]
+  }
+]

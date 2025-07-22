@@ -1,0 +1,33 @@
+{
+  "id": "Fox",
+  "name": "Fox",
+  "category": "Animal",
+  "subcategory": "Mammal",
+  "meanings": [
+    "Cleverness",
+    "Adaptability",
+    "Cunning",
+    "Survival"
+  ],
+  "color": "#F98D8D",
+  "emotion_family": "Clever",
+  "prompt": "meru archetypal symbol of a fox, slender pointed snout, bushy tail, sly posture, sense of cunning and adaptability, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable fox archetype",
+  "interpretation": "The fox in dreams may signal adaptability, resourcefulness, or the spirit of the trickster. Jung and Hillman might suggest the fox represents subtle intelligence\u2014an aspect of psyche that thrives in complexity and paradox. In myth and folklore, the fox often appears as a shapeshifter or teacher of reversals, sometimes leading you to question appearances or to laugh at your own seriousness. Esoteric traditions might frame the fox as a guide through illusions, an initiator into the mysteries of transformation. Tantric and Dzogchen perspectives may point to the playful, elusive quality of awareness mirrored in the fox\u2019s movements. If fox energy visits you, you could reflect on where adaptation or cunning might serve you\u2014or whether a touch of humor and shapeshifting is needed in your present situation.\n\n\u2014 Inspired by Jung, Hillman, Campbell, Meade, ARAS, Crowley, and others.",
+  "sources": [
+    "C.G. Jung, The Archetypes and The Collective Unconscious",
+    "James Hillman, The Dream and the Underworld",
+    "Chevalier & Gheerbrant, Dictionary of Symbols",
+    "Archive for Research in Archetypal Symbolism (ARAS)",
+    "Marie-Louise von Franz, Shadow and Evil in Fairy Tales"
+  ],
+  "svg_path": "results/gGlyphs_codex/archetypal_53/svg_colored/fox_colored.svg",
+  "svg_bw_path": "results/gGlyphs_codex/archetypal_53/svg_bw/fox.svg",
+  "svg_normalized_path": "results/gGlyphs_codex/archetypal_53/svg_normalized/fox_graph.svg",
+  "webp_path": "results/gGlyphs_codex/archetypal_53/webp/fox.webp",
+  "group": 1,
+  "size": 35,
+  "connections": 0,
+  "svg_file": "svg_normalized/fox_graph.svg",
+  "generated_at": "2025-07-22T15:46:36.642127",
+  "version": "1.0"
+}

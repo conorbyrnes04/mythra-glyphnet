@@ -1,421 +1,313 @@
-# 🌟 MYTHRA GLYPHNET
+# 🌌 MYTHRA GLYPHNET
+## *Cosmic Archetypal Constellation*
 
 **A Dream General, Habit Tracker, Mood Tracker, Life Experience & Psyche Analyzer**
 
-*Transform your dreams, experiences, and emotions into a beautiful constellation of archetypal symbols.*
+*Transform your dreams, experiences, and emotions into a beautiful constellation of archetypal symbols floating in cosmic space.*
 
 ---
 
-## 🌙 **Vision & Purpose**
+## 🌟 **Vision & Purpose**
 
-MYTHRA GLYPHNET is a revolutionary system for understanding the human psyche through archetypal symbolism. It bridges the gap between:
+MYTHRA GLYPHNET is a revolutionary system that maps the human psyche through archetypal symbolism, creating living constellations of meaning. It bridges the gap between:
 
-- **Dreams & Reality**: Track and analyze your dreams with symbolic representation
-- **Emotions & Symbols**: Map your emotional states to universal archetypal glyphs
-- **Experiences & Patterns**: Visualize life patterns through interconnected symbol networks
-- **Individual & Universal**: Personal dGlyphs connected to universal gGlyph codex
+- **🌙 Dreams & Reality**: Track and analyze dreams with symbolic representation
+- **💫 Emotions & Symbols**: Map emotional states to universal archetypal glyphs  
+- **🔮 Experiences & Patterns**: Visualize life patterns through interconnected cosmic networks
+- **✨ Individual & Universal**: Personal dGlyphs connected to the universal gGlyph codex
 
 The system generates two types of glyphs:
-- **🌍 gGlyphs**: Universal archetypal symbols (Wolf, Fire, Mountain, etc.)
-- **✨ dGlyphs**: Personal dream/experience amalgamations with emotional coloring
+- **🌍 gGlyphs**: Universal archetypal symbols (53 symbols: Wolf, Fire, Mountain, etc.)
+- **🌟 dGlyphs**: Personal dream/experience amalgamations with emotional coloring
+
+---
+
+## 🚀 **Demo & Live Experience**
+
+### 🌌 **Cosmic Archetypal Constellation**
+**View at:** `http://localhost:8005/space_constellation.html`
+
+An interactive cosmic visualization featuring:
+- **🌌 Starfield Background**: Animated twinkling stars and nebula effects
+- **🎨 Emotional Color Glyphs**: Symbols displayed in their assigned emotional colors
+- **⚪ White Glyph Mode**: Toggle to clean white symbols for mystical viewing
+- **🔗 Intelligent Connections**: 4 types of relationships between symbols:
+  - **🌊 Elemental** (Blue): Fire→Sun→Lightning, Water→Moon→Ocean
+  - **👑 Archetypal** (Pink): King→Warrior→Sage connections
+  - **🌿 Natural** (Green): Tree→Oak→Vine, Wolf→Bear→Lion
+  - **⭐ Celestial** (Gold): Sun→Moon→Star→Comet cosmic links
+- **🎮 Interactive Controls**: Toggle connection types, glyph styles, labels
+- **📝 Clickable Nodes**: Full symbol details with meanings, interpretations, sources
 
 ---
 
 ## 🎯 **Core Features**
 
 ### 🤖 **AI-Powered Glyph Generation**
-- **MERU Model**: Custom-trained LoRA model for archetypal symbol generation
-- **SVG Optimization**: Black & white vector graphics optimized for clarity
-- **Emotional Coloring**: Dynamic color application based on emotional taxonomy
-- **Batch Generation**: Automated creation of entire symbol codexes
+- **MERU Model**: Custom-trained LoRA model (`conorbyrnes04/meru`) for archetypal symbols
+- **OTSU SVG Conversion**: Optimized black & white vector graphics with perfect clarity
+- **Emotional Coloring**: Dynamic color application based on hierarchical emotion taxonomy
+- **Batch Generation**: Automated creation of complete 53-symbol archetypal codex
 
-### 🎨 **Visual Constellation Graph**
-- **Interactive D3.js Graph**: Force-directed visualization of symbol relationships
-- **Relationship Analysis**: Multi-dimensional similarity scoring (emotional, semantic, archetypal)
-- **Dark/Light Modes**: Beautiful themes for different viewing preferences
-- **SVG Node Display**: Actual archetypal symbols as interactive graph nodes
+### 🌌 **Cosmic Constellation Graph**
+- **Space Theme**: Deep cosmic background with animated starfield and nebulae
+- **Force-Directed Physics**: D3.js-powered intelligent node positioning
+- **Transparent Nodes**: Clean aesthetic with glyphs floating in space
+- **Multi-Relationship Display**: Color-coded connection types with intelligent filtering
+- **Real-time Interaction**: Hover effects, drag & drop, modal symbol details
 
-### 📊 **Comprehensive Database**
-- **MongoDB Integration**: Robust storage for glyph metadata and relationships
-- **LowDB Compatibility**: Works with existing JSON-based dream databases
-- **Enhanced Metadata**: Quality scoring, categorization, and connection mapping
-- **Search & Filter**: Advanced querying capabilities
+### 📊 **Comprehensive Database System**
+- **Archetypal Codex**: Complete 53-symbol collection with metadata
+- **Relationship Mapping**: 200+ intelligent connections between symbols
+- **Enhanced Metadata**: Categories, subcategories, emotional mapping, quality scoring
+- **JSON Structure**: Clean, hierarchical data organization for easy querying
 
-### 🎭 **Emotional Intelligence**
-- **Hierarchical Emotion Taxonomy**: 5 core emotions with secondary/tertiary levels
-- **Color Psychology**: Hex color mapping for emotional representation
-- **Dream Analysis**: Text-to-emotion processing for dGlyph generation
-- **Symbol-Emotion Mapping**: Bridge between abstract meanings and emotional states
+### 🎭 **Emotional Intelligence Framework**
+- **5-Tier Emotion Taxonomy**: Primary→Secondary→Tertiary emotional classification
+- **Color Psychology Mapping**: Hex colors for each emotional state
+- **Symbol-Emotion Bridge**: Connect abstract archetypal meanings to emotional resonance
+- **Dynamic Visualization**: Emotion-based coloring in real-time
 
 ---
 
-## 🏗️ **Architecture**
+## 🏗️ **Technical Architecture**
+
+### 🧠 **AI Models & Training**
+```python
+# MERU Model (Replicate)
+Model: conorbyrnes04/meru
+Base: recraft-ai/recraft-v3-svg  
+Training: LoRA fine-tuning on archetypal symbols
+Trigger: "meru" keyword for consistent style
+```
+
+### 🎨 **Image Processing Pipeline**
+```python
+# Generation → Processing → Optimization
+WebP (Replicate) → PNG (conversion) → SVG (OTSU/Potrace)
+↓
+Normalization → Graph Display → Emotional Coloring
+```
+
+### 🌐 **Frontend Stack**
+- **D3.js v7**: Force-directed graph visualization
+- **HTML5/CSS3**: Cosmic themes with glassmorphism effects
+- **Vanilla JavaScript**: Real-time interaction and state management
+- **SVG Integration**: Direct symbol rendering in graph nodes
+
+### 🗄️ **Data Management**
+- **JSON Codex**: Complete archetypal symbol database
+- **Relationship Engine**: Semantic, emotional, and archetypal similarity scoring
+- **File Organization**: Structured directories for WebP, SVG variants, metadata
+
+---
+
+## 📁 **Project Structure**
 
 ```
 mythra-glyphnet/
-├── 🎨 Glyph Generation
-│   ├── test_meru.py              # MERU model testing & generation
-│   ├── test_bw_meru.py           # B&W optimized generation with OTSU
-│   └── gGlyph_batch_generator.py # Batch codex generation
-│
-├── 🧠 AI Models & Training
-│   ├── replicate/inference/      # Model inference configs
-│   ├── prompts/                  # Prompt templates & engineering
-│   └── requirements.txt          # Python dependencies
-│
-├── 🗄️ Database & Storage
-│   ├── database/models/          # Pydantic data models
-│   ├── database/connection.py    # MongoDB interface
-│   ├── database/glyph_integration.py # LowDB bridge
-│   └── data/emotions/            # Emotional taxonomy system
-│
-├── 🎯 Symbol Processing
-│   ├── svg_normalizer.py         # SVG standardization for graphs
-│   ├── symbol_emotion_mapper.py  # Meaning→Emotion translation
-│   └── glyph_graph_analyzer.py   # Relationship analysis
-│
-├── 🌐 Visualization
-│   ├── results/gGlyphs_codex/    # Generated symbol collections
-│   ├── graph_demo_svg_working.html # Interactive constellation (light)
-│   └── graph_demo_svg_dark.html  # Interactive constellation (dark)
-│
-└── 🛠️ Utilities
-    ├── main.py                   # Unified CLI interface
-    ├── cleanup_app.py            # Project maintenance
-    └── enhance_database.py       # Database optimization
+├── 🌌 results/gGlyphs_codex/           # Main constellation
+│   ├── space_constellation.html        # ⭐ MAIN EXPERIENCE
+│   ├── archetypal_53/                  # Symbol assets
+│   │   ├── webp/                      # Generated images
+│   │   ├── svg_bw/                    # B&W SVGs
+│   │   └── svg_normalized/            # Graph-ready SVGs
+│   ├── archetypal_symbol_codex_complete.json
+│   └── symbol_relationships.json      # Connection data
+├── 🤖 AI Generation Scripts
+│   ├── test_meru.py                   # MERU model interface
+│   ├── test_bw_meru.py               # SVG conversion
+│   └── generate_archetypal_codex.py  # Batch generation
+├── 🔗 Relationship Engine
+│   └── create_symbol_relationships.py # Intelligent connections
+├── 🎨 Image Processing
+│   ├── fix_svg_normalization.py      # Graph optimization
+│   └── fix_problem_svgs.py          # Manual fixes
+└── 📊 Database Tools
+    ├── enhance_database.py           # Metadata enhancement
+    └── cleanup_app.py               # Project cleanup
 ```
 
 ---
 
 ## 🚀 **Quick Start**
 
-### 1. **Environment Setup**
+### 1. **Experience the Constellation**
 ```bash
-# Clone and enter project
-git clone <repository-url>
-cd mythra-glyphnet
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Setup environment variables
-echo "REPLICATE_API_TOKEN=your_token_here" > .env
+cd results/gGlyphs_codex
+python -m http.server 8005
+# Open: http://localhost:8005/space_constellation.html
 ```
 
-### 2. **Generate Your First Glyph**
+### 2. **Generate New Symbols**
 ```bash
-# Test MERU model with archetypal symbols
+# Single symbol generation
 python test_meru.py
 
-# Generate B&W optimized SVG
+# Batch archetypal codex generation  
+python generate_archetypal_codex.py
+
+# SVG optimization
 python test_bw_meru.py
-
-# Batch generate gGlyph codex
-python gGlyph_batch_generator.py
 ```
 
-### 3. **View the Constellation**
+### 3. **Build Relationships**
 ```bash
-# Start local server
-cd results/gGlyphs_codex
-python -m http.server 8001
-
-# Open in browser
-open http://localhost:8001/graph_demo_svg_dark.html
+# Generate intelligent symbol connections
+python create_symbol_relationships.py
 ```
 
 ---
 
-## 🎨 **Generated Symbol Examples**
+## 🎮 **Constellation Controls**
 
-### 🌍 **gGlyph Codex** (Universal Archetypes)
-| Symbol | Category | Meanings | Emotion Family |
-|--------|----------|----------|----------------|
-| 🐺 Wolf | Animal/Mammal | Instinct, Protection, Wildness, Loyalty | Anger |
-| 🪷 Lotus | Plant/Flower | Spiritual Awakening, Purity, Transcendence | Joy |
-| 🐍 Snake | Animal/Reptile | Transformation, Healing, Instinct, Danger | Love |
-| ⛰️ Mountain | Element/Earth | Stability, Strength, Aspiration, Endurance | Anger |
-| ☀️ Sun | Element/Celestial | Vitality, Illumination, Source, Clarity | Joy |
-| 🌙 Moon | Element/Celestial | Cycles, Reflection, Mystery, Feminine | Sadness |
+### 🌌 **Display Options**
+- **🎨 Glyph Icons**: Toggle symbol visibility
+- **📝 Labels**: Show/hide symbol names
+- **🔗 Connections**: Display relationship lines
 
-### ✨ **File Formats Generated**
-- **📸 WebP**: Original MERU model output (high quality)
-- **⚫ B&W SVG**: Vectorized using OTSU thresholding (svg_bw/)
-- **🎨 Colored SVG**: Emotion-mapped with gradients (svg_colored/)
-- **📐 Normalized SVG**: Graph-ready standardized size (svg_normalized/)
+### 🎨 **Glyph Styles**
+- **🌈 Emotion Colors**: Default emotional color mapping
+- **⚪ White Glyphs**: Clean white symbols for mystical viewing
 
----
+### 🔗 **Connection Types**
+- **🌊 Elemental**: Fire, Water, Earth, Air relationships
+- **👑 Archetypal**: Human archetype connections (King, Warrior, Sage)
+- **🌿 Natural**: Animal, plant, and nature groupings
+- **⭐ Celestial**: Cosmic body harmonies (Sun, Moon, Stars)
 
-## 🧠 **AI Models & Training**
-
-### 🎯 **MERU Model**
-- **Base Model**: `ostris/flux-dev-lora-trainer`
-- **Training Type**: LoRA (Low-Rank Adaptation)
-- **Trigger Word**: `meru`
-- **Specialty**: Archetypal symbol generation with vector aesthetics
-- **Output**: PNG (converted to SVG via potrace/OTSU)
-
-### 📝 **Prompt Engineering**
-- **Archetypal Prompts**: Specific visual descriptors for each symbol type
-- **Template System**: YAML-based prompt management
-- **Style Consistency**: "pure black ink on white background, high contrast monochrome"
-- **SVG Optimization**: Prompts designed for clean vector conversion
-
-### 🎨 **SVG Conversion Pipeline**
-```
-MERU PNG → Grayscale → OTSU Thresholding → Potrace → SVG → Normalization
-```
+### 🎛️ **Simulation Controls**
+- **🔄 Restart**: Redistribute nodes with new physics
+- **⏸️ Pause**: Stop force simulation for static viewing
 
 ---
 
-## 🎭 **Emotional Intelligence System**
+## 🔮 **Symbol Categories**
 
-### 🌈 **Emotion Taxonomy**
-```json
-{
-  "core": "Joy",
-  "hex": "#A3DD36",
-  "secondary": [
-    {
-      "name": "Optimistic",
-      "hex": "#A3DD36",
-      "tertiary": [
-        {"name": "Hopeful", "hex": "#1c171c"},
-        {"name": "Eager", "hex": "#d5ed9b"},
-        {"name": "Illustrious", "hex": "#d5ec9b"}
-      ]
-    }
-  ]
-}
-```
+### 🦎 **Animals** (13 symbols)
+Wolf, Lion, Bear, Fox, Eagle, Raven, Owl, Serpent, Turtle, Stag, Horse, Dolphin, Whale, Butterfly, Spider
 
-### 🎨 **Color Application Methods**
-- **Solid**: Single emotion-based color fill
-- **Gradient**: Linear gradient between related emotions
-- **Radial**: Radial gradient for depth and focus
-- **Emotional Blend**: Multi-emotion color mixing
+### 🌟 **Celestial** (8 symbols)  
+Sun, Moon, Star, Spiral, Lightning, Rainbow, Comet, Constellation
+
+### 🌍 **Elemental** (8 symbols)
+Fire, Water, Earth, Air, Storm, Desert, Volcano, Ocean
+
+### 🌱 **Nature** (6 symbols)
+Tree, Lotus, Rose, Oak, Vine, Mushroom
+
+### 👑 **Archetypes** (8 symbols)
+Warrior, Sage, Mother, Fool, Maiden, King, Hermit, Shaman
+
+### 🔯 **Sacred Geometry** (10 symbols)
+Mandala, Cross, Yin Yang, Triangle, Infinity, Circle, Labyrinth, Eye
 
 ---
 
-## 📊 **Database Architecture**
+## 🧬 **Emotional Taxonomy**
 
-### 🗄️ **MongoDB Collections**
-```python
-class GlyphModel(BaseModel):
-    id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
-    name: str = Field(..., description="Glyph name")
-    symbol_type: str = Field(..., description="Type: gGlyph, dGlyph, or custom")
-    trigger_word: str = Field(default="meru", description="Model trigger word")
-    prompt: str = Field(..., description="Full prompt used")
-    model_used: str = Field(..., description="Model ID")
-    svg_path: Optional[str] = Field(None, description="Path to SVG file")
-    webp_path: Optional[str] = Field(None, description="Path to WebP file")
-    meanings: List[str] = Field(default=[], description="Symbolic meanings")
-    emotion_analysis: Optional[Dict] = Field(None, description="Emotion analysis")
-    generation_metadata: Optional[Dict] = Field(None, description="Generation details")
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-```
+### 🔴 **Fear** → Anxiety, Worry, Terror
+- **Color**: `#8B0000` (Dark Red)
+- **Symbols**: Bear, Storm, Labyrinth
 
-### 📁 **LowDB Integration** (Existing Structure)
-- **genericGlyphs.json**: Universal symbol storage
-- **dreamSeeds.json**: Personal dream/experience records
-- **users.json**: User profiles and preferences
+### 🟡 **Joy** → Bliss, Contentment, Ecstasy  
+- **Color**: `#FFD700` (Gold)
+- **Symbols**: Sun, Butterfly, Rainbow
 
----
+### 🔵 **Sadness** → Melancholy, Grief, Despair
+- **Color**: `#4169E1` (Royal Blue)  
+- **Symbols**: Moon, Ocean, Hermit
 
-## 🌐 **Interactive Constellation Graph**
+### 🟢 **Trust** → Faith, Acceptance, Serenity
+- **Color**: `#228B22` (Forest Green)
+- **Symbols**: Tree, Turtle, Sage
 
-### 🎮 **Features**
-- **🖱️ Interactive Nodes**: Drag, hover, click for details
-- **🔗 Relationship Lines**: Color-coded by connection type
-- **🎛️ Dynamic Filters**: Strength, category, relationship type
-- **🌙 Dark/Light Modes**: Theme toggle with smooth transitions
-- **📊 Live Statistics**: SVG loading status, connection counts
-- **💡 Hover Tooltips**: Detailed relationship information
-
-### 🧮 **Relationship Algorithms**
-```python
-def calculate_emotional_similarity(glyph1, glyph2):
-    """Calculate emotional resonance between symbols"""
-    # Emotion family matching + meaning overlap
-    
-def calculate_semantic_similarity(glyph1, glyph2):
-    """Calculate meaning-based connections"""
-    # Jaccard similarity on meaning sets
-    
-def calculate_archetypal_similarity(glyph1, glyph2):
-    """Calculate deep archetypal resonance"""
-    # Category + subcategory + symbolic depth
-```
-
-### 🎨 **Visual Design**
-- **Force-Directed Layout**: D3.js physics simulation
-- **SVG Node Display**: Actual generated symbols as nodes
-- **Color-Coded Connections**: Emotional (red), Semantic (teal), Categorical (blue)
-- **Responsive Design**: Scales beautifully across devices
+### 🟠 **Anger** → Rage, Annoyance, Fury
+- **Color**: `#FF4500` (Orange Red)
+- **Symbols**: Fire, Lightning, Warrior
 
 ---
 
 ## 🛠️ **Development Tools**
 
-### 🧹 **Maintenance Scripts**
-```bash
-# Clean up project structure
-python cleanup_app.py
+### 🔧 **Core Scripts**
+- `test_meru.py`: Single symbol generation with MERU
+- `test_bw_meru.py`: SVG conversion and optimization  
+- `generate_archetypal_codex.py`: Batch symbol creation
+- `create_symbol_relationships.py`: Intelligent connection mapping
 
-# Enhance database with quality scores
-python enhance_database.py
+### 🎨 **Image Processing**
+- `fix_svg_normalization.py`: Graph-ready SVG preparation
+- `fix_problem_svgs.py`: Manual symbol corrections
 
-# Fix SVG structure issues
-python fix_svg_gradients.py
-
-# Update to OTSU-only processing
-python cleanup_svg_methods.py
-```
-
-### 🔧 **CLI Interface**
-```bash
-# Unified interface
-python main.py generate    # Generate new glyphs
-python main.py enhance-db  # Enhance database
-python main.py stats      # Show statistics
-```
+### 📊 **Database Management**
+- `enhance_database.py`: Metadata enrichment
+- `cleanup_app.py`: Project organization
 
 ---
 
-## 📈 **Usage Examples**
+## 🌟 **Future Roadmap**
 
-### 🎯 **Generate a Custom Symbol**
-```python
-from test_bw_meru import generate_bw_meru_glyph
+### 🔮 **Phase 1: dGlyph Integration**
+- Personal dream/experience glyph generation
+- Individual emotional profile mapping
+- Dynamic constellation personalization
 
-# Generate with archetypal prompt
-result = generate_bw_meru_glyph("meru archetypal symbol of a phoenix")
-print(f"Generated: {result['svg_path']}")
-```
+### 🧠 **Phase 2: AI Analysis Engine**
+- Pattern recognition in symbol usage
+- Predictive emotional modeling
+- Archetypal journey mapping
 
-### 🎨 **Apply Emotional Coloring**
-```python
-from data.emotions.emotion_processor import EmotionProcessor
-from test_emotion_coloring import colorize_svg_gradient
+### 🌐 **Phase 3: Community Constellation**
+- Shared symbol experiences
+- Collective unconscious visualization
+- Global archetypal pattern analysis
 
-processor = EmotionProcessor()
-emotion_analysis = processor.analyze_emotion_text("hopeful transformation")
-colored_svg = colorize_svg_gradient(svg_content, emotion_analysis)
-```
-
-### 📊 **Analyze Symbol Relationships**
-```python
-from glyph_graph_analyzer import GlyphGraphAnalyzer
-
-analyzer = GlyphGraphAnalyzer()
-relationships = analyzer.calculate_all_relationships()
-graph_data = analyzer.prepare_graph_data()
-```
+### 📱 **Phase 4: Mobile Experience**
+- Native app with camera integration
+- Real-time symbol recognition
+- Augmented reality constellation overlay
 
 ---
 
-## 🌟 **Key Innovations**
+## 🎨 **Visual Examples**
 
-### 🎨 **Vector-Style AI Training**
-- First successful training of archetypal symbols for SVG conversion
-- OTSU thresholding for optimal black/white conversion
-- Custom prompt engineering for vector aesthetics
+### 🌌 **Cosmic Constellation Interface**
+- Deep space background with twinkling stars
+- Floating archetypal symbols in emotional colors
+- Intelligent connection lines showing relationships
+- Interactive controls for customization
 
-### 🧠 **Multi-Dimensional Relationship Analysis**
-- Emotional, semantic, categorical, archetypal, and symbolic similarity scoring
-- Dynamic graph visualization of symbol relationships
-- Real-time filtering and interaction
+### 🔗 **Relationship Examples**
+- **Fire → Sun → Lightning**: Elemental energy chain
+- **Wolf → Bear → Lion**: Animal kingdom hierarchy  
+- **King → Warrior → Sage**: Archetypal development path
+- **Tree → Oak → Vine**: Natural growth patterns
 
-### 🎭 **Emotion-Symbol Bridge**
-- Novel mapping between abstract symbolic meanings and emotional taxonomy
-- Hierarchical emotion system with visual color representation
-- Dynamic emotional coloring of universal symbols
-
-### 🌐 **Interactive Dream Psychology**
-- Real-time symbol constellation for dream/experience analysis
-- Force-directed graph showing psychological connections
-- Dark/light modes for different analytical contexts
-
----
-
-## 🔮 **Future Roadmap**
-
-### 🚀 **Phase 1: Enhanced Generation**
-- [ ] Advanced dGlyph amalgamation algorithms
-- [ ] Multi-symbol composite generation
-- [ ] Style transfer between gGlyph and dGlyph aesthetics
-
-### 🧠 **Phase 2: AI Intelligence**
-- [ ] GPT integration for dream narrative analysis
-- [ ] Automatic symbol suggestion based on experience text
-- [ ] Pattern recognition across user dream sequences
-
-### 🌐 **Phase 3: Social Features**
-- [ ] Shared symbol libraries and dream communities
-- [ ] Collaborative symbol meaning development
-- [ ] Cross-user pattern analysis and insights
-
-### 📱 **Phase 4: Platform Expansion**
-- [ ] Mobile app for dream capture and visualization
-- [ ] AR/VR symbol constellation exploration
-- [ ] Integration with wearable devices for mood tracking
-
----
-
-## 🛡️ **Technical Specifications**
-
-### 📋 **Requirements**
-- **Python**: 3.8+
-- **Node.js**: 14+ (for existing LowDB integration)
-- **MongoDB**: 4.4+ (optional, for enhanced features)
-- **Modern Browser**: Chrome, Firefox, Safari (for graph visualization)
-
-### 🔑 **API Keys**
-- **Replicate**: For MERU model access (`REPLICATE_API_TOKEN`)
-
-### 📦 **Dependencies**
-```
-replicate>=0.8.0       # AI model inference
-pymongo>=4.0.0         # MongoDB driver
-motor>=3.0.0           # Async MongoDB
-pydantic>=2.0.0        # Data validation
-pillow>=9.0.0          # Image processing
-numpy>=1.21.0          # Numerical operations
-scipy>=1.7.0           # Scientific computing
-python-dotenv>=0.19.0  # Environment management
-```
+### 🎨 **Glyph Variations**
+- **Emotional**: Symbols in assigned psychological colors
+- **White**: Clean monochrome for mystical viewing
+- **Graph-Optimized**: Normalized SVGs for perfect display
 
 ---
 
 ## 🤝 **Contributing**
 
-MYTHRA GLYPHNET is a revolutionary approach to understanding human psychology through archetypal symbolism. Contributions are welcome in:
+We welcome contributions to expand the archetypal codex and enhance the cosmic constellation experience:
 
-- **🎨 Symbol Design**: New archetypal symbols and prompts
-- **🧠 AI Training**: Model improvements and training data
-- **📊 Relationship Algorithms**: New ways to measure symbol connections
-- **🎨 Visualization**: Enhanced graph features and interactions
-- **🔬 Psychology**: Deeper integration of Jungian and archetypal psychology
-
----
-
-## 📜 **License**
-
-MIT License - Feel free to explore, modify, and build upon this foundation for understanding the human psyche through symbolic representation.
+1. **Symbol Design**: Create new archetypal symbols
+2. **Relationship Mapping**: Define intelligent connections
+3. **Emotional Taxonomy**: Expand psychological frameworks
+4. **Visualization**: Enhance the cosmic interface
 
 ---
 
-## 🙏 **Acknowledgments**
+## 📄 **License**
 
-- **Replicate**: For providing the AI infrastructure
-- **D3.js**: For powerful graph visualization capabilities
-- **Potrace**: For excellent bitmap-to-vector conversion
-- **Jung & Archetypal Psychology**: For the theoretical foundation
-- **The Open Source Community**: For the tools that made this possible
+MIT License - Transform consciousness through archetypal symbolism.
 
 ---
 
-*"In every symbol lies a universe of meaning, waiting to be discovered."* 🌟
+**✨ Experience the cosmos of consciousness through MYTHRA GLYPHNET ✨**
 
-**Explore your inner constellation at**: `http://localhost:8001/graph_demo_svg_dark.html` 🌙✨
+*"As above, so below - as within, so without"*

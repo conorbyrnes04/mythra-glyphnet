@@ -1,0 +1,33 @@
+{
+  "id": "Lion",
+  "name": "Lion",
+  "category": "Animal",
+  "subcategory": "Mammal",
+  "meanings": [
+    "Courage",
+    "Leadership",
+    "Royalty",
+    "Power"
+  ],
+  "color": "#c2e294",
+  "emotion_family": "Triumphant",
+  "prompt": "meru archetypal symbol of a lion, bold frontal or profile silhouette with a flowing mane radiating outward, prominent nose and eyes, sense of regality and strength, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable lion archetype",
+  "interpretation": "Encountering a lion in a dream may suggest the stirring of dignity, creative power, or leadership. Jung might see the lion as an image of the Self, expressing both animal vitality and a unifying radiance. Hillman could point to the lion\u2019s presence as an opportunity to embody majesty or to reflect on your place of sovereignty. In myth, lions often stand as guardians or challengers\u2014sometimes inviting you to face the forces that test your worthiness. Esoteric and alchemical perspectives sometimes link the lion to gold, sunlight, or the transformative fire of the soul. Tantric and Dzogchen traditions may view the lion as a symbol of awareness\u2019s natural nobility and confidence. If a lion appears to you, it may be worth asking where your strength wishes to express itself, or where you are called to stand your ground and claim your place in the sun.\n\n\u2014 Inspired by Jung, Hillman, Campbell, Grof, Crowley, Chevalier & Gheerbrant, K\u1e63emar\u0101ja, Longchenpa, et al.",
+  "sources": [
+    "C.G. Jung, Man and His Symbols",
+    "Chevalier & Gheerbrant, Dictionary of Symbols",
+    "Joseph Campbell, The Power of Myth",
+    "Aleister Crowley, The Book of Thoth",
+    "Longchenpa, The Practice of Dzogchen"
+  ],
+  "svg_path": "results/gGlyphs_codex/archetypal_53/svg_colored/lion_colored.svg",
+  "svg_bw_path": "results/gGlyphs_codex/archetypal_53/svg_bw/lion.svg",
+  "svg_normalized_path": "results/gGlyphs_codex/archetypal_53/svg_normalized/lion_graph.svg",
+  "webp_path": "results/gGlyphs_codex/archetypal_53/webp/lion.webp",
+  "group": 1,
+  "size": 35,
+  "connections": 0,
+  "svg_file": "svg_normalized/lion_graph.svg",
+  "generated_at": "2025-07-22T15:46:08.951141",
+  "version": "1.0"
+}
