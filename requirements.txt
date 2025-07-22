@@ -1,4 +1,22 @@
 replicate
-pillow
-requests
 python-dotenv
+Pillow
+requests
+pyyaml
+nbformat
+jupyter
+notebook
+
+# MongoDB Dependencies
+pymongo>=4.0.0
+motor>=3.0.0
+pydantic>=2.0.0
+bson
+
+# Additional utilities
+python-dateutil
+asyncio
+
+echo "numpy" >> requirements.txt
+echo "scipy" >> requirements.txtnumpy
+scipy

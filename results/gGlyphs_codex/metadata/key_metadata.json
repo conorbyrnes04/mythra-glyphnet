@@ -1,0 +1,96 @@
+{
+  "name": "Key",
+  "category": "Object",
+  "subcategory": "Tool",
+  "meanings": [
+    "Access",
+    "Discovery",
+    "Unlocking",
+    "Potential"
+  ],
+  "prompt": "meru archetypal symbol of a key, strong vertical shaft with distinct circular handle at one end and stylized abstract notched teeth at the other, horizontal alignment, unlocking motion, access and discovery energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable key archetype",
+  "files": {
+    "webp": "results/gGlyphs_codex/webp/key.webp",
+    "svg_bw": "results/gGlyphs_codex/svg_bw/key.svg",
+    "svg_colored": "results/gGlyphs_codex/svg_colored/key_colored.svg"
+  },
+  "emotion_analysis": {
+    "dominant_emotion": {
+      "level": "tertiary",
+      "core": "Joy",
+      "secondary": "Enthusiastic",
+      "tertiary": "Zealous",
+      "hex": "#ebf3b1",
+      "path": [
+        "Joy",
+        "Enthusiastic",
+        "Zealous"
+      ]
+    },
+    "secondary_emotion": {
+      "level": "secondary",
+      "core": "Joy",
+      "secondary": "Enthusiastic",
+      "hex": "#8FD424",
+      "path": [
+        "Joy",
+        "Enthusiastic"
+      ]
+    },
+    "all_emotions": [
+      {
+        "level": "core",
+        "core": "Joy",
+        "hex": "#A3DD36",
+        "path": [
+          "Joy"
+        ]
+      },
+      {
+        "level": "secondary",
+        "core": "Joy",
+        "secondary": "Enthusiastic",
+        "hex": "#8FD424",
+        "path": [
+          "Joy",
+          "Enthusiastic"
+        ]
+      },
+      {
+        "level": "tertiary",
+        "core": "Joy",
+        "secondary": "Enthusiastic",
+        "tertiary": "Zealous",
+        "hex": "#ebf3b1",
+        "path": [
+          "Joy",
+          "Enthusiastic",
+          "Zealous"
+        ]
+      },
+      {
+        "level": "core",
+        "core": "Joy",
+        "hex": "#A3DD36",
+        "path": [
+          "Joy"
+        ]
+      }
+    ],
+    "color_palette": {
+      "primary": "#ebf3b1",
+      "secondary": "#8FD424",
+      "gradient": "#bde36a",
+      "light": "#ffffd4",
+      "dark": "#bcc28d"
+    }
+  },
+  "generated": "2025-07-22T13:23:30.440800",
+  "model": "meru",
+  "version": "1.0",
+  "color_info": {
+    "primary_color": "#ebf3b1",
+    "emotion_family": "Joy",
+    "emotion_path": "Joy \u2192 Enthusiastic \u2192 Zealous"
+  }
+}

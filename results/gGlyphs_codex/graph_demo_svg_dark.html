@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gGlyph Constellation - Dark Mode</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        :root {
+            /* Light mode colors */
+            --bg-gradient-start: #667eea;
+            --bg-gradient-end: #764ba2;
+            --container-bg: rgba(255, 255, 255, 0.95);
+            --text-color: white;
+            --graph-bg: rgba(255, 255, 255, 0.95);
+            --control-bg: rgba(255, 255, 255, 0.2);
+            --control-input-bg: rgba(255, 255, 255, 0.9);
+            --legend-bg: rgba(255, 255, 255, 0.95);
+            --legend-text: #333;
+            --node-label-color: #333;
+            --link-label-color: #333;
+            --info-panel-bg: rgba(0, 0, 0, 0.9);
+            --status-bg: rgba(255, 255, 255, 0.2);
+            --debug-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] {
+            /* Dark mode colors */
+            --bg-gradient-start: #1a1a2e;
+            --bg-gradient-end: #16213e;
+            --container-bg: rgba(30, 30, 30, 0.95);
+            --text-color: #e0e0e0;
+            --graph-bg: rgba(20, 20, 20, 0.95);
+            --control-bg: rgba(40, 40, 40, 0.8);
+            --control-input-bg: rgba(60, 60, 60, 0.9);
+            --legend-bg: rgba(30, 30, 30, 0.95);
+            --legend-text: #e0e0e0;
+            --node-label-color: #e0e0e0;
+            --link-label-color: #e0e0e0;
+            --info-panel-bg: rgba(0, 0, 0, 0.95);
+            --status-bg: rgba(40, 40, 40, 0.6);
+            --debug-bg: rgba(40, 40, 40, 0.4);
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        #graph {
+            background: var(--graph-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .control-group {
+            background: var(--control-bg);
+            padding: 10px 15px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            transition: background 0.3s ease;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        select, input[type="range"], input[type="checkbox"] {
+            background: var(--control-input-bg);
+            border: none;
+            padding: 5px;
+            border-radius: 4px;
+            color: #333;
+            transition: background 0.3s ease;
+        }
+
+        .theme-toggle {
+            background: var(--control-bg);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+
+        .theme-toggle .icon {
+            font-size: 18px;
+        }
+        
+        .legend {
+            background: var(--legend-bg);
+            color: var(--legend-text);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .legend h3 {
+            margin-top: 0;
+            color: var(--legend-text);
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        
+        .info-panel {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--info-panel-bg);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 300px;
+            display: none;
+            z-index: 1000;
+            border: 2px solid #fff;
+            backdrop-filter: blur(10px);
+        }
+        
+        .link {
+            stroke-opacity: 0.6;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .link:hover {
+            stroke-opacity: 1;
+            stroke-width: 8px !important;
+        }
+        
+        .link-label {
+            font-size: 10px;
+            font-weight: bold;
+            fill: var(--link-label-color);
+            text-anchor: middle;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .link-label.visible {
+            opacity: 1;
+        }
+        
+        .node {
+            cursor: pointer;
+        }
+        
+        .node-svg-image {
+            transition: all 0.3s ease;
+        }
+        
+        .node:hover .node-svg-image {
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.8));
+            transform: scale(1.4);
+        }
+
+        [data-theme="dark"] .node:hover .node-svg-image {
+            filter: drop-shadow(0 0 20px rgba(255,255,255,0.9));
+        }
+        
+        .node-label {
+            font-size: 12px;
+            font-weight: bold;
+            fill: var(--node-label-color);
+            text-anchor: middle;
+            pointer-events: none;
+            transition: fill 0.3s ease;
+        }
+        
+        .status {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: var(--status-bg);
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .debug-info {
+            background: var(--debug-bg);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 12px;
+            transition: background 0.3s ease;
+        }
+        
+        .relationship-tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            pointer-events: none;
+            z-index: 1001;
+            border: 2px solid #fff;
+            max-width: 250px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Enhanced dark mode graph styling */
+        [data-theme="dark"] .link {
+            stroke-opacity: 0.8;
+        }
+
+        [data-theme="dark"] .node-svg-image {
+            filter: drop-shadow(3px 3px 8px rgba(0,0,0,0.8)) brightness(1.1);
+        }
+
+        /* Glowing effects for dark mode */
+        [data-theme="dark"] .legend-item {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        [data-theme="dark"] #graph {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 0 50px rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="container">
+        <h1>🌟 gGlyph Constellation</h1>
+        <p class="subtitle">SVG Symbol Graph • Archetypal Relationships with Visual Glyphs</p>
+        
+        <div class="status" id="status">🔄 Loading constellation with SVG glyphs...</div>
+        <div class="debug-info" id="debug-info">Server: http://localhost:8001/</div>
+        
+        <div class="controls">
+            <button class="theme-toggle" id="themeToggle">
+                <span class="icon" id="themeIcon">🌙</span>
+                <span id="themeText">Dark Mode</span>
+            </button>
+
+            <div class="control-group">
+                <label for="strengthFilter">Relationship Strength:</label>
+                <select id="strengthFilter">
+                    <option value="all">Show All</option>
+                    <option value="strong">Strong Only (0.6+)</option>
+                    <option value="medium">Medium+ (0.4+)</option>
+                    <option value="very_strong">Very Strong Only (0.8+)</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="categoryFilter">Category Filter:</label>
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Animal">Animals</option>
+                    <option value="Element">Elements</option>
+                    <option value="Plant">Plants</option>
+                    <option value="Object">Objects</option>
+                    <option value="Archetype">Archetypes</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="showLabels">Show Relationship Labels:</label>
+                <input type="checkbox" id="showLabels" checked>
+            </div>
+            
+            <div class="control-group">
+                <label for="forceStrength">Force Strength:</label>
+                <input type="range" id="forceStrength" min="0.1" max="2" step="0.1" value="1">
+                <span id="forceValue">1.0</span>
+            </div>
+        </div>
+        
+        <svg id="graph" width="100%" height="700"></svg>
+        
+        <div id="info-panel" class="info-panel">
+            <h4 id="info-title">Glyph Info</h4>
+            <p id="info-content">Hover over a node to see details</p>
+        </div>
+        
+        <div id="relationship-tooltip" class="relationship-tooltip" style="display: none;">
+            Relationship details
+        </div>
+        
+        <div class="legend">
+            <h3>🎨 Emotion Families & Symbolic Representations</h3>
+            <div class="legend-item" style="background: #FF6A68; color: white;">🐺 Anger (Primal Strength, Intensity)</div>
+            <div class="legend-item" style="background: #9dd989; color: white;">🌟 Joy (Growth, Discovery, Life Energy)</div>
+            <div class="legend-item" style="background: #f5ee94; color: black;">🐍 Love (Healing, Transformation)</div>
+            <div class="legend-item" style="background: #8FABC4; color: white;">🌊 Sadness (Emotional Depth, Cycles)</div>
+            <div class="legend-item" style="background: #B7E9C6; color: black;">👤 Surprise (Mystery, Hidden Aspects)</div>
+            
+            <h3>🔗 Relationship Themes & Connection Strengths</h3>
+            <p><strong>Hover over connection lines</strong> to see detailed relationship themes and similarity scores!</p>
+            <p><strong>Very Strong (0.8+):</strong> Deep archetypal resonance • 
+               <strong>Strong (0.6+):</strong> Clear thematic connections • 
+               <strong>Medium (0.4+):</strong> Meaningful associations</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const body = document.body;
+
+        // Check for saved theme preference or default to 'light'
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        updateThemeButton(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeButton(newTheme);
+        });
+
+        function updateThemeButton(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+            }
+        }
+
+        // Enhanced graph data with SVG file references
+        const graphData = {
+            "nodes": [
+                {
+                    "id": "Wolf",
+                    "name": "Wolf",
+                    "category": "Animal",
+                    "subcategory": "Mammal",
+                    "meanings": ["Instinct", "Protection", "Wildness", "Loyalty"],
+                    "color": "#FF6A68",
+                    "emotion_family": "Anger",
+                    "group": 1,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/wolf_graph.svg"
+                },
+                {
+                    "id": "Lotus",
+                    "name": "Lotus",
+                    "category": "Plant",
+                    "subcategory": "Flower", 
+                    "meanings": ["Spiritual Awakening", "Purity", "Transcendence"],
+                    "color": "#9dd989",
+                    "emotion_family": "Joy",
+                    "group": 2,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/lotus_graph.svg"
+                },
+                {
+                    "id": "Snake",
+                    "name": "Snake",
+                    "category": "Animal",
+                    "subcategory": "Reptile",
+                    "meanings": ["Transformation", "Healing", "Instinct", "Danger"],
+                    "color": "#f5ee94",
+                    "emotion_family": "Love",
+                    "group": 1,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/snake_graph.svg"
+                },
+                {
+                    "id": "Mountain",
+                    "name": "Mountain",
+                    "category": "Element",
+                    "subcategory": "Earth",
+                    "meanings": ["Stability", "Strength", "Aspiration", "Endurance"],
+                    "color": "#FFAAA6",
+                    "emotion_family": "Anger",
+                    "group": 3,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/mountain_graph.svg"
+                },
+                {
+                    "id": "Sun",
+                    "name": "Sun",
+                    "category": "Element",
+                    "subcategory": "Celestial",
+                    "meanings": ["Vitality", "Illumination", "Source", "Clarity"],
+                    "color": "#ebf3b1",
+                    "emotion_family": "Joy",
+                    "group": 3,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/sun_graph.svg"
+                },
+                {
+                    "id": "Moon",
+                    "name": "Moon",
+                    "category": "Element",
+                    "subcategory": "Celestial",
+                    "meanings": ["Cycles", "Reflection", "Mystery", "Feminine"],
+                    "color": "#8FABC4",
+                    "emotion_family": "Sadness",
+                    "group": 3,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/moon_graph.svg"
+                },
+                {
+                    "id": "Key",
+                    "name": "Key",
+                    "category": "Object",
+                    "subcategory": "Tool",
+                    "meanings": ["Access", "Discovery", "Unlocking", "Potential"],
+                    "color": "#ebf3b1",
+                    "emotion_family": "Joy",
+                    "group": 4,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/key_graph.svg"
+                },
+                {
+                    "id": "Tree",
+                    "name": "Tree",
+                    "category": "Plant",
+                    "subcategory": "Tree",
+                    "meanings": ["Growth", "Connection", "Stability", "Life"],
+                    "color": "#1c171c",
+                    "emotion_family": "Joy",
+                    "group": 2,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/tree_graph.svg"
+                },
+                {
+                    "id": "Water",
+                    "name": "Water",
+                    "category": "Element",
+                    "subcategory": "Water",
+                    "meanings": ["Flow", "Emotion", "Adaptability", "Depth"],
+                    "color": "#A8A4C7",
+                    "emotion_family": "Sadness",
+                    "group": 3,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/water_graph.svg"
+                },
+                {
+                    "id": "Shadow",
+                    "name": "Shadow",
+                    "category": "Archetype",
+                    "subcategory": "Psychological",
+                    "meanings": ["Unconscious", "Mystery", "Hidden Aspects", "Depth"],
+                    "color": "#B7E9C6",
+                    "emotion_family": "Surprise",
+                    "group": 5,
+                    "size": 35,
+                    "connections": 9,
+                    "svg_file": "svg_normalized/shadow_graph.svg"
+                }
+            ],
+            "links": [
+                {"source": "Sun", "target": "Key", "value": 0.762, "strength": "strong", "theme": "Discovery & Illumination", "primary_type": "emotional"},
+                {"source": "Wolf", "target": "Snake", "value": 0.751, "strength": "strong", "theme": "Primal Transformation", "primary_type": "emotional"},
+                {"source": "Snake", "target": "Water", "value": 0.719, "strength": "strong", "theme": "Flowing Transform", "primary_type": "emotional"},
+                {"source": "Water", "target": "Shadow", "value": 0.714, "strength": "strong", "theme": "Depth & Mystery", "primary_type": "emotional"},
+                {"source": "Moon", "target": "Water", "value": 0.709, "strength": "strong", "theme": "Emotional Cycles", "primary_type": "emotional"},
+                {"source": "Mountain", "target": "Tree", "value": 0.695, "strength": "strong", "theme": "Grounded Growth", "primary_type": "emotional"},
+                {"source": "Lotus", "target": "Tree", "value": 0.692, "strength": "strong", "theme": "Spiritual Growth", "primary_type": "emotional"},
+                {"source": "Mountain", "target": "Key", "value": 0.659, "strength": "strong", "theme": "Strong Discovery", "primary_type": "emotional"},
+                {"source": "Mountain", "target": "Sun", "value": 0.649, "strength": "strong", "theme": "Power & Illumination", "primary_type": "emotional"},
+                {"source": "Sun", "target": "Tree", "value": 0.636, "strength": "strong", "theme": "Life Energy", "primary_type": "emotional"},
+                {"source": "Wolf", "target": "Mountain", "value": 0.628, "strength": "strong", "theme": "Primal Strength", "primary_type": "emotional"},
+                {"source": "Moon", "target": "Shadow", "value": 0.614, "strength": "strong", "theme": "Shadow Cycles", "primary_type": "emotional"},
+                {"source": "Snake", "target": "Moon", "value": 0.594, "strength": "medium", "theme": "Cyclic Transform", "primary_type": "emotional"},
+                {"source": "Lotus", "target": "Sun", "value": 0.584, "strength": "medium", "theme": "Spiritual Illumination", "primary_type": "emotional"},
+                {"source": "Moon", "target": "Tree", "value": 0.544, "strength": "medium", "theme": "Cyclic Growth", "primary_type": "emotional"},
+                {"source": "Lotus", "target": "Moon", "value": 0.509, "strength": "medium", "theme": "Reflective Purity", "primary_type": "emotional"},
+                {"source": "Lotus", "target": "Water", "value": 0.509, "strength": "medium", "theme": "Pure Flow", "primary_type": "emotional"},
+                {"source": "Sun", "target": "Moon", "value": 0.490, "strength": "medium", "theme": "Celestial Balance", "primary_type": "categorical"},
+                {"source": "Snake", "target": "Shadow", "value": 0.469, "strength": "medium", "theme": "Hidden Instinct", "primary_type": "semantic"},
+                {"source": "Key", "target": "Tree", "value": 0.469, "strength": "medium", "theme": "Growth Access", "primary_type": "emotional"}
+            ]
+        };
+
+        console.log("Graph data loaded with SVG files:", graphData);
+        
+        // Test SVG loading
+        let svgLoadStatus = {};
+        graphData.nodes.forEach(node => {
+            svgLoadStatus[node.id] = "loading";
+        });
+        
+        document.getElementById("status").innerHTML = "✅ Graph loaded! Testing SVG access...";
+
+        // Graph setup
+        const svg = d3.select("#graph");
+        const width = 1360;
+        const height = 700;
+        
+        svg.attr("width", width).attr("height", height);
+        
+        // Create simulation
+        const simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(d => d.id).distance(150))
+            .force("charge", d3.forceManyBody().strength(-1000))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(50));
+
+        let nodes = graphData.nodes;
+        let links = graphData.links;
+        
+        // Link strength scale
+        const linkStrengthScale = d3.scaleLinear()
+            .domain([0, 1])
+            .range([0.3, 1]);
+        
+        // Create tooltip
+        const tooltip = d3.select("#relationship-tooltip");
+        
+        // Create link elements
+        let link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line");
+        
+        // Create link labels
+        let linkLabel = svg.append("g")
+            .attr("class", "link-labels")
+            .selectAll("text");
+        
+        // Create node elements
+        let node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("g");
+        
+        function updateGraph() {
+            const strengthFilter = document.getElementById("strengthFilter").value;
+            const categoryFilter = document.getElementById("categoryFilter").value;
+            const showLabels = document.getElementById("showLabels").checked;
+            
+            let filteredLinks = links;
+            let filteredNodes = nodes;
+            
+            // Filter by strength
+            if (strengthFilter !== "all") {
+                if (strengthFilter === "very_strong") {
+                    filteredLinks = links.filter(d => d.value >= 0.8);
+                } else if (strengthFilter === "strong") {
+                    filteredLinks = links.filter(d => d.value >= 0.6);
+                } else if (strengthFilter === "medium") {
+                    filteredLinks = links.filter(d => d.value >= 0.4);
+                }
+            }
+            
+            // Filter by category
+            if (categoryFilter !== "all") {
+                filteredNodes = nodes.filter(d => d.category === categoryFilter);
+                const nodeIds = new Set(filteredNodes.map(d => d.id));
+                filteredLinks = filteredLinks.filter(d => 
+                    nodeIds.has(d.source.id || d.source) && nodeIds.has(d.target.id || d.target)
+                );
+            }
+            
+            // Update links
+            link = link.data(filteredLinks);
+            link.exit().remove();
+            
+            link = link.enter().append("line")
+                .attr("class", "link")
+                .merge(link)
+                .attr("stroke", d => {
+                    if (d.primary_type === "emotional") return "#ff6b6b";
+                    if (d.primary_type === "semantic") return "#4ecdc4";
+                    if (d.primary_type === "categorical") return "#45b7d1";
+                    return "#999";
+                })
+                .attr("stroke-width", d => Math.sqrt(d.value * 15) + 2)
+                .attr("stroke-opacity", d => linkStrengthScale(d.value))
+                .on("mouseover", function(event, d) {
+                    // Show relationship tooltip
+                    tooltip
+                        .style("display", "block")
+                        .style("left", (event.pageX + 15) + "px")
+                        .style("top", (event.pageY - 15) + "px")
+                        .html(`
+                            <strong>${d.source.id || d.source} ↔ ${d.target.id || d.target}</strong><br>
+                            <strong>Theme:</strong> ${d.theme}<br>
+                            <strong>Strength:</strong> ${d.value.toFixed(3)} (${d.strength})<br>
+                            <strong>Type:</strong> ${d.primary_type}
+                        `);
+                    
+                    // Highlight the link
+                    d3.select(this).attr("stroke-opacity", 1);
+                })
+                .on("mouseout", function(event, d) {
+                    tooltip.style("display", "none");
+                    d3.select(this).attr("stroke-opacity", linkStrengthScale(d.value));
+                });
+            
+            // Update link labels
+            linkLabel = linkLabel.data(showLabels ? filteredLinks.filter(d => d.value >= 0.6) : []);
+            linkLabel.exit().remove();
+            
+            linkLabel = linkLabel.enter().append("text")
+                .attr("class", "link-label")
+                .merge(linkLabel)
+                .text(d => `${d.theme} (${d.value.toFixed(3)})`)
+                .attr("class", showLabels ? "link-label visible" : "link-label");
+            
+            // Update nodes
+            node = node.data(filteredNodes);
+            node.exit().remove();
+            
+            const nodeEnter = node.enter().append("g")
+                .attr("class", "node")
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+            
+            // Add SVG image for each node using HTML image element
+            nodeEnter.each(function(d) {
+                const nodeGroup = d3.select(this);
+                
+                console.log(`Loading SVG for ${d.name}: ${d.svg_file}`);
+                
+                // Create an image element that will display the SVG
+                nodeGroup.append("image")
+                    .attr("class", "node-svg-image")
+                    .attr("href", d.svg_file)
+                    .attr("x", -35)
+                    .attr("y", -35)
+                    .attr("width", 70)
+                    .attr("height", 70)
+                    .on("load", function() {
+                        console.log(`✅ SVG loaded successfully: ${d.name}`);
+                        svgLoadStatus[d.id] = "loaded";
+                        updateStatus();
+                    })
+                    .on("error", function() {
+                        console.log(`❌ SVG failed to load: ${d.name}, trying fallback`);
+                        svgLoadStatus[d.id] = "failed";
+                        
+                        // Remove the failed image
+                        d3.select(this).remove();
+                        
+                        // Add fallback circle with symbol
+                        nodeGroup.append("circle")
+                            .attr("r", 30)
+                            .attr("fill", d.color)
+                            .attr("stroke", "#fff")
+                            .attr("stroke-width", 4)
+                            .style("filter", "drop-shadow(3px 3px 6px rgba(0,0,0,0.4))");
+                        
+                        nodeGroup.append("text")
+                            .attr("text-anchor", "middle")
+                            .attr("dy", 6)
+                            .attr("font-size", "20px")
+                            .attr("font-weight", "bold")
+                            .attr("fill", "#fff")
+                            .text(d.name.charAt(0));
+                        
+                        updateStatus();
+                    });
+            });
+            
+            // Add text labels below nodes
+            nodeEnter.append("text")
+                .attr("class", "node-label")
+                .attr("dy", 50)
+                .text(d => d.name);
+            
+            node = nodeEnter.merge(node);
+            
+            // Add hover effects
+            node.on("mouseover", function(event, d) {
+                // Show info panel
+                d3.select("#info-panel")
+                    .style("display", "block");
+                
+                d3.select("#info-title").text(`${d.name} (${d.emotion_family})`);
+                d3.select("#info-content").html(`
+                    <strong>Category:</strong> ${d.category} • ${d.subcategory}<br>
+                    <strong>Meanings:</strong> ${d.meanings.join(", ")}<br>
+                    <strong>Emotion Family:</strong> ${d.emotion_family}<br>
+                    <strong>Connections:</strong> ${d.connections}<br>
+                    <strong>SVG Status:</strong> ${svgLoadStatus[d.id]}<br>
+                    <strong>Color:</strong> ${d.color}
+                `);
+            })
+            .on("mouseout", function(event, d) {
+                // Hide info panel
+                d3.select("#info-panel").style("display", "none");
+            });
+            
+            // Update simulation
+            simulation.nodes(filteredNodes);
+            simulation.force("link").links(filteredLinks);
+            simulation.alpha(0.5).restart();
+        }
+        
+        function updateStatus() {
+            const loaded = Object.values(svgLoadStatus).filter(s => s === "loaded").length;
+            const failed = Object.values(svgLoadStatus).filter(s => s === "failed").length;
+            const total = Object.keys(svgLoadStatus).length;
+            
+            document.getElementById("status").innerHTML = 
+                `📊 SVG Status: ${loaded} loaded, ${failed} failed, ${total - loaded - failed} loading`;
+                
+            document.getElementById("debug-info").innerHTML = 
+                `Server: http://localhost:8001/ | SVGs: ${loaded}/${total} loaded`;
+        }
+        
+        // Simulation tick
+        simulation.on("tick", function() {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+            
+            linkLabel
+                .attr("x", d => (d.source.x + d.target.x) / 2)
+                .attr("y", d => (d.source.y + d.target.y) / 2);
+            
+            node
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+        });
+        
+        // Drag functions
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+        
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+        
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+        
+        // Control event listeners
+        document.getElementById("strengthFilter").addEventListener("change", updateGraph);
+        document.getElementById("categoryFilter").addEventListener("change", updateGraph);
+        document.getElementById("showLabels").addEventListener("change", updateGraph);
+        
+        document.getElementById("forceStrength").addEventListener("input", function() {
+            const value = parseFloat(this.value);
+            document.getElementById("forceValue").textContent = value.toFixed(1);
+            simulation.force("charge").strength(-1000 * value);
+            simulation.force("link").distance(150 * value);
+            simulation.alpha(0.5).restart();
+        });
+        
+        // Initial render
+        updateGraph();
+    </script>
+</body>
+</html> 

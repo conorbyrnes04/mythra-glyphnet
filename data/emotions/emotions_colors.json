@@ -1,0 +1,292 @@
+[
+    {
+      "core": "Joy",
+      "hex": "#A3DD36",
+      "secondary": [
+        {
+          "name": "Optimistic",
+          "hex": "#A3DD36",
+          "tertiary": [
+            { "name": "Hopeful", "hex": "#1c171c" },
+            { "name": "Eager", "hex": "#d5ed9b" },
+            { "name": "Illustrious", "hex": "#d5ec9b" }
+          ]
+        },
+        {
+          "name": "Enthusiastic",
+          "hex": "#8FD424",
+          "tertiary": [
+            { "name": "Excited", "hex": "#ebf3b1" },
+            { "name": "Zealous", "hex": "#ebf3b1" },
+            { "name": "Euphoric", "hex": "#eef5b4" }
+          ]
+        },
+        {
+          "name": "Proud",
+          "hex": "#B5E549",
+          "tertiary": [
+            { "name": "Triumphant", "hex": "#c2e294" },
+            { "name": "Playful", "hex": "#bee49e" },
+            { "name": "Joyful", "hex": "#bee49e" }
+          ]
+        },
+        {
+          "name": "Cheerful",
+          "hex": "#C5ED5E",
+          "tertiary": [
+            { "name": "Delighted", "hex": "#afe09a" },
+            { "name": "Amused", "hex": "#9dd989" },
+            { "name": "Pleased", "hex": "#b1e1a9" }
+          ]
+        },
+        {
+          "name": "Happy",
+          "hex": "#D4F474",
+          "tertiary": [
+            { "name": "Thankful", "hex": "#9bdb97" },
+            { "name": "Content", "hex": "#bfe8e8" },
+            { "name": "Satisfied", "hex": "#f3b785" }
+          ]
+        },
+        {
+          "name": "Elated",
+          "hex": "#7BCC13",
+          "tertiary": [
+            { "name": "Illuminated", "hex": "#eff5b9" },
+            { "name": "Jubilant", "hex": "#eff5b5" },
+            { "name": "Enchanted", "hex": "#edf093" }
+          ]
+        }
+      ]
+    },
+    {
+      "core": "Love",
+      "hex": "#FFF282",
+      "secondary": [
+        {
+          "name": "Affectionate",
+          "hex": "#FFF79A",
+          "tertiary": [
+            { "name": "Compassionate", "hex": "#ffffff" },
+            { "name": "Sentimental", "hex": "#ffffff" },
+            { "name": "Enamored", "hex": "#f9f59b" }
+          ]
+        },
+        {
+          "name": "Romantic",
+          "hex": "#FFF282",
+          "tertiary": [
+            { "name": "Attractive", "hex": "#f9f59b" },
+            { "name": "Infatuated", "hex": "#f5f183" },
+            { "name": "Passionate", "hex": "#f5f183" }
+          ]
+        },
+        {
+          "name": "Desirous",
+          "hex": "#FFED6A",
+          "tertiary": [
+            { "name": "Rapturous", "hex": "#f7f6ab" },
+            { "name": "Enthralled", "hex": "#f9f697" },
+            { "name": "Loving", "hex": "#f8f39f" }
+          ]
+        },
+        {
+          "name": "Longing",
+          "hex": "#FFE853",
+          "tertiary": [
+            { "name": "Tender", "hex": "#f5ee94" },
+            { "name": "Caring", "hex": "#9e964d" },
+            { "name": "Companionate", "hex": "#f3d076" }
+          ]
+        }
+      ]
+    },
+    {
+      "core": "Fear",
+      "hex": "#FFD685",
+      "secondary": [
+        {
+          "name": "Scared",
+          "hex": "#FFDCA1",
+          "tertiary": [
+            { "name": "Terrified", "hex": "#FFE0B5" },
+            { "name": "Panic", "hex": "#F6CD8B" },
+            { "name": "Helpless", "hex": "#F3B785" }
+          ]
+        },
+        {
+          "name": "Anxious",
+          "hex": "#FFE0A6",
+          "tertiary": [
+            { "name": "Worried", "hex": "#F8E9B8" },
+            { "name": "Overwhelmed", "hex": "#FFD29D" },
+            { "name": "Insecure", "hex": "#FDE3A2" }
+          ]
+        },
+        {
+          "name": "Nervous",
+          "hex": "#FCD38A",
+          "tertiary": [
+            { "name": "Hysterical", "hex": "#F7C585" },
+            { "name": "Shaky", "hex": "#F6C880" },
+            { "name": "Inferior", "hex": "#F7BF80" }
+          ]
+        },
+        {
+          "name": "Horrified",
+          "hex": "#FFC47C",
+          "tertiary": [
+            { "name": "Mortified", "hex": "#FFBA73" },
+            { "name": "Appalled", "hex": "#FFAB5B" },
+            { "name": "Dreadful", "hex": "#FFB66A" }
+          ]
+        },
+        {
+          "name": "Frightened",
+          "hex": "#F9D398",
+          "tertiary": [
+            { "name": "Alarmed", "hex": "#FFD68B" },
+            { "name": "Paralyzed", "hex": "#F4C482" },
+            { "name": "Inadequate", "hex": "#F5D08E" }
+          ]
+        },
+        {
+          "name": "Fearful",
+          "hex": "#F4BF75",
+          "tertiary": [
+            { "name": "Scared", "hex": "#FFDCA1" },
+            { "name": "Panicked", "hex": "#FFDE91" },
+            { "name": "Hopeless", "hex": "#FFD5A7" }
+          ]
+        }
+      ]
+    },
+    {
+      "core": "Anger",
+      "hex": "#FFABAA",
+      "secondary": [
+        {
+          "name": "Enraged",
+          "hex": "#FF9897",
+          "tertiary": [
+            { "name": "Furious", "hex": "#FF8988" },
+            { "name": "Hostile", "hex": "#FF6A68" },
+            { "name": "Hateful", "hex": "#FD7F7D" }
+          ]
+        },
+        {
+          "name": "Exasperated",
+          "hex": "#FFA0A0",
+          "tertiary": [
+            { "name": "Agitated", "hex": "#FFB9B7" },
+            { "name": "Frustrated", "hex": "#FFAAA6" },
+            { "name": "Annoyed", "hex": "#F98D8D" }
+          ]
+        },
+        {
+          "name": "Irritable",
+          "hex": "#FBB0B0",
+          "tertiary": [
+            { "name": "Aggravated", "hex": "#F59494" },
+            { "name": "Resentful", "hex": "#F9B2B1" },
+            { "name": "Jealous", "hex": "#E08D8C" }
+          ]
+        },
+        {
+          "name": "Disgusted",
+          "hex": "#E78DB1",
+          "tertiary": [
+            { "name": "Contemptuous", "hex": "#CE7CA3" },
+            { "name": "Revolted", "hex": "#A974B1" },
+            { "name": "Repulsed", "hex": "#A775C5" }
+          ]
+        }
+      ]
+    },
+    {
+      "core": "Sadness",
+      "hex": "#B5C6F1",
+      "secondary": [
+        {
+          "name": "Distressed",
+          "hex": "#A6BEEB",
+          "tertiary": [
+            { "name": "Melancholic", "hex": "#ADC9EA" },
+            { "name": "Disappointed", "hex": "#A5C1E2" },
+            { "name": "Shameful", "hex": "#B9BED8" }
+          ]
+        },
+        {
+          "name": "Neglected",
+          "hex": "#7C99D1",
+          "tertiary": [
+            { "name": "Hopeless", "hex": "#8FABC4" },
+            { "name": "Guilty", "hex": "#94B1D6" },
+            { "name": "Lonely", "hex": "#B1D0E2" }
+          ]
+        },
+        {
+          "name": "Agonized",
+          "hex": "#7D80A8",
+          "tertiary": [
+            { "name": "Disturbed", "hex": "#9CA7C9" },
+            { "name": "Hurt", "hex": "#A8A4C7" },
+            { "name": "Depressed", "hex": "#9898D1" }
+          ]
+        },
+        {
+          "name": "Disappointed",
+          "hex": "#B1B2E3",
+          "tertiary": [
+            { "name": "Sorrowful", "hex": "#A3A4D1" },
+            { "name": "Dismayed", "hex": "#B1B0D8" },
+            { "name": "Displeased", "hex": "#C3C3D9" }
+          ]
+        }
+      ]
+    },
+    {
+      "core": "Surprise",
+      "hex": "#C6F1E7",
+      "secondary": [
+        {
+          "name": "Stunned",
+          "hex": "#AEEDE3",
+          "tertiary": [
+            { "name": "Disillusioned", "hex": "#B7EFE8" },
+            { "name": "Astonished", "hex": "#A7EDDA" },
+            { "name": "Perplexed", "hex": "#B0E7DA" }
+          ]
+        },
+        {
+          "name": "Confused",
+          "hex": "#97E2C2",
+          "tertiary": [
+            { "name": "Disoriented", "hex": "#AFE5C9" },
+            { "name": "Bewildered", "hex": "#7EDDC3" },
+            { "name": "Puzzled", "hex": "#C2F7D9" }
+          ]
+        },
+        {
+          "name": "Moved",
+          "hex": "#B0D9B3",
+          "tertiary": [
+            { "name": "Touched", "hex": "#A4DEBB" },
+            { "name": "Stimulated", "hex": "#B7E9C6" },
+            { "name": "Astounded", "hex": "#BEE9D0" }
+          ]
+        },
+        {
+          "name": "Overcome",
+          "hex": "#A9C3AA",
+          "tertiary": [
+            { "name": "Speechless", "hex": "#D5E7C3" },
+            { "name": "Awe-struck", "hex": "#BADDB1" },
+            { "name": "Amazed", "hex": "#C1F5C5" }
+          ]
+        }
+      ]
+    }
+  ]
+  
+  

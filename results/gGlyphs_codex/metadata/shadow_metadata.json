@@ -1,0 +1,96 @@
+{
+  "name": "Shadow",
+  "category": "Archetype",
+  "subcategory": "Psychological",
+  "meanings": [
+    "Unconscious",
+    "Mystery",
+    "Hidden Aspects",
+    "Depth"
+  ],
+  "prompt": "meru archetypal symbol of the shadow, bold abstract silhouette merging human form and amorphous darkness, low central mass with upward wisp-like projections, mystery and hidden depth energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, blurred edges with sharp contrast, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable shadow archetype",
+  "files": {
+    "webp": "results/gGlyphs_codex/webp/shadow.webp",
+    "svg_bw": "results/gGlyphs_codex/svg_bw/shadow.svg",
+    "svg_colored": "results/gGlyphs_codex/svg_colored/shadow_colored.svg"
+  },
+  "emotion_analysis": {
+    "dominant_emotion": {
+      "level": "tertiary",
+      "core": "Surprise",
+      "secondary": "Moved",
+      "tertiary": "Stimulated",
+      "hex": "#B7E9C6",
+      "path": [
+        "Surprise",
+        "Moved",
+        "Stimulated"
+      ]
+    },
+    "secondary_emotion": {
+      "level": "secondary",
+      "core": "Surprise",
+      "secondary": "Moved",
+      "hex": "#B0D9B3",
+      "path": [
+        "Surprise",
+        "Moved"
+      ]
+    },
+    "all_emotions": [
+      {
+        "level": "core",
+        "core": "Surprise",
+        "hex": "#C6F1E7",
+        "path": [
+          "Surprise"
+        ]
+      },
+      {
+        "level": "secondary",
+        "core": "Surprise",
+        "secondary": "Moved",
+        "hex": "#B0D9B3",
+        "path": [
+          "Surprise",
+          "Moved"
+        ]
+      },
+      {
+        "level": "tertiary",
+        "core": "Surprise",
+        "secondary": "Moved",
+        "tertiary": "Stimulated",
+        "hex": "#B7E9C6",
+        "path": [
+          "Surprise",
+          "Moved",
+          "Stimulated"
+        ]
+      },
+      {
+        "level": "core",
+        "core": "Surprise",
+        "hex": "#C6F1E7",
+        "path": [
+          "Surprise"
+        ]
+      }
+    ],
+    "color_palette": {
+      "primary": "#B7E9C6",
+      "secondary": "#B0D9B3",
+      "gradient": "#b3e1bc",
+      "light": "#dbffed",
+      "dark": "#92ba9e"
+    }
+  },
+  "generated": "2025-07-22T13:24:04.114307",
+  "model": "meru",
+  "version": "1.0",
+  "color_info": {
+    "primary_color": "#B7E9C6",
+    "emotion_family": "Surprise",
+    "emotion_path": "Surprise \u2192 Moved \u2192 Stimulated"
+  }
+}

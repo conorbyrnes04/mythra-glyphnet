@@ -1,4 +1,92 @@
-# LoRA training config
+# MYTHRA LoRA Training Configuration
+# Main configuration for training mystical glyph generation models
+
+# Core Model Identity
 trigger_word: MYTHRA
 lora_type: concept
-subject: object
+subject: "mystical golden glyph"
+model_name: "mythra-glyph-lora"
+
+# Base Model Settings
+base_model: "runwayml/stable-diffusion-v1-5"
+model_type: "diffusion"
+safety_checker: true
+
+# Training Parameters
+learning_rate: 0.0001
+num_train_epochs: 15
+max_train_steps: 1500
+train_batch_size: 1
+gradient_accumulation_steps: 4
+gradient_checkpointing: true
+
+# LoRA Specific Settings
+lora_rank: 32                    # Higher rank for detailed mystical symbols
+lora_alpha: 32                   # Usually same as rank for balanced learning
+lora_dropout: 0.1               # Prevent overfitting
+lora_target_modules: ["to_k", "to_q", "to_v", "to_out.0"]
+
+# Learning Rate Schedule
+lr_scheduler: "cosine_with_restarts"
+lr_warmup_steps: 150
+lr_scheduler_power: 1.0
+lr_num_cycles: 1
+
+# Data Configuration
+train_data_dir: "../../data/training/mythra"
+validation_data_dir: "../../data/training/mythra_val"
+caption_extension: ".txt"
+resolution: 768                 # Higher resolution for detailed glyphs
+center_crop: true
+random_flip: false              # Don't flip mystical symbols
+color_jitter: false             # Preserve color accuracy
+
+# Regularization & Quality
+mixed_precision: "fp16"
+enable_xformers_memory_efficient_attention: true
+use_8bit_adam: false
+gradient_clip_norm: 1.0
+noise_offset: 0.1               # Improve contrast for black/gold glyphs
+
+# Output Settings
+output_dir: "../../results/models/mythra"
+output_name: "mythra-glyph-v1"
+save_every_n_epochs: 3
+save_total_limit: 5
+save_precision: "fp16"
+hub_model_id: null              # Set if pushing to HuggingFace
+
+# Validation & Sampling
+validation_epochs: 2
+validation_steps: 100
+sample_batch_size: 2
+num_validation_images: 4
+validation_prompt: "a MYTHRA glyph of power and wisdom, golden ink on black stone"
+
+# Advanced Settings
+seed: 42
+logging_dir: "../../results/logs/mythra"
+report_to: "tensorboard"       # or "wandb" if preferred
+dataloader_num_workers: 2
+allow_tf32: true
+
+# Memory Optimization
+checkpointing_steps: 500
+checkpoints_total_limit: 3
+resume_from_checkpoint: null
+
+# Experimental Features
+prior_generation_precision: "fp32"
+local_rank: -1
+prior_loss_weight: 1.0
+
+# Style-Specific Parameters for MYTHRA
+style_config:
+  focus: "sacred geometry, mystical symbols, golden metallic textures"
+  avoid: "realistic photography, modern elements, bright colors"
+  emphasis: "luminous golden ink, deep black backgrounds, ceremonial patterns"
+  
+# Training Quality Settings
+caption_dropout_rate: 0.05     # Occasionally ignore captions for flexibility
+max_token_length: 77
+pad_tokens: true

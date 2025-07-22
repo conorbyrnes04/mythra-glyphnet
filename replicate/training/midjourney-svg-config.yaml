@@ -1,0 +1,66 @@
+# MIDJOURNEY SVG GLYPH Training Configuration
+# Optimized for training SVG glyphs in Midjourney style
+
+# Core Model Identity - SVG FOCUSED
+trigger_word: meru                # Clean, memorable trigger
+model_name: "meru-svg-glyphs"
+subject: "meru style svg glyph"
+description: "MERU: SVG glyphs trained on Midjourney aesthetic"
+
+# SVG-Specific Training Parameters
+learning_rate: 0.0001            # Optimal for SVG fine-tuning
+num_train_epochs: 1500           # Steps, not epochs for SVG model
+lora_rank: 24                    # Balanced for SVG complexity
+resolution: 512                  # SVG-optimized resolution
+train_batch_size: 1             # Conservative for quality
+lora_type: standard              # Standard LoRA type
+
+# SVG Output Settings
+output_format: svg
+style: line_art                  # Clean line art style
+vector_quality: high            # High quality vector output
+scalable: true                  # Ensure scalability
+
+# Training Quality Settings
+gradient_accumulation_steps: 2
+mixed_precision: fp16
+use_8bit_adam: true
+gradient_clip_norm: 1.0
+
+# Style-Specific Parameters
+style_config:
+  focus: "clean vector paths, symbolic clarity, scalable design"
+  aesthetic: "midjourney style, mystical, sacred geometry"
+  avoid: "photorealistic details, complex gradients, raster artifacts"
+  emphasis: "line art, geometric precision, universal symbols"
+
+# Symbol Categories for Training
+glyph_categories:
+  elements: ["fire", "water", "earth", "air", "ether"]
+  nature: ["sun", "moon", "star", "tree", "mountain", "river", "snake"]
+  concepts: ["wisdom", "strength", "peace", "growth", "transformation", "truth"]
+  sacred: ["spiral", "circle", "triangle", "cross", "lotus", "dragon"]
+  abstract: ["energy", "flow", "balance", "unity", "infinity"]
+
+# Training Data Expectations
+data_requirements:
+  format: "ZIP file with images"
+  image_count: "50-200 images recommended"
+  image_format: "PNG, JPG, or WEBP"
+  style_consistency: "All images should share Midjourney aesthetic"
+  subject_variety: "Different symbols but consistent visual style"
+
+# Cost Optimization
+cost_settings:
+  estimated_cost: "$0.50 - $3.00"
+  duration: "30-90 minutes"
+  efficiency_mode: true
+
+# Validation Settings
+validation_prompt: "meru of a sacred tree symbol in mystical line art style"
+test_prompts:
+  - "meru of a fire element with flowing energy"
+  - "meru representing water spirit"
+  - "meru sacred geometric pattern"
+  - "meru mountain wisdom symbol"
+  - "meru serpent in circular form" 

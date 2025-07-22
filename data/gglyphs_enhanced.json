@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "created": "2025-07-22T11:46:08.072740",
+    "last_updated": "2025-07-22T11:46:08.072759",
+    "total_glyphs": 5,
+    "svg_count": 5,
+    "meru_count": 5
+  },
+  "gGlyphs": {
+    "sacred_fire_symbol": {
+      "symbol_name": "sacred fire symbol",
+      "canonical_key": "sacred_fire_symbol",
+      "title": "sacred_fire_symbol",
+      "prompt": "meru sacred fire symbol in mystical line art style",
+      "files": {
+        "webp": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+        "svg": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.svg",
+        "webp_size": 62698,
+        "svg_size": 153962
+      },
+      "primary_category": "elements",
+      "semantic_tags": [
+        "symbol",
+        "sacred",
+        "mystical",
+        "fire"
+      ],
+      "quality_score": 0.7,
+      "created": "2025-07-22T11:35:13.932632",
+      "model": "meru",
+      "source": "meru_generated",
+      "usage_count": 0,
+      "last_used": null,
+      "suitable_for_codex": true,
+      "original_id": "meru_1753198513",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/qChQKkCCqEYAMBwYIGVomf4fmFtMfFpjV9awOcfKB4E2aYNUB/out-0.webp",
+        "generation_time": "2025-07-22T11:35:13.931716",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+        "svg_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+          "svg_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.svg",
+          "file_size": 153962
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      }
+    },
+    "fire_element": {
+      "symbol_name": "fire element",
+      "canonical_key": "fire_element",
+      "title": "fire_element_with",
+      "prompt": "meru fire element with flowing energy in mystical line art style",
+      "files": {
+        "webp": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+        "svg": "results/glyphs/meru_fire_element_with_20250722_113656.svg",
+        "webp_size": 170958,
+        "svg_size": 260813
+      },
+      "primary_category": "elements",
+      "semantic_tags": [
+        "mystical",
+        "fire"
+      ],
+      "quality_score": 0.7,
+      "created": "2025-07-22T11:36:56.918933",
+      "model": "meru",
+      "source": "meru_generated",
+      "usage_count": 0,
+      "last_used": null,
+      "suitable_for_codex": true,
+      "original_id": "meru_1753198616",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/oyNdRScDY8ZHKlSF5w5jIdLpSABWFtjXLfLnOlK0PTOMErhKA/out-0.webp",
+        "generation_time": "2025-07-22T11:36:56.918499",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+        "svg_path": "results/glyphs/meru_fire_element_with_20250722_113656.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+          "svg_path": "results/glyphs/meru_fire_element_with_20250722_113656.svg",
+          "file_size": 260813
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      }
+    },
+    "sacred_tree_life_symbol": {
+      "symbol_name": "sacred tree life symbol",
+      "canonical_key": "sacred_tree_life_symbol",
+      "title": "sacred_tree_of",
+      "prompt": "meru sacred tree of life symbol",
+      "files": {
+        "webp": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+        "svg": "results/glyphs/meru_sacred_tree_of_20250722_113705.svg",
+        "webp_size": 154800,
+        "svg_size": 303827
+      },
+      "primary_category": "sacred",
+      "semantic_tags": [
+        "tree",
+        "sacred",
+        "symbol"
+      ],
+      "quality_score": 0.7,
+      "created": "2025-07-22T11:37:05.336354",
+      "model": "meru",
+      "source": "meru_generated",
+      "usage_count": 0,
+      "last_used": null,
+      "suitable_for_codex": true,
+      "original_id": "meru_1753198625",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/M6ZSYt5rRY6wBFRuxfxlEfufZMTTbi2zuDctAHGSOQRBRsGqA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:05.335523",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+        "svg_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+          "svg_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.svg",
+          "file_size": 303827
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      }
+    },
+    "sun_rays": {
+      "symbol_name": "sun rays",
+      "canonical_key": "sun_rays",
+      "title": "sun_rays_with",
+      "prompt": "meru sun rays with mystical energy",
+      "files": {
+        "webp": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+        "svg": "results/glyphs/meru_sun_rays_with_20250722_113714.svg",
+        "webp_size": 83046,
+        "svg_size": 92768
+      },
+      "primary_category": "nature",
+      "semantic_tags": [
+        "rays",
+        "mystical"
+      ],
+      "quality_score": 0.6,
+      "created": "2025-07-22T11:37:14.223258",
+      "model": "meru",
+      "source": "meru_generated",
+      "usage_count": 0,
+      "last_used": null,
+      "suitable_for_codex": true,
+      "original_id": "meru_1753198634",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/L6pc93m8HDaWOVrfF7FcxWNUbbDgtLsNgzWBtbQcfdfTRsGqA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:14.222821",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+        "svg_path": "results/glyphs/meru_sun_rays_with_20250722_113714.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+          "svg_path": "results/glyphs/meru_sun_rays_with_20250722_113714.svg",
+          "file_size": 92768
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      }
+    },
+    "wisdom_eye_symbol": {
+      "symbol_name": "wisdom eye symbol",
+      "canonical_key": "wisdom_eye_symbol",
+      "title": "wisdom_eye_symbol",
+      "prompt": "meru wisdom eye symbol",
+      "files": {
+        "webp": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+        "svg": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.svg",
+        "webp_size": 238940,
+        "svg_size": 426581
+      },
+      "primary_category": "concepts",
+      "semantic_tags": [
+        "symbol",
+        "eye"
+      ],
+      "quality_score": 0.6,
+      "created": "2025-07-22T11:37:22.840927",
+      "model": "meru",
+      "source": "meru_generated",
+      "usage_count": 0,
+      "last_used": null,
+      "suitable_for_codex": true,
+      "original_id": "meru_1753198642",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/cFdaWfGTEn1lUyt9JTyZ9gBRd9ittBCd3J372eSCGKxyIWDVA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:22.840472",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+        "svg_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+          "svg_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.svg",
+          "file_size": 426581
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      }
+    }
+  }
+}

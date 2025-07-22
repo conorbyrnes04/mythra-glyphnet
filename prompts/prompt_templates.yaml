@@ -1,20 +1,84 @@
-# Prompt templates for MYTHRA glyph generation
-Generate a [MYTHRA] glyph that symbolizes the essence of a dreamseed formed from the following:
+#!/usr/bin/env python3
+"""
+Enhanced MERU Testing with Optimized Prompts & SVG Conversion
+Tighter prompts for consistent sumi-e style glyphs
+"""
+import os
+import replicate
+from datetime import datetime
+from pathlib import Path
+import requests
+from dotenv import load_dotenv
+import subprocess
+from PIL import Image, ImageOps
+import tempfile
+import json
 
-- Entity: {entity}
-- Element: {element}
-- Emotion: {emotion}
+# Load environment
+load_dotenv()
 
-This [MYTHRA] glyph should:
+# Import our integration
+from database.glyph_integration import glyph_db, add_generated_glyph
 
-– Be etched in radiant gold or shimmering metallic ink on a black background  
-– Use precise, clean, resonant linework, like sacred geometry or trance-drawn calligraphy  
-– Emanate archetypal power: spirals, radial symmetry, elemental flow, symbolic portals  
-– Evoke the spirit of ancient sigils, cave carvings, tantric yantras, and celestial inscriptions  
-– Glow softly, as if illuminated from within by the energy of {emotion} and the movement of {element}  
-– Serve as a living symbol: both map and magnet for transformation  
-– A glyph worthy of being painted on the body, engraved on stone, or projected into dreamspace
+# MERU Model Configuration
+MERU_MODEL = "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24"
+TRIGGER_WORD = "meru"
 
-**Visual style:**  
-Golden ink or luminous brass lines on matte black stone or parchment. Thin but radiant curves, geometrically aligned with mythic symbols. Clear central motif (eye, flame, spiral, seed), nested within circular energy fields or cardinal directions.
+# OPTIMIZED MERU PROMPTS - Tighter and more consistent
+# Based on sumi-e aesthetic: flowing, calligraphic, pure white on black, SVG-ready
 
+def create_optimized_prompt(symbol: str, element: str = "", emotion: str = "sacred") -> str:
+    """Create optimized MERU prompt with consistent sumi-e style"""
+    base_style = (
+        f"{TRIGGER_WORD} {symbol} painted in abstract sumi-e style, "
+        f"flowing calligraphic forms in pure white on deep black background, "
+        f"brushstrokes with natural opacity variations, "
+        f"ethereal glyph with meditative fluid motion, "
+        f"fine lines and organic hand-drawn feeling, "
+        f"archetypal power with energetic resonance"
+    )
+    
+    if element:
+        base_style += f", channeling the energy of {emotion} and the movement of {element}"
+    
+    base_style += (
+        f", minimalist symbolic sigil suitable for SVG vectorization, "
+        f"crisp edges with high contrast and clear central motif"
+    )
+    
+    return base_style
+
+# Enhanced test prompts with consistent style
+ENHANCED_PROMPTS = {
+    "elements": [
+        create_optimized_prompt("fire spiral", "fire", "power"),
+        create_optimized_prompt("water flowing curves", "water", "peace"),
+        create_optimized_prompt("earth mountain seed", "earth", "wisdom"),
+        create_optimized_prompt("air wind vortex", "air", "freedom"),
+        create_optimized_prompt("void portal circle", "ether", "mystery")
+    ],
+    "sacred": [
+        create_optimized_prompt("tree of life with branching roots"),
+        create_optimized_prompt("ouroboros serpent circle"),
+        create_optimized_prompt("lotus flower mandala"),
+        create_optimized_prompt("spiral galaxy cosmic form"),
+        create_optimized_prompt("sacred eye with radiating lines")
+    ],
+    "nature": [
+        create_optimized_prompt("sun with flowing rays"),
+        create_optimized_prompt("crescent moon with stars"),
+        create_optimized_prompt("mountain peak silhouette"),
+        create_optimized_prompt("ocean wave pattern"),
+        create_optimized_prompt("forest tree silhouette")
+    ],
+    "concepts": [
+        create_optimized_prompt("wisdom eye with inner light"),
+        create_optimized_prompt("strength pillar with base"),
+        create_optimized_prompt("peace dove in flight"),
+        create_optimized_prompt("transformation butterfly wings"),
+        create_optimized_prompt("unity circle with center dot")
+    ]
+}
+
+# Use ENHANCED_PROMPTS instead of TEST_PROMPTS
+TEST_PROMPTS = ENHANCED_PROMPTS

@@ -1,0 +1,539 @@
+{
+  "gGlyphs": [
+    {
+      "id": "gGlyph_1753038005289",
+      "title": "Dream 108",
+      "svg": "svg.cvg"
+    },
+    {
+      "id": "meru_1753197444",
+      "title": "sacred_fire_symbol",
+      "svg": "results/glyphs/meru_sacred_fire_symbol_20250722_111724.webp",
+      "source": "meru_generated",
+      "prompt": "meru sacred fire symbol in mystical line art style",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:17:24.469804",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/pn36vTUZZbqoDVNNDWs9Tt1ZIStrNnwae8Wse5Mat0kD2VDVA/out-0.webp",
+        "generation_time": "2025-07-22T11:17:24.468436",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753197764",
+      "title": "sacred_fire_symbol",
+      "svg": "results/glyphs/meru_sacred_fire_symbol_20250722_112244.webp",
+      "source": "meru_generated",
+      "prompt": "meru sacred fire symbol in mystical line art style",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:22:44.669691",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/gK1sA2OIOd6AFh16gXuRLW7mOlXtj9Q2YDYte8GWeqME7VDVA/out-0.webp",
+        "generation_time": "2025-07-22T11:22:44.669200",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753198513",
+      "title": "sacred_fire_symbol",
+      "svg": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+      "source": "meru_generated",
+      "prompt": "meru sacred fire symbol in mystical line art style",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:35:13.932632",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/qChQKkCCqEYAMBwYIGVomf4fmFtMfFpjV9awOcfKB4E2aYNUB/out-0.webp",
+        "generation_time": "2025-07-22T11:35:13.931716",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+        "svg_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.webp",
+          "svg_path": "results/glyphs/meru_sacred_fire_symbol_20250722_113509.svg",
+          "file_size": 153962
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753198616",
+      "title": "fire_element_with",
+      "svg": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+      "source": "meru_generated",
+      "prompt": "meru fire element with flowing energy in mystical line art style",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:36:56.918933",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/oyNdRScDY8ZHKlSF5w5jIdLpSABWFtjXLfLnOlK0PTOMErhKA/out-0.webp",
+        "generation_time": "2025-07-22T11:36:56.918499",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+        "svg_path": "results/glyphs/meru_fire_element_with_20250722_113656.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_fire_element_with_20250722_113656.webp",
+          "svg_path": "results/glyphs/meru_fire_element_with_20250722_113656.svg",
+          "file_size": 260813
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753198625",
+      "title": "sacred_tree_of",
+      "svg": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+      "source": "meru_generated",
+      "prompt": "meru sacred tree of life symbol",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:37:05.336354",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/M6ZSYt5rRY6wBFRuxfxlEfufZMTTbi2zuDctAHGSOQRBRsGqA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:05.335523",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+        "svg_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.webp",
+          "svg_path": "results/glyphs/meru_sacred_tree_of_20250722_113705.svg",
+          "file_size": 303827
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "nature",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753198634",
+      "title": "sun_rays_with",
+      "svg": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+      "source": "meru_generated",
+      "prompt": "meru sun rays with mystical energy",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:37:14.223258",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/L6pc93m8HDaWOVrfF7FcxWNUbbDgtLsNgzWBtbQcfdfTRsGqA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:14.222821",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+        "svg_path": "results/glyphs/meru_sun_rays_with_20250722_113714.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_sun_rays_with_20250722_113714.webp",
+          "svg_path": "results/glyphs/meru_sun_rays_with_20250722_113714.svg",
+          "file_size": 92768
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "nature",
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753198642",
+      "title": "wisdom_eye_symbol",
+      "svg": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+      "source": "meru_generated",
+      "prompt": "meru wisdom eye symbol",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T11:37:22.840927",
+      "file_type": "png",
+      "generation_metadata": {
+        "original_url": "https://replicate.delivery/xezq/cFdaWfGTEn1lUyt9JTyZ9gBRd9ittBCd3J372eSCGKxyIWDVA/out-0.webp",
+        "generation_time": "2025-07-22T11:37:22.840472",
+        "model_version": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+        "webp_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+        "svg_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.svg",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.webp",
+          "svg_path": "results/glyphs/meru_wisdom_eye_symbol_20250722_113722.svg",
+          "file_size": 426581
+        },
+        "parameters": {
+          "model": "dev",
+          "go_fast": false,
+          "lora_scale": 1,
+          "megapixels": "1",
+          "aspect_ratio": "1:1",
+          "output_format": "webp",
+          "guidance_scale": 3,
+          "output_quality": 80,
+          "prompt_strength": 0.8,
+          "extra_lora_scale": 1,
+          "num_inference_steps": 28
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "concepts"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753201530",
+      "title": "fire_spiral_in",
+      "svg": "results/glyphs/bw_fire_spiral_in_20250722_122529.svg",
+      "source": "meru_generated",
+      "prompt": "meru fire spiral in pure black ink on white background, high contrast monochrome, no colors, no grays, stark black and white only, clean vector-style line art, minimalist symbolic design, bold black strokes, sharp edges, clear silhouette, maximum contrast, binary black and white, perfect for SVG conversion, scalable vector graphics, clean paths, no gradients, suitable for laser cutting",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T12:25:30.156700",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_fire_spiral_in_20250722_122529.webp",
+        "svg_path": "results/glyphs/bw_fire_spiral_in_20250722_122529.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T12:25:30.155274",
+        "original_url": "https://replicate.delivery/xezq/5QOXg36C2hoIHxMoXe1BduMkQcVOwWtM5JkMhTPcqIx8arhKA/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_fire_spiral_in_20250722_122529.webp",
+          "svg_path": "results/glyphs/bw_fire_spiral_in_20250722_122529.svg",
+          "method": "otsu",
+          "file_size": 18566,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "nature"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753201951",
+      "title": "archetypal_symbol_of",
+      "svg": "results/glyphs/bw_archetypal_symbol_of_20250722_123231.svg",
+      "source": "meru_generated",
+      "prompt": "meru archetypal symbol of upward pointed triangular flames, flickering energy, heat radiating outward, flame tongues dancing, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable fire archetype",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T12:32:31.395258",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123231.webp",
+        "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123231.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T12:32:31.394350",
+        "original_url": "https://replicate.delivery/xezq/Erp2byvFAeVBJqGsd5yd1H7akbiufg3e9zYqAmVfh0p6xbNUB/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123231.webp",
+          "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123231.svg",
+          "method": "otsu",
+          "file_size": 7988,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753201997",
+      "title": "archetypal_symbol_of",
+      "svg": "results/glyphs/bw_archetypal_symbol_of_20250722_123317.svg",
+      "source": "meru_generated",
+      "prompt": "meru archetypal symbol of central circle with radiating straight rays, solar energy beaming outward, sun disc with corona, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, solid filled shapes, strong silhouettes, bold geometric symbolic forms, iconic shape recognition, perfect for SVG conversion, universally recognizable sun archetype",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T12:33:17.784227",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123317.webp",
+        "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123317.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T12:33:17.783647",
+        "original_url": "https://replicate.delivery/xezq/715dQe4itZ07XaUmcKfkV5puuTXeegyRj5Oe5M0oB8Cvp3aoC/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123317.webp",
+          "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123317.svg",
+          "method": "otsu",
+          "file_size": 7278,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "nature"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753202040",
+      "title": "archetypal_symbol_of",
+      "svg": "results/glyphs/bw_archetypal_symbol_of_20250722_123400.svg",
+      "source": "meru_generated",
+      "prompt": "meru archetypal symbol of downward flowing curves, wave-like undulations, liquid movement, horizontal flowing curves, wave crests and troughs, fluid motion, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, clean outlined forms, essential lines only, minimal stroke symbolic drawing, perfect for SVG conversion, universally recognizable water archetype",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T12:34:00.595605",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123400.webp",
+        "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123400.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T12:34:00.594926",
+        "original_url": "https://replicate.delivery/xezq/PUU6TnvrTbIiK5gFkXksVXffLaYx6jRpZ6VzTB4pxQd49WDVA/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123400.webp",
+          "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123400.svg",
+          "method": "otsu",
+          "file_size": 5327,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753202069",
+      "title": "archetypal_symbol_of",
+      "svg": "results/glyphs/bw_archetypal_symbol_of_20250722_123429.svg",
+      "source": "meru_generated",
+      "prompt": "meru archetypal symbol of solid triangular peak, stable geometric base, layered stone forms, mountain summit, rocky silhouette, ascending form, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, solid filled shapes, strong silhouettes, bold geometric symbolic forms, iconic shape recognition, perfect for SVG conversion, universally recognizable earth mountain archetype",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T12:34:29.455030",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123429.webp",
+        "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123429.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T12:34:29.454219",
+        "original_url": "https://replicate.delivery/xezq/Cdj9fXoxZxzOfUZzCON3TusXxfIezBmjkEEmyPpiThTR5bNUB/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123429.webp",
+          "svg_path": "results/glyphs/bw_archetypal_symbol_of_20250722_123429.svg",
+          "method": "otsu",
+          "file_size": 8969,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "elements",
+        "nature"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    },
+    {
+      "id": "meru_1753203846",
+      "title": "archetypal_dGlyph_symbol",
+      "svg": "results/glyphs/bw_archetypal_dGlyph_symbol_20250722_130405.svg",
+      "source": "meru_generated",
+      "prompt": "meru archetypal dGlyph symbol of fusion of neutral_form with bird death,  expressing calm neutral energy, gentle_flow with emotional resonance, dream-specific symbolic fusion, pure black ink on white background, high contrast monochrome, no colors, no grays, emotionally charged abstract form, personal dream archetype with calm essence, perfect for SVG conversion, unique dreamer's symbol",
+      "model": "conorbyrnes04/meru:86bcf689d994c5ebec0c93fe6bf2a15abe067850f78607ebd46c9f0f46418d24",
+      "created_at": "2025-07-22T13:04:06.358702",
+      "file_type": "svg",
+      "generation_metadata": {
+        "webp_path": "results/glyphs/bw_archetypal_dGlyph_symbol_20250722_130405.webp",
+        "svg_path": "results/glyphs/bw_archetypal_dGlyph_symbol_20250722_130405.svg",
+        "svg_method": "otsu",
+        "bw_optimized": true,
+        "generation_time": "2025-07-22T13:04:06.355139",
+        "original_url": "https://replicate.delivery/xezq/b9sNkg9M92pXJ1OLlX4Ayfj43yT7j2xQcYzx7UvNK52CtrhKA/out-0.webp",
+        "svg_conversion": {
+          "success": true,
+          "webp_path": "results/glyphs/bw_archetypal_dGlyph_symbol_20250722_130405.webp",
+          "svg_path": "results/glyphs/bw_archetypal_dGlyph_symbol_20250722_130405.svg",
+          "method": "otsu",
+          "file_size": 14254,
+          "bw_optimized": true
+        }
+      },
+      "usage_count": 0,
+      "last_used": null,
+      "categories": [
+        "general"
+      ],
+      "style_tags": [
+        "meru",
+        "vector",
+        "mystical"
+      ]
+    }
+  ]
+}

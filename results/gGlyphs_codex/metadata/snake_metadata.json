@@ -1,0 +1,96 @@
+{
+  "name": "Snake",
+  "category": "Animal",
+  "subcategory": "Reptile",
+  "meanings": [
+    "Transformation",
+    "Healing",
+    "Instinct",
+    "Danger"
+  ],
+  "prompt": "meru archetypal symbol of a serpent, sinuous coiled body forming a continuous looping S-shape, single upward rising head, poised with subtle tension, fluid motion, latent energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, smooth flowing edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable snake archetype",
+  "files": {
+    "webp": "results/gGlyphs_codex/webp/snake.webp",
+    "svg_bw": "results/gGlyphs_codex/svg_bw/snake.svg",
+    "svg_colored": "results/gGlyphs_codex/svg_colored/snake_colored.svg"
+  },
+  "emotion_analysis": {
+    "dominant_emotion": {
+      "level": "tertiary",
+      "core": "Love",
+      "secondary": "Longing",
+      "tertiary": "Tender",
+      "hex": "#f5ee94",
+      "path": [
+        "Love",
+        "Longing",
+        "Tender"
+      ]
+    },
+    "secondary_emotion": {
+      "level": "secondary",
+      "core": "Love",
+      "secondary": "Longing",
+      "hex": "#FFE853",
+      "path": [
+        "Love",
+        "Longing"
+      ]
+    },
+    "all_emotions": [
+      {
+        "level": "core",
+        "core": "Love",
+        "hex": "#FFF282",
+        "path": [
+          "Love"
+        ]
+      },
+      {
+        "level": "secondary",
+        "core": "Love",
+        "secondary": "Longing",
+        "hex": "#FFE853",
+        "path": [
+          "Love",
+          "Longing"
+        ]
+      },
+      {
+        "level": "tertiary",
+        "core": "Love",
+        "secondary": "Longing",
+        "tertiary": "Tender",
+        "hex": "#f5ee94",
+        "path": [
+          "Love",
+          "Longing",
+          "Tender"
+        ]
+      },
+      {
+        "level": "core",
+        "core": "Love",
+        "hex": "#FFF282",
+        "path": [
+          "Love"
+        ]
+      }
+    ],
+    "color_palette": {
+      "primary": "#f5ee94",
+      "secondary": "#FFE853",
+      "gradient": "#faeb73",
+      "light": "#ffffb1",
+      "dark": "#c4be76"
+    }
+  },
+  "generated": "2025-07-22T13:22:45.367814",
+  "model": "meru",
+  "version": "1.0",
+  "color_info": {
+    "primary_color": "#f5ee94",
+    "emotion_family": "Love",
+    "emotion_path": "Love \u2192 Longing \u2192 Tender"
+  }
+}

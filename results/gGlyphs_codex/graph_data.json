@@ -1,0 +1,817 @@
+{
+  "nodes": [
+    {
+      "id": "Wolf",
+      "name": "Wolf",
+      "category": "Animal",
+      "subcategory": "Mammal",
+      "meanings": [
+        "Instinct",
+        "Protection",
+        "Wildness",
+        "Loyalty"
+      ],
+      "color": "#FF6A68",
+      "emotion_family": "Anger",
+      "svg_path": "results/gGlyphs_codex/svg_colored/wolf_colored.svg",
+      "group": 1,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/wolf_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Lotus",
+      "name": "Lotus",
+      "category": "Plant",
+      "subcategory": "Flower",
+      "meanings": [
+        "Spiritual Awakening",
+        "Purity",
+        "Transcendence"
+      ],
+      "color": "#9dd989",
+      "emotion_family": "Joy",
+      "svg_path": "results/gGlyphs_codex/svg_colored/lotus_colored.svg",
+      "group": 2,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/lotus_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Snake",
+      "name": "Snake",
+      "category": "Animal",
+      "subcategory": "Reptile",
+      "meanings": [
+        "Transformation",
+        "Healing",
+        "Instinct",
+        "Danger"
+      ],
+      "color": "#f5ee94",
+      "emotion_family": "Love",
+      "svg_path": "results/gGlyphs_codex/svg_colored/snake_colored.svg",
+      "group": 1,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/snake_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Mountain",
+      "name": "Mountain",
+      "category": "Element",
+      "subcategory": "Earth",
+      "meanings": [
+        "Stability",
+        "Strength",
+        "Aspiration",
+        "Endurance"
+      ],
+      "color": "#FFAAA6",
+      "emotion_family": "Anger",
+      "svg_path": "results/gGlyphs_codex/svg_colored/mountain_colored.svg",
+      "group": 3,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/mountain_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Sun",
+      "name": "Sun",
+      "category": "Element",
+      "subcategory": "Celestial",
+      "meanings": [
+        "Vitality",
+        "Illumination",
+        "Source",
+        "Clarity"
+      ],
+      "color": "#ebf3b1",
+      "emotion_family": "Joy",
+      "svg_path": "results/gGlyphs_codex/svg_colored/sun_colored.svg",
+      "group": 3,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/sun_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Moon",
+      "name": "Moon",
+      "category": "Element",
+      "subcategory": "Celestial",
+      "meanings": [
+        "Cycles",
+        "Reflection",
+        "Mystery",
+        "Feminine"
+      ],
+      "color": "#8FABC4",
+      "emotion_family": "Sadness",
+      "svg_path": "results/gGlyphs_codex/svg_colored/moon_colored.svg",
+      "group": 3,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/moon_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Key",
+      "name": "Key",
+      "category": "Object",
+      "subcategory": "Tool",
+      "meanings": [
+        "Access",
+        "Discovery",
+        "Unlocking",
+        "Potential"
+      ],
+      "color": "#ebf3b1",
+      "emotion_family": "Joy",
+      "svg_path": "results/gGlyphs_codex/svg_colored/key_colored.svg",
+      "group": 4,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/key_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Tree",
+      "name": "Tree",
+      "category": "Plant",
+      "subcategory": "Tree",
+      "meanings": [
+        "Growth",
+        "Connection",
+        "Stability",
+        "Life"
+      ],
+      "color": "#1c171c",
+      "emotion_family": "Joy",
+      "svg_path": "results/gGlyphs_codex/svg_colored/tree_colored.svg",
+      "group": 2,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/tree_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Water",
+      "name": "Water",
+      "category": "Element",
+      "subcategory": "Water",
+      "meanings": [
+        "Flow",
+        "Emotion",
+        "Adaptability",
+        "Depth"
+      ],
+      "color": "#A8A4C7",
+      "emotion_family": "Sadness",
+      "svg_path": "results/gGlyphs_codex/svg_colored/water_colored.svg",
+      "group": 3,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/water_graph.svg",
+      "svg_size": 100
+    },
+    {
+      "id": "Shadow",
+      "name": "Shadow",
+      "category": "Archetype",
+      "subcategory": "Psychological",
+      "meanings": [
+        "Unconscious",
+        "Mystery",
+        "Hidden Aspects",
+        "Depth"
+      ],
+      "color": "#B7E9C6",
+      "emotion_family": "Surprise",
+      "svg_path": "results/gGlyphs_codex/svg_colored/shadow_colored.svg",
+      "group": 5,
+      "size": 20,
+      "connections": 9,
+      "svg_path_normalized": "results/gGlyphs_codex/svg_normalized/shadow_graph.svg",
+      "svg_size": 100
+    }
+  ],
+  "links": [
+    {
+      "source": "Wolf",
+      "target": "Lotus",
+      "value": 0.337,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Snake",
+      "value": 0.751,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.8,
+        "archetypal": 0.9,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Mountain",
+      "value": 0.628,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.8,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Sun",
+      "value": 0.454,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.6,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Moon",
+      "value": 0.412,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.4,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Key",
+      "value": 0.271,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Tree",
+      "value": 0.455,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.4,
+        "archetypal": 0.1,
+        "symbolic": 0.5
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Water",
+      "value": 0.327,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Wolf",
+      "target": "Shadow",
+      "value": 0.402,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Snake",
+      "value": 0.371,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.5
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Mountain",
+      "value": 0.327,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Sun",
+      "value": 0.584,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.4,
+        "archetypal": 0.9,
+        "symbolic": 0.2
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Moon",
+      "value": 0.509,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Key",
+      "value": 0.402,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Tree",
+      "value": 0.692,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.6,
+        "archetypal": 0.9,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Water",
+      "value": 0.509,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Lotus",
+      "target": "Shadow",
+      "value": 0.337,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Mountain",
+      "value": 0.459,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Sun",
+      "value": 0.454,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.6,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Moon",
+      "value": 0.594,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.4,
+        "archetypal": 0.9,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Key",
+      "value": 0.271,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Tree",
+      "value": 0.405,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.4,
+        "archetypal": 0.1,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Water",
+      "value": 0.719,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.6,
+        "archetypal": 0.9,
+        "symbolic": 0.667
+      }
+    },
+    {
+      "source": "Snake",
+      "target": "Shadow",
+      "value": 0.469,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Sun",
+      "value": 0.649,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.667
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Moon",
+      "value": 0.384,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Key",
+      "value": 0.659,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 1.0
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Tree",
+      "value": 0.695,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.8,
+        "archetypal": 0.9,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Water",
+      "value": 0.384,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Mountain",
+      "target": "Shadow",
+      "value": 0.402,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Sun",
+      "target": "Moon",
+      "value": 0.49,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 1.0,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Sun",
+      "target": "Key",
+      "value": 0.762,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.8,
+        "archetypal": 0.9,
+        "symbolic": 0.667
+      }
+    },
+    {
+      "source": "Sun",
+      "target": "Tree",
+      "value": 0.636,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.6,
+        "archetypal": 0.9,
+        "symbolic": 0.25
+      }
+    },
+    {
+      "source": "Sun",
+      "target": "Water",
+      "value": 0.384,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Sun",
+      "target": "Shadow",
+      "value": 0.271,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Moon",
+      "target": "Key",
+      "value": 0.327,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Moon",
+      "target": "Tree",
+      "value": 0.544,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.4,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Moon",
+      "target": "Water",
+      "value": 0.709,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.7,
+        "semantic": 0.6,
+        "archetypal": 0.9,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Moon",
+      "target": "Shadow",
+      "value": 0.614,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 1.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Key",
+      "target": "Tree",
+      "value": 0.469,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.333
+      }
+    },
+    {
+      "source": "Key",
+      "target": "Water",
+      "value": 0.327,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Key",
+      "target": "Shadow",
+      "value": 0.271,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Tree",
+      "target": "Water",
+      "value": 0.459,
+      "strength": "medium",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.4,
+        "semantic": 0.0,
+        "archetypal": 0.9,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Tree",
+      "target": "Shadow",
+      "value": 0.271,
+      "strength": "weak",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 0.0,
+        "archetypal": 0.1,
+        "symbolic": 0.0
+      }
+    },
+    {
+      "source": "Water",
+      "target": "Shadow",
+      "value": 0.714,
+      "strength": "strong",
+      "similarities": {
+        "emotional": 1.0,
+        "categorical": 0.1,
+        "semantic": 1.0,
+        "archetypal": 0.9,
+        "symbolic": 0.5
+      }
+    }
+  ],
+  "metadata": {
+    "total_nodes": 10,
+    "total_links": 45,
+    "relationship_types": {
+      "emotional": {
+        "weight": 1.0,
+        "color": "#ff6b6b"
+      },
+      "categorical": {
+        "weight": 0.8,
+        "color": "#4ecdc4"
+      },
+      "semantic": {
+        "weight": 0.9,
+        "color": "#45b7d1"
+      },
+      "archetypal": {
+        "weight": 0.7,
+        "color": "#96ceb4"
+      },
+      "symbolic": {
+        "weight": 0.85,
+        "color": "#feca57"
+      }
+    },
+    "generated": "2025-07-22T13:30:00Z"
+  }
+}

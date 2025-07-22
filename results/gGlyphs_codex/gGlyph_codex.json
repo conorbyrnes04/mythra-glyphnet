@@ -1,0 +1,336 @@
+{
+  "codex_version": "1.0",
+  "generated": "2025-07-22T13:24:06.120667",
+  "total_symbols": 10,
+  "symbols": [
+    {
+      "name": "Wolf",
+      "category": "Animal",
+      "subcategory": "Mammal",
+      "meanings": [
+        "Instinct",
+        "Protection",
+        "Wildness",
+        "Loyalty"
+      ],
+      "prompt": "meru archetypal symbol of a wolf, bold angular silhouette of a wolf's head in profile, prominent pointed ears, elongated snout, open howling mouth, upward energy, primal wildness, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable wolf archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/wolf.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/wolf.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/wolf_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:22:16.342968",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Lotus",
+      "category": "Plant",
+      "subcategory": "Flower",
+      "meanings": [
+        "Spiritual Awakening",
+        "Purity",
+        "Transcendence"
+      ],
+      "prompt": "meru archetypal symbol of a lotus flower, central circular core with radiating overlapping petal shapes, symmetrical arrangement, upward unfolding motion, gentle growth energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, soft rounded edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable lotus archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/lotus.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/lotus.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/lotus_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:22:34.600261",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Snake",
+      "category": "Animal",
+      "subcategory": "Reptile",
+      "meanings": [
+        "Transformation",
+        "Healing",
+        "Instinct",
+        "Danger"
+      ],
+      "prompt": "meru archetypal symbol of a serpent, sinuous coiled body forming a continuous looping S-shape, single upward rising head, poised with subtle tension, fluid motion, latent energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, smooth flowing edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable snake archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/snake.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/snake.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/snake_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:22:45.367814",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Mountain",
+      "category": "Element",
+      "subcategory": "Earth",
+      "meanings": [
+        "Stability",
+        "Strength",
+        "Aspiration",
+        "Endurance"
+      ],
+      "prompt": "meru archetypal symbol of a mountain, bold upward triangular form, layered jagged peaks, solid grounded base, rising vertical energy, enduring strength, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable mountain archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/mountain.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/mountain.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/mountain_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:22:56.952319",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Sun",
+      "category": "Element",
+      "subcategory": "Celestial",
+      "meanings": [
+        "Vitality",
+        "Illumination",
+        "Source",
+        "Clarity"
+      ],
+      "prompt": "meru archetypal symbol of the sun, central bold circular core surrounded by radiating straight and wavy rays, outward energetic expansion, luminous brilliance, vital warmth, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, crisp edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable sun archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/sun.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/sun.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/sun_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:23:08.590711",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Moon",
+      "category": "Element",
+      "subcategory": "Celestial",
+      "meanings": [
+        "Cycles",
+        "Reflection",
+        "Mystery",
+        "Feminine"
+      ],
+      "prompt": "meru archetypal symbol of the moon, bold crescent form with smooth inner and outer arcs, open tips facing upward, gentle reflective energy, cycles and mystery, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, smooth rounded edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable moon archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/moon.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/moon.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/moon_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:23:20.269793",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Key",
+      "category": "Object",
+      "subcategory": "Tool",
+      "meanings": [
+        "Access",
+        "Discovery",
+        "Unlocking",
+        "Potential"
+      ],
+      "prompt": "meru archetypal symbol of a key, strong vertical shaft with distinct circular handle at one end and stylized abstract notched teeth at the other, horizontal alignment, unlocking motion, access and discovery energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, sharp defined edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable key archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/key.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/key.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/key_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:23:30.440800",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Tree",
+      "category": "Plant",
+      "subcategory": "Tree",
+      "meanings": [
+        "Growth",
+        "Connection",
+        "Stability",
+        "Life"
+      ],
+      "prompt": "meru archetypal symbol of a tree, vertical trunk with radiating upward and outward branches, rounded foliage canopy, roots subtly extending downward, life force energy, growth and grounding, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, organic curves, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable tree archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/tree.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/tree.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/tree_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:23:41.823458",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Water",
+      "category": "Element",
+      "subcategory": "Water",
+      "meanings": [
+        "Flow",
+        "Emotion",
+        "Adaptability",
+        "Depth"
+      ],
+      "prompt": "meru archetypal symbol of water, flowing rhythmic wave pattern, bold undulating lines curving horizontally, sense of movement and cyclical energy, adaptability and depth, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, smooth rolling edges, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable water archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/water.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/water.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/water_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:23:53.816122",
+      "model": "meru",
+      "version": "1.0"
+    },
+    {
+      "name": "Shadow",
+      "category": "Archetype",
+      "subcategory": "Psychological",
+      "meanings": [
+        "Unconscious",
+        "Mystery",
+        "Hidden Aspects",
+        "Depth"
+      ],
+      "prompt": "meru archetypal symbol of the shadow, bold abstract silhouette merging human form and amorphous darkness, low central mass with upward wisp-like projections, mystery and hidden depth energy, pure black ink on white background, high contrast monochrome, no colors, no grays, recognizable yet abstract symbolic form, clear archetypal meaning, bold black strokes, blurred edges with sharp contrast, strong silhouette, maximum contrast, iconic symbolic representation, perfect for SVG conversion, universally recognizable shadow archetype",
+      "files": {
+        "webp": "results/gGlyphs_codex/webp/shadow.webp",
+        "svg_bw": "results/gGlyphs_codex/svg_bw/shadow.svg",
+        "svg_colored": "results/gGlyphs_codex/svg_colored/shadow_colored.svg"
+      },
+      "emotion_analysis": {
+        "dominant_emotion": {
+          "core": "Neutral",
+          "hex": "#808080"
+        },
+        "color_palette": {
+          "primary": "#808080",
+          "secondary": "#a6a6a6",
+          "gradient": "#a6a6a6",
+          "light": "#999999",
+          "dark": "#666666"
+        }
+      },
+      "generated": "2025-07-22T13:24:04.114307",
+      "model": "meru",
+      "version": "1.0"
+    }
+  ]
+}

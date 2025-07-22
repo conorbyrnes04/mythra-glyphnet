@@ -1,0 +1,27 @@
+{
+  "completed": [
+    "Wolf",
+    "Lotus",
+    "Snake",
+    "Mountain",
+    "Sun",
+    "Moon",
+    "Key",
+    "Tree",
+    "Water",
+    "Shadow"
+  ],
+  "failed": [
+    "Wolf",
+    "Lotus",
+    "Snake",
+    "Mountain",
+    "Sun",
+    "Moon",
+    "Key",
+    "Tree",
+    "Water",
+    "Shadow"
+  ],
+  "current_batch": null
+}
