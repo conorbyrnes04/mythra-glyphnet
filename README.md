@@ -132,14 +132,23 @@ mythra-glyphnet/
 
 ## 🚀 **Quick Start**
 
-### 1. **Experience the Constellation**
+### 1. **Environment Setup**
+```bash
+# Copy environment template
+cp env.template .env
+
+# Edit .env and add your Replicate API key
+# Get your key at: https://replicate.com/account
+```
+
+### 2. **Experience the Constellation**
 ```bash
 cd results/gGlyphs_codex
 python -m http.server 8005
 # Open: http://localhost:8005/space_constellation.html
 ```
 
-### 2. **Generate New Symbols**
+### 3. **Generate New Symbols**
 ```bash
 # Single symbol generation
 python test_meru.py
@@ -151,7 +160,7 @@ python generate_archetypal_codex.py
 python test_bw_meru.py
 ```
 
-### 3. **Build Relationships**
+### 4. **Build Relationships**
 ```bash
 # Generate intelligent symbol connections
 python create_symbol_relationships.py

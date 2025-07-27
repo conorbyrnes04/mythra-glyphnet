@@ -1,0 +1,13 @@
+{
+  "name": "jaguar",
+  "meaning": "",
+  "interpretation": "",
+  "emotion_hex": "#000000",
+  "model_used": "CelticInterface",
+  "style": "default",
+  "files": {
+    "png": "assets/glyphs/archetypal/png/jaguar.png",
+    "svg": "assets/glyphs/archetypal/svg/jaguar.svg",
+    "colored": "assets/glyphs/archetypal/png/jaguar.png"
+  }
+}

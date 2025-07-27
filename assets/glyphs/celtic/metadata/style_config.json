@@ -1,0 +1,17 @@
+{
+  "style": "celtic",
+  "description": "Ancient Celtic ritual symbols with golden lines on black background",
+  "prompts": {
+    "celtic": "Create a mythic glyph in the style of ancient Celtic ritual symbols, featuring {subject}. Use only bold, hand-drawn golden lines on a pure black background. Incorporate swirling, spiral patterns, knotwork, and stylized eyes. The design should be dynamic, highly abstract yet recognizable, rich in tribal and Celtic-inspired ornament, with strong contrast and a sense of ritual power. Channel the energy of sacred geometry, illuminated manuscripts, and visionary art. No text, no color except gold, strong silhouette, suitable for tattoo or SVG icon.",
+    "gold_on_black": "Create a mythic glyph in the style of ancient ritual symbols and sacred geometry, featuring {subject}. Use only bold, hand-drawn golden lines on a pure black background. The design should be symmetrical or near-symmetrical, highly abstract but still recognizable, and richly ornamented with intricate patterns, geometric and floral motifs. Channel the energy of shamanic art, visionary illustrations, and illuminated manuscripts. No text, no color except gold, strong silhouette, suitable for tattoo or SVG icon."
+  },
+  "model_id": "conorbyrnes04/celtic:a04725c70d2f4adf655e6a6aff9894a5b9ba03acdffb67ea976e777068f5c375",
+  "sizes": {
+    "64x64": "Distant symbols (zoom out)",
+    "128x128": "Medium distance symbols",
+    "256x256": "Close-up symbols",
+    "512x512": "High detail symbols",
+    "original": "Original full-size symbols"
+  },
+  "symbols": []
+}

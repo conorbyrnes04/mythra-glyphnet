@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Curation Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #ffd700;
+            padding: 2rem;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .variant-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .variant-card {
+            background: #333;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .variant-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+            background: #000;
+        }
+        .status {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+        .success { background: rgba(0, 255, 0, 0.2); border: 1px solid #00ff00; }
+        .error { background: rgba(255, 0, 0, 0.2); border: 1px solid #ff0000; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🐉 Dragon Curation Test</h1>
+        <p>Testing if all Dragon variants are accessible and display correctly.</p>
+        
+        <div id="status"></div>
+        
+        <div class="variant-grid" id="variantGrid">
+            <!-- Variants will be loaded here -->
+        </div>
+        
+        <div style="margin-top: 2rem;">
+            <h3>Test Results:</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script>
+        const dragonVariants = [
+            'dragon_variant_1.png',
+            'dragon_variant_2.png', 
+            'dragon_variant_3.png',
+            'dragon_variant_4.png'
+        ];
+        
+        let loadedCount = 0;
+        let errorCount = 0;
+        
+        function createVariantCard(variantName, index) {
+            const card = document.createElement('div');
+            card.className = 'variant-card';
+            
+            const img = document.createElement('img');
+            img.className = 'variant-image';
+            img.src = `assets/glyphs/archetypal/png/${variantName}`;
+            img.alt = `Dragon Variant ${index + 1}`;
+            
+            img.onload = function() {
+                loadedCount++;
+                updateStatus();
+            };
+            
+            img.onerror = function() {
+                errorCount++;
+                this.style.border = '2px solid #ff0000';
+                updateStatus();
+            };
+            
+            card.appendChild(img);
+            card.innerHTML += `<p><strong>Variant ${index + 1}</strong></p>`;
+            
+            return card;
+        }
+        
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            const resultsDiv = document.getElementById('results');
+            
+            if (loadedCount + errorCount === dragonVariants.length) {
+                if (errorCount === 0) {
+                    statusDiv.innerHTML = '<div class="status success">✅ All Dragon variants loaded successfully!</div>';
+                    resultsDiv.innerHTML = `
+                        <p>✅ Variants loaded: ${loadedCount}</p>
+                        <p>❌ Errors: ${errorCount}</p>
+                        <p>🎉 Dragon curation is ready to test!</p>
+                    `;
+                } else {
+                    statusDiv.innerHTML = '<div class="status error">❌ Some Dragon variants failed to load</div>';
+                    resultsDiv.innerHTML = `
+                        <p>✅ Variants loaded: ${loadedCount}</p>
+                        <p>❌ Errors: ${errorCount}</p>
+                        <p>🔧 Check file paths and server configuration</p>
+                    `;
+                }
+            } else {
+                statusDiv.innerHTML = `<div class="status">🔄 Loading... (${loadedCount + errorCount}/${dragonVariants.length})</div>`;
+            }
+        }
+        
+        function initTest() {
+            const grid = document.getElementById('variantGrid');
+            
+            dragonVariants.forEach((variant, index) => {
+                const card = createVariantCard(variant, index);
+                grid.appendChild(card);
+            });
+            
+            updateStatus();
+        }
+        
+        // Start the test when page loads
+        document.addEventListener('DOMContentLoaded', initTest);
+    </script>
+</body>
+</html> 

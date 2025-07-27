@@ -1,0 +1,13 @@
+{
+  "name": "celtic_png_test_house",
+  "meaning": "a simple house with a peaked roof and one window",
+  "interpretation": "Testing PNG-based Celtic generation with transparent background",
+  "emotion_hex": "#FFD700",
+  "model_used": "CelticInterface",
+  "style": "celtic_celtic",
+  "files": {
+    "png": "assets/glyphs/archetypal/webp/celtic_png_test_house.png",
+    "svg": "assets/glyphs/archetypal/svg/celtic_png_test_house.svg",
+    "colored": "assets/glyphs/archetypal/webp/celtic_png_test_house.png"
+  }
+}

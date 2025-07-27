@@ -1,0 +1,22 @@
+{
+  "celtic": {
+    "preferred_styles": {
+      "celtic_enhanced": 1
+    },
+    "quality_feedback": {
+      "composition": 1
+    },
+    "regeneration_patterns": {
+      "1": 1
+    },
+    "selection_patterns": {
+      "2": 1
+    }
+  },
+  "meru": {
+    "preferred_styles": {},
+    "quality_feedback": {},
+    "regeneration_patterns": {},
+    "selection_patterns": {}
+  }
+}

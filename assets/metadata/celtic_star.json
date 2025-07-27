@@ -1,0 +1,13 @@
+{
+  "name": "celtic_star",
+  "meaning": "a radiating five-pointed star",
+  "interpretation": "Celtic ritual symbol of Star",
+  "emotion_hex": "#FFD700",
+  "model_used": "CelticInterface",
+  "style": "celtic_celtic",
+  "files": {
+    "webp": "assets/glyphs/archetypal/webp/celtic_star.webp",
+    "svg": "assets/glyphs/archetypal/svg/celtic_star.svg",
+    "colored": "assets/glyphs/archetypal/colored/celtic_star_colored.svg"
+  }
+}

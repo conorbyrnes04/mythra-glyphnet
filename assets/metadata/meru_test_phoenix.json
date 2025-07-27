@@ -1,0 +1,12 @@
+{
+  "name": "meru_test_phoenix",
+  "meaning": "A test phoenix symbol",
+  "interpretation": "Testing MERU model",
+  "emotion_hex": "#FF6600",
+  "model_used": "MERUInterface",
+  "files": {
+    "webp": "assets/glyphs/archetypal/webp/meru_test_phoenix.webp",
+    "svg": "assets/glyphs/archetypal/svg/meru_test_phoenix.svg",
+    "colored": "assets/glyphs/archetypal/colored/meru_test_phoenix_colored.svg"
+  }
+}

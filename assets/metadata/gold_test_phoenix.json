@@ -1,0 +1,13 @@
+{
+  "name": "gold_test_phoenix",
+  "meaning": "A golden phoenix symbol of rebirth",
+  "interpretation": "Testing ancient ritual symbols with sacred geometry",
+  "emotion_hex": "#FFD700",
+  "model_used": "CelticInterface",
+  "style": "celtic_gold_on_black",
+  "files": {
+    "webp": "assets/glyphs/archetypal/webp/gold_test_phoenix.webp",
+    "svg": "assets/glyphs/archetypal/svg/gold_test_phoenix.svg",
+    "colored": "assets/glyphs/archetypal/colored/gold_test_phoenix_colored.svg"
+  }
+}

@@ -1,0 +1,866 @@
+[
+  {
+    "id": 1,
+    "name": "Phoenix",
+    "meaning": "Rebirth and Transformation",
+    "interpretation": "Rising from ashes with renewed strength",
+    "style": "celtic_enhanced",
+    "emotion": "#FF6600"
+  },
+  {
+    "id": 2,
+    "name": "Jaguar",
+    "meaning": "Power and Stealth",
+    "interpretation": "Silent hunter of the shadows",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 3,
+    "name": "Moon",
+    "meaning": "Mystery and Intuition",
+    "interpretation": "Silver light in darkness",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 4,
+    "name": "Sun",
+    "meaning": "Cosmic Energy",
+    "interpretation": "Radiant power illuminating all",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 5,
+    "name": "Tree",
+    "meaning": "Growth and Wisdom",
+    "interpretation": "Roots deep in earth, branches reaching sky",
+    "style": "tribal_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 6,
+    "name": "Wolf",
+    "meaning": "Loyalty and Freedom",
+    "interpretation": "Wild spirit of the pack",
+    "style": "celtic_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 7,
+    "name": "Eagle",
+    "meaning": "Vision and Power",
+    "interpretation": "Soaring above all obstacles",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 8,
+    "name": "Serpent",
+    "meaning": "Transformation and Healing",
+    "interpretation": "Shedding old skin for renewal",
+    "style": "tribal_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 9,
+    "name": "Star",
+    "meaning": "Guidance and Hope",
+    "interpretation": "Light in the darkest night",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 10,
+    "name": "Water",
+    "meaning": "Flow and Emotion",
+    "interpretation": "Adapting to all forms",
+    "style": "gold_on_black",
+    "emotion": "#0066CC"
+  },
+  {
+    "id": 11,
+    "name": "Fire",
+    "meaning": "Passion and Purification",
+    "interpretation": "Burning away the old",
+    "style": "celtic_enhanced",
+    "emotion": "#FF4444"
+  },
+  {
+    "id": 12,
+    "name": "Earth",
+    "meaning": "Stability and Nurturing",
+    "interpretation": "Foundation of all life",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 13,
+    "name": "Air",
+    "meaning": "Freedom and Thought",
+    "interpretation": "Carrying ideas and dreams",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 14,
+    "name": "Dragon",
+    "meaning": "Power and Wisdom",
+    "interpretation": "Ancient guardian of knowledge",
+    "style": "celtic_enhanced",
+    "emotion": "#FF4444"
+  },
+  {
+    "id": 15,
+    "name": "Lion",
+    "meaning": "Courage and Leadership",
+    "interpretation": "King of the wild",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 16,
+    "name": "Bear",
+    "meaning": "Strength and Protection",
+    "interpretation": "Gentle giant of the forest",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 17,
+    "name": "Owl",
+    "meaning": "Wisdom and Mystery",
+    "interpretation": "Seer of hidden truths",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 18,
+    "name": "Raven",
+    "meaning": "Magic and Transformation",
+    "interpretation": "Messenger between worlds",
+    "style": "celtic_enhanced",
+    "emotion": "#000000"
+  },
+  {
+    "id": 19,
+    "name": "Butterfly",
+    "meaning": "Transformation and Beauty",
+    "interpretation": "Metamorphosis of the soul",
+    "style": "tribal_enhanced",
+    "emotion": "#FF69B4"
+  },
+  {
+    "id": 20,
+    "name": "Spider",
+    "meaning": "Creation and Patience",
+    "interpretation": "Weaver of destiny's web",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 21,
+    "name": "Horse",
+    "meaning": "Freedom and Journey",
+    "interpretation": "Spirit of the open road",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 22,
+    "name": "Deer",
+    "meaning": "Grace and Sensitivity",
+    "interpretation": "Gentle spirit of the forest",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 23,
+    "name": "Fox",
+    "meaning": "Cunning and Adaptability",
+    "interpretation": "Master of survival",
+    "style": "celtic_enhanced",
+    "emotion": "#FF6600"
+  },
+  {
+    "id": 24,
+    "name": "Turtle",
+    "meaning": "Longevity and Protection",
+    "interpretation": "Ancient wisdom of the earth",
+    "style": "gold_on_black",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 25,
+    "name": "Frog",
+    "meaning": "Transformation and Cleansing",
+    "interpretation": "Bridge between water and land",
+    "style": "tribal_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 26,
+    "name": "Snake",
+    "meaning": "Healing and Renewal",
+    "interpretation": "Shedding the past",
+    "style": "celtic_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 27,
+    "name": "Fish",
+    "meaning": "Abundance and Flow",
+    "interpretation": "Swimming in life's currents",
+    "style": "gold_on_black",
+    "emotion": "#0066CC"
+  },
+  {
+    "id": 28,
+    "name": "Bird",
+    "meaning": "Freedom and Spirit",
+    "interpretation": "Messenger of the heavens",
+    "style": "tribal_enhanced",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 29,
+    "name": "Bee",
+    "meaning": "Community and Industry",
+    "interpretation": "Sweet fruits of cooperation",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 30,
+    "name": "Ant",
+    "meaning": "Diligence and Cooperation",
+    "interpretation": "Strength in numbers",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 31,
+    "name": "Spiral",
+    "meaning": "Evolution and Growth",
+    "interpretation": "Journey of the soul",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 32,
+    "name": "Circle",
+    "meaning": "Wholeness and Unity",
+    "interpretation": "Endless cycle of life",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 33,
+    "name": "Triangle",
+    "meaning": "Balance and Harmony",
+    "interpretation": "Three forces in unity",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 34,
+    "name": "Square",
+    "meaning": "Stability and Foundation",
+    "interpretation": "Solid ground beneath",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 35,
+    "name": "Cross",
+    "meaning": "Connection and Balance",
+    "interpretation": "Intersection of paths",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 36,
+    "name": "Eye",
+    "meaning": "Vision and Awareness",
+    "interpretation": "Seeing beyond the veil",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 37,
+    "name": "Heart",
+    "meaning": "Love and Compassion",
+    "interpretation": "Center of emotion",
+    "style": "tribal_enhanced",
+    "emotion": "#FF69B4"
+  },
+  {
+    "id": 38,
+    "name": "Hand",
+    "meaning": "Creation and Action",
+    "interpretation": "Power to shape reality",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 39,
+    "name": "Foot",
+    "meaning": "Journey and Progress",
+    "interpretation": "Steps toward destiny",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 40,
+    "name": "Wing",
+    "meaning": "Freedom and Aspiration",
+    "interpretation": "Rising above limitations",
+    "style": "tribal_enhanced",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 41,
+    "name": "Horn",
+    "meaning": "Power and Protection",
+    "interpretation": "Call to action",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 42,
+    "name": "Feather",
+    "meaning": "Lightness and Spirit",
+    "interpretation": "Touch of the divine",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 43,
+    "name": "Leaf",
+    "meaning": "Growth and Renewal",
+    "interpretation": "New life emerging",
+    "style": "tribal_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 44,
+    "name": "Flower",
+    "meaning": "Beauty and Blooming",
+    "interpretation": "Opening to life",
+    "style": "celtic_enhanced",
+    "emotion": "#FF69B4"
+  },
+  {
+    "id": 45,
+    "name": "Seed",
+    "meaning": "Potential and Beginning",
+    "interpretation": "Promise of new life",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 46,
+    "name": "Root",
+    "meaning": "Connection and Foundation",
+    "interpretation": "Anchored to source",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 47,
+    "name": "Branch",
+    "meaning": "Growth and Extension",
+    "interpretation": "Reaching outward",
+    "style": "celtic_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 48,
+    "name": "Thorn",
+    "meaning": "Protection and Defense",
+    "interpretation": "Boundary of safety",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 49,
+    "name": "Berry",
+    "meaning": "Nourishment and Abundance",
+    "interpretation": "Sweet gifts of earth",
+    "style": "tribal_enhanced",
+    "emotion": "#FF4444"
+  },
+  {
+    "id": 50,
+    "name": "Mushroom",
+    "meaning": "Magic and Mystery",
+    "interpretation": "Portal to other realms",
+    "style": "celtic_enhanced",
+    "emotion": "#FF69B4"
+  },
+  {
+    "id": 51,
+    "name": "Crystal",
+    "meaning": "Clarity and Focus",
+    "interpretation": "Light through form",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 52,
+    "name": "Mountain",
+    "meaning": "Strength and Endurance",
+    "interpretation": "Unmovable foundation",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 53,
+    "name": "Valley",
+    "meaning": "Receptivity and Flow",
+    "interpretation": "Gathering of wisdom",
+    "style": "celtic_enhanced",
+    "emotion": "#44FF44"
+  },
+  {
+    "id": 54,
+    "name": "River",
+    "meaning": "Flow and Change",
+    "interpretation": "Ever-moving life force",
+    "style": "gold_on_black",
+    "emotion": "#0066CC"
+  },
+  {
+    "id": 55,
+    "name": "Ocean",
+    "meaning": "Depth and Mystery",
+    "interpretation": "Vastness of spirit",
+    "style": "tribal_enhanced",
+    "emotion": "#0066CC"
+  },
+  {
+    "id": 56,
+    "name": "Wave",
+    "meaning": "Rhythm and Movement",
+    "interpretation": "Ebb and flow of life",
+    "style": "celtic_enhanced",
+    "emotion": "#0066CC"
+  },
+  {
+    "id": 57,
+    "name": "Storm",
+    "meaning": "Power and Cleansing",
+    "interpretation": "Force of transformation",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 58,
+    "name": "Lightning",
+    "meaning": "Illumination and Power",
+    "interpretation": "Sudden insight",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 59,
+    "name": "Rainbow",
+    "meaning": "Hope and Promise",
+    "interpretation": "Bridge to the divine",
+    "style": "celtic_enhanced",
+    "emotion": "#FF69B4"
+  },
+  {
+    "id": 60,
+    "name": "Cloud",
+    "meaning": "Dreams and Imagination",
+    "interpretation": "Shapes of possibility",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 61,
+    "name": "Wind",
+    "meaning": "Change and Movement",
+    "interpretation": "Breath of life",
+    "style": "tribal_enhanced",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 62,
+    "name": "Smoke",
+    "meaning": "Transformation and Prayer",
+    "interpretation": "Rising to the heavens",
+    "style": "celtic_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 63,
+    "name": "Flame",
+    "meaning": "Passion and Purification",
+    "interpretation": "Burning bright within",
+    "style": "gold_on_black",
+    "emotion": "#FF4444"
+  },
+  {
+    "id": 64,
+    "name": "Spark",
+    "meaning": "Inspiration and Ignition",
+    "interpretation": "Moment of creation",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 65,
+    "name": "Ember",
+    "meaning": "Persistence and Warmth",
+    "interpretation": "Keeping the fire alive",
+    "style": "celtic_enhanced",
+    "emotion": "#FF6600"
+  },
+  {
+    "id": 66,
+    "name": "Ash",
+    "meaning": "Transformation and Renewal",
+    "interpretation": "Fertile ground for new growth",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 67,
+    "name": "Dust",
+    "meaning": "Humility and Connection",
+    "interpretation": "Returning to source",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 68,
+    "name": "Stone",
+    "meaning": "Strength and Endurance",
+    "interpretation": "Unmovable truth",
+    "style": "celtic_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 69,
+    "name": "Cave",
+    "meaning": "Introspection and Mystery",
+    "interpretation": "Inner sanctuary",
+    "style": "gold_on_black",
+    "emotion": "#000000"
+  },
+  {
+    "id": 70,
+    "name": "Labyrinth",
+    "meaning": "Journey and Discovery",
+    "interpretation": "Path to the center",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 71,
+    "name": "Bridge",
+    "meaning": "Connection and Transition",
+    "interpretation": "Crossing boundaries",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 72,
+    "name": "Gate",
+    "meaning": "Opportunity and Choice",
+    "interpretation": "Threshold of change",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 73,
+    "name": "Door",
+    "meaning": "Passage and New Beginnings",
+    "interpretation": "Opening to possibility",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 74,
+    "name": "Window",
+    "meaning": "Perspective and Vision",
+    "interpretation": "Seeing beyond walls",
+    "style": "celtic_enhanced",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 75,
+    "name": "Mirror",
+    "meaning": "Reflection and Truth",
+    "interpretation": "Seeing the self clearly",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 76,
+    "name": "Mask",
+    "meaning": "Identity and Transformation",
+    "interpretation": "Different faces of self",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 77,
+    "name": "Crown",
+    "meaning": "Authority and Sovereignty",
+    "interpretation": "Ruler of one's destiny",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 78,
+    "name": "Sword",
+    "meaning": "Power and Protection",
+    "interpretation": "Cutting through illusion",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 79,
+    "name": "Shield",
+    "meaning": "Protection and Defense",
+    "interpretation": "Guardian of boundaries",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 80,
+    "name": "Arrow",
+    "meaning": "Direction and Focus",
+    "interpretation": "Aim toward destiny",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 81,
+    "name": "Bow",
+    "meaning": "Tension and Release",
+    "interpretation": "Power in restraint",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 82,
+    "name": "Spear",
+    "meaning": "Penetration and Truth",
+    "interpretation": "Piercing through deception",
+    "style": "tribal_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 83,
+    "name": "Staff",
+    "meaning": "Authority and Guidance",
+    "interpretation": "Walking stick of wisdom",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 84,
+    "name": "Wand",
+    "meaning": "Magic and Intention",
+    "interpretation": "Tool of transformation",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 85,
+    "name": "Chalice",
+    "meaning": "Receptivity and Nourishment",
+    "interpretation": "Container of sacred drink",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 86,
+    "name": "Cauldron",
+    "meaning": "Transformation and Alchemy",
+    "interpretation": "Vessel of change",
+    "style": "celtic_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 87,
+    "name": "Key",
+    "meaning": "Access and Knowledge",
+    "interpretation": "Unlocking hidden doors",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 88,
+    "name": "Lock",
+    "meaning": "Protection and Secrecy",
+    "interpretation": "Guarding sacred knowledge",
+    "style": "tribal_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 89,
+    "name": "Chain",
+    "meaning": "Connection and Bondage",
+    "interpretation": "Links of relationship",
+    "style": "celtic_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 90,
+    "name": "Rope",
+    "meaning": "Connection and Support",
+    "interpretation": "Lifeline to safety",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 91,
+    "name": "Knot",
+    "meaning": "Connection and Binding",
+    "interpretation": "Tying intentions together",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 92,
+    "name": "Weave",
+    "meaning": "Integration and Unity",
+    "interpretation": "Threads of destiny",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 93,
+    "name": "Net",
+    "meaning": "Catching and Holding",
+    "interpretation": "Gathering abundance",
+    "style": "gold_on_black",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 94,
+    "name": "Basket",
+    "meaning": "Containment and Gathering",
+    "interpretation": "Holding precious things",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 95,
+    "name": "Vessel",
+    "meaning": "Receptivity and Holding",
+    "interpretation": "Container of sacred space",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 96,
+    "name": "Wheel",
+    "meaning": "Cycles and Movement",
+    "interpretation": "Turning of time",
+    "style": "gold_on_black",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 97,
+    "name": "Spindle",
+    "meaning": "Creation and Transformation",
+    "interpretation": "Spinning destiny's thread",
+    "style": "tribal_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 98,
+    "name": "Loom",
+    "meaning": "Weaving and Integration",
+    "interpretation": "Creating the fabric of life",
+    "style": "celtic_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 99,
+    "name": "Anvil",
+    "meaning": "Forging and Transformation",
+    "interpretation": "Shaping raw material",
+    "style": "gold_on_black",
+    "emotion": "#666666"
+  },
+  {
+    "id": 100,
+    "name": "Hammer",
+    "meaning": "Power and Creation",
+    "interpretation": "Tool of the maker",
+    "style": "tribal_enhanced",
+    "emotion": "#666666"
+  },
+  {
+    "id": 101,
+    "name": "Bell",
+    "meaning": "Awakening and Announcement",
+    "interpretation": "Call to attention",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 102,
+    "name": "Drum",
+    "meaning": "Rhythm and Heartbeat",
+    "interpretation": "Pulse of life",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 103,
+    "name": "Flute",
+    "meaning": "Breath and Song",
+    "interpretation": "Voice of the wind",
+    "style": "tribal_enhanced",
+    "emotion": "#CCCCFF"
+  },
+  {
+    "id": 104,
+    "name": "Harp",
+    "meaning": "Harmony and Beauty",
+    "interpretation": "Strings of the heart",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 105,
+    "name": "Book",
+    "meaning": "Knowledge and Wisdom",
+    "interpretation": "Pages of understanding",
+    "style": "gold_on_black",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 106,
+    "name": "Scroll",
+    "meaning": "Ancient Knowledge",
+    "interpretation": "Unfolding wisdom",
+    "style": "tribal_enhanced",
+    "emotion": "#8B4513"
+  },
+  {
+    "id": 107,
+    "name": "Quill",
+    "meaning": "Writing and Expression",
+    "interpretation": "Pen of the soul",
+    "style": "celtic_enhanced",
+    "emotion": "#FFD700"
+  },
+  {
+    "id": 108,
+    "name": "Ink",
+    "meaning": "Permanence and Memory",
+    "interpretation": "Staining the page of time",
+    "style": "gold_on_black",
+    "emotion": "#000000"
+  }
+] 

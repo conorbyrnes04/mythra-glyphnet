@@ -1,0 +1,45 @@
+{
+  "dreamscape": {
+    "performance": {
+      "max_symbols_visible": 100,
+      "lazy_loading": true,
+      "zoom_levels": {
+        "distant": {
+          "min": 0,
+          "max": 0.5,
+          "size": "64x64"
+        },
+        "medium": {
+          "min": 0.5,
+          "max": 1.0,
+          "size": "128x128"
+        },
+        "close": {
+          "min": 1.0,
+          "max": 2.0,
+          "size": "256x256"
+        },
+        "detail": {
+          "min": 2.0,
+          "max": 10.0,
+          "size": "512x512"
+        }
+      },
+      "preferred_format": "webp",
+      "fallback_format": "png",
+      "cache_duration": 3600
+    },
+    "styles": {
+      "celtic": {
+        "path": "assets/glyphs/celtic",
+        "default_size": "128x128",
+        "default_format": "webp"
+      },
+      "meru": {
+        "path": "assets/glyphs/meru",
+        "default_size": "128x128",
+        "default_format": "webp"
+      }
+    }
+  }
+}

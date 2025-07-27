@@ -1,0 +1,13 @@
+{
+  "name": "celtic_key",
+  "meaning": "an ancient key with ornate handle",
+  "interpretation": "Celtic ritual symbol of Key",
+  "emotion_hex": "#FFD700",
+  "model_used": "CelticInterface",
+  "style": "celtic_celtic",
+  "files": {
+    "webp": "assets/glyphs/archetypal/webp/celtic_key.webp",
+    "svg": "assets/glyphs/archetypal/svg/celtic_key.svg",
+    "colored": "assets/glyphs/archetypal/colored/celtic_key_colored.svg"
+  }
+}

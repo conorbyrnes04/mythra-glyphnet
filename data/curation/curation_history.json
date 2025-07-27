@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2025-07-27T09:01:32.688254",
+    "glyph_info": {
+      "name": "Dragon",
+      "meaning": "Power and Wisdom",
+      "interpretation": "Ancient guardian of knowledge",
+      "style": "celtic_enhanced",
+      "emotion": "#FF4444"
+    },
+    "selected_variant": 2,
+    "feedback": "composition",
+    "regeneration_count": 1,
+    "model_used": "celtic"
+  }
+]

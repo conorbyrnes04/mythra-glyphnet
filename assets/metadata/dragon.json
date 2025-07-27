@@ -1,0 +1,13 @@
+{
+  "name": "Dragon",
+  "meaning": "Power and Wisdom",
+  "interpretation": "Ancient guardian of knowledge",
+  "emotion_hex": "#FF4444",
+  "model_used": "CelticInterface",
+  "style": "celtic_celtic_enhanced",
+  "files": {
+    "png": "assets/glyphs/archetypal/png/dragon.png",
+    "svg": "assets/glyphs/archetypal/svg/dragon.svg",
+    "colored": "assets/glyphs/archetypal/png/dragon.png"
+  }
+}

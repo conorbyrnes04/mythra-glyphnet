@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glyph Curation Studio - 108 Sacred Symbols</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffd700;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            border: 2px solid #ffd700;
+            backdrop-filter: blur(10px);
+        }
+
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px #ffd700;
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #ffed4e);
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .glyph-info {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .glyph-name {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px #ffd700;
+        }
+
+        .glyph-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-item {
+            background: rgba(255, 215, 0, 0.05);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 3px solid #ffd700;
+        }
+
+        .detail-label {
+            color: #ffed4e;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .variants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .variant-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .variant-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .variant-card:hover::before {
+            left: 100%;
+        }
+
+        .variant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            border-color: #ffed4e;
+        }
+
+        .variant-card.selected {
+            border-color: #00ff00;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .variant-number {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: #ffd700;
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .variant-image {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin: 1rem 0;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .variant-card:hover .variant-image {
+            transform: scale(1.05);
+        }
+
+        .variant-quality {
+            font-size: 0.9rem;
+            color: #ffed4e;
+            background: rgba(255, 215, 0, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: 2px solid #ffd700;
+            background: rgba(0, 0, 0, 0.3);
+            color: #ffd700;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .btn-primary {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #ffed4e;
+        }
+
+        .btn-regenerate {
+            background: rgba(255, 100, 100, 0.2);
+            border-color: #ff6666;
+            color: #ffcccc;
+        }
+
+        .btn-regenerate:hover {
+            background: rgba(255, 100, 100, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .feedback-panel {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .feedback-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #ffed4e;
+        }
+
+        .feedback-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .feedback-option {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid #ffd700;
+            border-radius: 10px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .feedback-option:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .feedback-option.selected {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #ffed4e;
+        }
+
+        .stats-panel {
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255, 215, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffed4e;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .variants-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .variant-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Stars Background -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">🎨 Glyph Curation Studio</h1>
+            <p class="subtitle">Selecting the 108 Sacred Symbols</p>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">0 / 108 Glyphs Curated</div>
+        </header>
+
+        <div class="glyph-info" id="glyphInfo">
+            <h2 class="glyph-name" id="glyphName">Loading...</h2>
+            <div class="glyph-details">
+                <div class="detail-item">
+                    <div class="detail-label">Meaning</div>
+                    <div class="detail-value" id="glyphMeaning">Loading...</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Interpretation</div>
+                    <div class="detail-value" id="glyphInterpretation">Loading...</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Style</div>
+                    <div class="detail-value" id="glyphStyle">Loading...</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Emotion</div>
+                    <div class="detail-value" id="glyphEmotion">Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="variants-grid" id="variantsGrid">
+            <!-- Variants will be loaded here -->
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-regenerate" id="regenerateBtn" onclick="showRegenerationPanel()">
+                🔄 Regenerate All Variants
+            </button>
+            <button class="btn btn-primary" id="selectBtn" onclick="selectVariant()" disabled>
+                ✅ Select This Variant
+            </button>
+            <button class="btn" id="nextBtn" onclick="nextGlyph()" disabled>
+                ➡️ Continue to Next Glyph
+            </button>
+        </div>
+
+        <div class="feedback-panel" id="regenerationPanel" style="display: none;">
+            <h3 class="feedback-title">🔄 Custom Regeneration Feedback</h3>
+            <p style="text-align: center; margin-bottom: 1rem; opacity: 0.8;">
+                What would you like to see improved? Your feedback will enhance the model's prompts.
+            </p>
+            <div style="margin-bottom: 1rem;">
+                <label for="customFeedback" style="display: block; margin-bottom: 0.5rem; color: #ffed4e;">💭 Custom Feedback (Optional):</label>
+                <textarea id="customFeedback" rows="4" style="width: 100%; padding: 1rem; background: rgba(0, 0, 0, 0.3); border: 1px solid #ffd700; border-radius: 10px; color: #ffd700; font-family: inherit; resize: vertical;" 
+                    placeholder="Describe what you'd like to see improved... (e.g., 'More intricate spiral patterns', 'Stronger Celtic knotwork', 'Better balance and symmetry', 'More dynamic movement')"></textarea>
+            </div>
+            <div style="text-align: center;">
+                <button class="btn btn-primary" onclick="regenerateWithFeedback()">🔄 Regenerate with Feedback</button>
+                <button class="btn" onclick="hideRegenerationPanel()">❌ Cancel</button>
+            </div>
+        </div>
+
+        <div class="feedback-panel" id="feedbackPanel" style="display: none;">
+            <h3 class="feedback-title">💡 Help Improve the Model</h3>
+            <p style="text-align: center; margin-bottom: 1rem; opacity: 0.8;">
+                Why did you choose this variant? Your feedback helps refine the model.
+            </p>
+            <div class="feedback-options">
+                <div class="feedback-option" onclick="selectFeedback('composition')">
+                    <strong>🎨 Composition</strong><br>
+                    <small>Best overall design and balance</small>
+                </div>
+                <div class="feedback-option" onclick="selectFeedback('detail')">
+                    <strong>✨ Detail</strong><br>
+                    <small>Most intricate and beautiful patterns</small>
+                </div>
+                <div class="feedback-option" onclick="selectFeedback('spirit')">
+                    <strong>🌟 Spirit</strong><br>
+                    <small>Captures the essence and energy</small>
+                </div>
+                <div class="feedback-option" onclick="selectFeedback('style')">
+                    <strong>🎭 Style</strong><br>
+                    <small>Best Celtic/tribal aesthetic</small>
+                </div>
+                <div class="feedback-option" onclick="selectFeedback('other')">
+                    <strong>💭 Other</strong><br>
+                    <small>Different reason</small>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 1rem;">
+                <button class="btn btn-primary" onclick="submitFeedback()">Submit Feedback</button>
+                <button class="btn" onclick="skipFeedback()">Skip</button>
+            </div>
+        </div>
+
+        <div class="stats-panel">
+            <h3 style="text-align: center; margin-bottom: 1rem; color: #ffed4e;">📊 Curation Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalCurated">0</div>
+                    <div class="stat-label">Glyphs Curated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="regenerations">0</div>
+                    <div class="stat-label">Regenerations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="avgQuality">0</div>
+                    <div class="stat-label">Avg Quality Score</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="completion">0%</div>
+                    <div class="stat-label">Completion</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let currentGlyphIndex = 0;
+        let selectedVariant = null;
+        let selectedFeedback = null;
+        let curationData = [];
+        let glyphList = [];
+        let stats = {
+            totalCurated: 0,
+            regenerations: 0,
+            qualityScores: [],
+            feedback: {
+                composition: 0,
+                detail: 0,
+                spirit: 0,
+                style: 0,
+                other: 0
+            }
+        };
+
+        // Sample 108 glyph list (you can replace with your actual list)
+        const sampleGlyphs = [
+            { name: "Dragon", meaning: "Power and Wisdom", interpretation: "Ancient guardian of knowledge", style: "celtic_enhanced", emotion: "#FF4444" },
+            { name: "Phoenix", meaning: "Rebirth and Transformation", interpretation: "Rising from ashes with renewed strength", style: "celtic_enhanced", emotion: "#FF6600" },
+            { name: "Jaguar", meaning: "Power and Stealth", interpretation: "Silent hunter of the shadows", style: "celtic_enhanced", emotion: "#8B4513" },
+            { name: "Moon", meaning: "Mystery and Intuition", interpretation: "Silver light in darkness", style: "gold_on_black", emotion: "#CCCCFF" },
+            { name: "Sun", meaning: "Cosmic Energy", interpretation: "Radiant power illuminating all", style: "celtic_enhanced", emotion: "#FFD700" },
+            { name: "Tree", meaning: "Growth and Wisdom", interpretation: "Roots deep in earth, branches reaching sky", style: "tribal_enhanced", emotion: "#44FF44" },
+            { name: "Wolf", meaning: "Loyalty and Freedom", interpretation: "Wild spirit of the pack", style: "celtic_enhanced", emotion: "#666666" },
+            { name: "Eagle", meaning: "Vision and Power", interpretation: "Soaring above all obstacles", style: "gold_on_black", emotion: "#8B4513" },
+            { name: "Serpent", meaning: "Transformation and Healing", interpretation: "Shedding old skin for renewal", style: "tribal_enhanced", emotion: "#44FF44" },
+            { name: "Star", meaning: "Guidance and Hope", interpretation: "Light in the darkest night", style: "celtic_enhanced", emotion: "#FFD700" },
+            { name: "Water", meaning: "Flow and Emotion", interpretation: "Adapting to all forms", style: "gold_on_black", emotion: "#0066CC" }
+            // Add more glyphs to reach 108...
+        ];
+
+        // Initialize the app
+        function initApp() {
+            createStars();
+            glyphList = sampleGlyphs;
+            loadGlyph(0);
+            updateStats();
+        }
+
+        // Create floating stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            const starCount = 50;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.animationDelay = Math.random() * 3 + 's';
+                star.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Load a specific glyph
+        function loadGlyph(index) {
+            if (index >= glyphList.length) {
+                showCompletion();
+                return;
+            }
+
+            currentGlyphIndex = index;
+            const glyph = glyphList[index];
+            
+            // Update glyph info
+            document.getElementById('glyphName').textContent = glyph.name;
+            document.getElementById('glyphMeaning').textContent = glyph.meaning;
+            document.getElementById('glyphInterpretation').textContent = glyph.interpretation;
+            document.getElementById('glyphStyle').textContent = glyph.style;
+            document.getElementById('glyphEmotion').textContent = glyph.emotion;
+            
+            // Load variants (simulated for now)
+            loadVariants(glyph);
+            
+            // Update progress
+            updateProgress();
+            
+            // Reset selection
+            selectedVariant = null;
+            document.getElementById('selectBtn').disabled = true;
+            document.getElementById('nextBtn').disabled = true;
+        }
+
+        // Load variants for a glyph
+        function loadVariants(glyph) {
+            const variantsGrid = document.getElementById('variantsGrid');
+            variantsGrid.innerHTML = '';
+            
+            // Simulate 4 variants (replace with actual API call)
+            for (let i = 1; i <= 4; i++) {
+                const variantCard = createVariantCard(i, glyph);
+                variantsGrid.appendChild(variantCard);
+            }
+        }
+
+        // Create a variant card
+        function createVariantCard(variantNumber, glyph) {
+            const card = document.createElement('div');
+            card.className = 'variant-card';
+            card.onclick = () => selectVariantCard(variantNumber, card);
+            
+            // Use actual image path
+            const imagePath = `assets/glyphs/archetypal/png/${glyph.name.toLowerCase()}_variant_${variantNumber}.png`;
+            
+            // Create placeholder SVG for missing images
+            const placeholderSvg = `data:image/svg+xml;base64,${btoa(`
+                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#333"/>
+                    <text x="50%" y="50%" font-family="Arial" font-size="14" fill="#ffd700" text-anchor="middle" dy=".3em">
+                        ${glyph.name} Variant ${variantNumber}
+                    </text>
+                    <text x="50%" y="70%" font-family="Arial" font-size="12" fill="#ffd700" text-anchor="middle" dy=".3em">
+                        (Click to generate)
+                    </text>
+                </svg>
+            `)}`;
+            
+            card.innerHTML = `
+                <div class="variant-number">${variantNumber}</div>
+                <img src="${imagePath}" alt="${glyph.name} Variant ${variantNumber}" class="variant-image" 
+                     onerror="this.src='${placeholderSvg}'">
+                <div class="variant-quality">Variant ${variantNumber}</div>
+            `;
+            
+            return card;
+        }
+
+        // Select a variant card
+        function selectVariantCard(variantNumber, card) {
+            // Remove previous selection
+            document.querySelectorAll('.variant-card').forEach(c => c.classList.remove('selected'));
+            
+            // Add selection to current card
+            card.classList.add('selected');
+            selectedVariant = variantNumber;
+            
+            // Enable buttons
+            document.getElementById('selectBtn').disabled = false;
+        }
+
+        // Select the current variant
+        function selectVariant() {
+            if (!selectedVariant) return;
+            
+            // Save selection
+            const glyph = glyphList[currentGlyphIndex];
+            curationData.push({
+                glyph: glyph,
+                selectedVariant: selectedVariant,
+                timestamp: new Date().toISOString()
+            });
+            
+            // Show feedback panel
+            showFeedbackPanel();
+        }
+
+        // Show feedback panel
+        function showFeedbackPanel() {
+            document.getElementById('feedbackPanel').style.display = 'block';
+            document.getElementById('feedbackPanel').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Select feedback option
+        function selectFeedback(type) {
+            document.querySelectorAll('.feedback-option').forEach(opt => opt.classList.remove('selected'));
+            event.target.closest('.feedback-option').classList.add('selected');
+            selectedFeedback = type;
+        }
+
+        // Submit feedback
+        function submitFeedback() {
+            if (selectedFeedback) {
+                stats.feedback[selectedFeedback]++;
+                stats.qualityScores.push(selectedFeedback);
+            }
+            
+            // Hide feedback panel
+            document.getElementById('feedbackPanel').style.display = 'none';
+            
+            // Update stats
+            updateStats();
+            
+            // Enable next button
+            document.getElementById('nextBtn').disabled = false;
+        }
+
+        // Skip feedback
+        function skipFeedback() {
+            document.getElementById('feedbackPanel').style.display = 'none';
+            document.getElementById('nextBtn').disabled = false;
+        }
+
+        // Show regeneration panel
+        function showRegenerationPanel() {
+            document.getElementById('regenerationPanel').style.display = 'block';
+            document.getElementById('regenerationPanel').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Hide regeneration panel
+        function hideRegenerationPanel() {
+            document.getElementById('regenerationPanel').style.display = 'none';
+            document.getElementById('customFeedback').value = '';
+        }
+
+        // Regenerate with custom feedback
+        function regenerateWithFeedback() {
+            const customFeedback = document.getElementById('customFeedback').value.trim();
+            const glyph = glyphList[currentGlyphIndex];
+            
+            // Show loading state
+            showLoadingState();
+            
+            // Call backend to regenerate variants with feedback
+            callBackendRegeneration(glyph, customFeedback);
+        }
+        
+        // Call backend regeneration
+        async function callBackendRegeneration(glyph, customFeedback) {
+            try {
+                console.log(`🔄 Regenerating ${glyph.name} with feedback: ${customFeedback}`);
+                
+                // Call the Flask API
+                const response = await fetch('http://localhost:5002/api/regenerate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        glyph_info: glyph,
+                        custom_feedback: customFeedback
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    console.log('✅ Regeneration successful:', result.message);
+                    
+                    // Record the regeneration with feedback
+                    if (customFeedback) {
+                        recordCustomFeedback(customFeedback);
+                    }
+                    
+                    stats.regenerations++;
+                    
+                    // Display the new variants from the API response
+                    displayNewVariants(result.variants, glyph);
+                    
+                    // Reset selection
+                    selectedVariant = null;
+                    document.getElementById('selectBtn').disabled = true;
+                    document.getElementById('nextBtn').disabled = true;
+                    
+                    // Hide panel and clear feedback
+                    hideRegenerationPanel();
+                    updateStats();
+                    
+                    // Show feedback recorded message
+                    if (customFeedback) {
+                        showFeedbackRecorded(customFeedback);
+                    }
+                    
+                    // Show success message
+                    showSuccess(`Successfully regenerated ${glyph.name} variants!`);
+                    
+                } else {
+                    throw new Error(result.error || 'Failed to regenerate variants');
+                }
+                
+                // Hide loading state
+                hideLoadingState();
+                
+            } catch (error) {
+                console.error('Error regenerating variants:', error);
+                hideLoadingState();
+                showError(`Failed to regenerate variants: ${error.message}`);
+            }
+        }
+        
+        // Show loading state
+        function showLoadingState() {
+            const variantsGrid = document.getElementById('variantsGrid');
+            variantsGrid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🔄</div>
+                    <div style="font-size: 1.2rem; margin-bottom: 0.5rem;">Generating New Variants...</div>
+                    <div style="font-size: 0.9rem; opacity: 0.8;">Processing your feedback to create better variants</div>
+                </div>
+            `;
+        }
+        
+        // Hide loading state
+        function hideLoadingState() {
+            // Loading state will be replaced when loadVariants is called
+        }
+        
+        // Show error message
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(255, 0, 0, 0.2);
+                border: 2px solid #ff0000;
+                border-radius: 10px;
+                padding: 1rem;
+                color: #ffcccc;
+                z-index: 1000;
+                max-width: 300px;
+                backdrop-filter: blur(10px);
+            `;
+            errorDiv.innerHTML = `
+                <strong>❌ Error!</strong><br>
+                <small>${message}</small>
+            `;
+            
+            document.body.appendChild(errorDiv);
+            
+            // Remove after 5 seconds
+            setTimeout(() => {
+                if (errorDiv.parentNode) {
+                    errorDiv.parentNode.removeChild(errorDiv);
+                }
+            }, 5000);
+        }
+        
+        // Show success message
+        function showSuccess(message) {
+            const successDiv = document.createElement('div');
+            successDiv.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(0, 255, 0, 0.2);
+                border: 2px solid #00ff00;
+                border-radius: 10px;
+                padding: 1rem;
+                color: #00ff00;
+                z-index: 1000;
+                max-width: 300px;
+                backdrop-filter: blur(10px);
+            `;
+            successDiv.innerHTML = `
+                <strong>✅ Success!</strong><br>
+                <small>${message}</small>
+            `;
+            
+            document.body.appendChild(successDiv);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                if (successDiv.parentNode) {
+                    successDiv.parentNode.removeChild(successDiv);
+                }
+            }, 3000);
+        }
+        
+        // Display new variants from API response
+        function displayNewVariants(variants, glyph) {
+            const variantsGrid = document.getElementById('variantsGrid');
+            variantsGrid.innerHTML = '';
+            
+            if (variants && variants.length > 0) {
+                variants.forEach((variant, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'variant-card';
+                    card.onclick = () => selectVariant(index + 1);
+                    
+                    // Add timestamp to prevent caching and force reload
+                    const timestamp = new Date().getTime();
+                    const imagePath = `${variant}?t=${timestamp}`;
+                    
+                    console.log(`🖼️ Loading new variant ${index + 1}: ${imagePath}`);
+                    
+                    card.innerHTML = `
+                        <div class="variant-number">${index + 1}</div>
+                        <img src="${imagePath}" alt="${glyph.name} Variant ${index + 1}" class="variant-image" 
+                            onload="console.log('✅ Loaded new variant ${index + 1}')"
+                            onerror="console.error('❌ Failed to load variant ${index + 1}'); this.src='data:image/svg+xml;base64,${btoa(`
+                                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="100%" height="100%" fill="#333"/>
+                                    <text x="50%" y="50%" font-family="Arial" font-size="14" fill="#ffd700" text-anchor="middle" dy=".3em">
+                                        ${glyph.name} Variant ${index + 1}
+                                    </text>
+                                    <text x="50%" y="70%" font-family="Arial" font-size="12" fill="#ffd700" text-anchor="middle" dy=".3em">
+                                        (Newly Generated)
+                                    </text>
+                                </svg>
+                            `)}'">
+                        <div class="variant-quality">Variant ${index + 1} (New)</div>
+                    `;
+                    
+                    variantsGrid.appendChild(card);
+                });
+                
+                // Force browser to reload images by clearing cache
+                setTimeout(() => {
+                    const images = variantsGrid.querySelectorAll('img');
+                    images.forEach((img, index) => {
+                        const newSrc = img.src.split('?')[0] + '?t=' + new Date().getTime();
+                        img.src = newSrc;
+                    });
+                }, 100);
+                
+            } else {
+                // Fallback to loading existing variants if API didn't return new ones
+                console.log('⚠️ No variants returned from API, falling back to existing variants');
+                loadVariants(glyph);
+            }
+        }
+
+        // Record custom feedback
+        function recordCustomFeedback(feedback) {
+            const glyph = glyphList[currentGlyphIndex];
+            
+            // Store custom feedback for backend processing
+            if (!window.customFeedbackData) {
+                window.customFeedbackData = [];
+            }
+            
+            window.customFeedbackData.push({
+                glyph_name: glyph.name,
+                glyph_info: glyph,
+                feedback: feedback,
+                timestamp: new Date().toISOString()
+            });
+            
+            console.log(`📝 Custom feedback recorded for ${glyph.name}: ${feedback}`);
+        }
+
+        // Show feedback recorded message
+        function showFeedbackRecorded(feedback) {
+            const message = document.createElement('div');
+            message.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(0, 255, 0, 0.2);
+                border: 2px solid #00ff00;
+                border-radius: 10px;
+                padding: 1rem;
+                color: #00ff00;
+                z-index: 1000;
+                max-width: 300px;
+                backdrop-filter: blur(10px);
+            `;
+            message.innerHTML = `
+                <strong>✅ Feedback Recorded!</strong><br>
+                <small>Your custom feedback will help improve the model.</small>
+            `;
+            
+            document.body.appendChild(message);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                if (message.parentNode) {
+                    message.parentNode.removeChild(message);
+                }
+            }, 3000);
+        }
+
+        // Regenerate variants (legacy function)
+        function regenerateVariants() {
+            regenerateWithFeedback();
+        }
+
+        // Go to next glyph
+        function nextGlyph() {
+            stats.totalCurated++;
+            loadGlyph(currentGlyphIndex + 1);
+            updateStats();
+        }
+
+        // Update progress
+        function updateProgress() {
+            const progress = (currentGlyphIndex / glyphList.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            document.getElementById('progressText').textContent = `${currentGlyphIndex} / ${glyphList.length} Glyphs Curated`;
+        }
+
+        // Update statistics
+        function updateStats() {
+            document.getElementById('totalCurated').textContent = stats.totalCurated;
+            document.getElementById('regenerations').textContent = stats.regenerations;
+            
+            const avgQuality = stats.qualityScores.length > 0 ? 
+                Math.round((stats.qualityScores.length / stats.totalCurated) * 100) : 0;
+            document.getElementById('avgQuality').textContent = avgQuality;
+            
+            const completion = Math.round((stats.totalCurated / glyphList.length) * 100);
+            document.getElementById('completion').textContent = completion + '%';
+        }
+
+        // Show completion message
+        function showCompletion() {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+                <div class="header">
+                    <h1 class="title">🎉 Curation Complete!</h1>
+                    <p class="subtitle">All 108 Sacred Symbols have been curated</p>
+                </div>
+                <div class="stats-panel">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: #ffed4e;">📊 Final Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.totalCurated}</div>
+                            <div class="stat-label">Glyphs Curated</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">${stats.regenerations}</div>
+                            <div class="stat-label">Regenerations</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">${Object.values(stats.feedback).reduce((a, b) => a + b, 0)}</div>
+                            <div class="stat-label">Feedback Given</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Completion</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="exportData()">📊 Export Curation Data</button>
+                    <button class="btn" onclick="location.reload()">🔄 Start Over</button>
+                </div>
+            `;
+        }
+
+        // Export curation data
+        function exportData() {
+            const data = {
+                curationData: curationData,
+                customFeedbackData: window.customFeedbackData || [],
+                stats: stats,
+                timestamp: new Date().toISOString()
+            };
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `glyph-curation-${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize the app when page loads
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html> 

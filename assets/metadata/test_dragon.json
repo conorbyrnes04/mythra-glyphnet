@@ -1,0 +1,11 @@
+{
+  "name": "test_dragon",
+  "meaning": "A test dragon symbol",
+  "interpretation": "Testing the generation system",
+  "emotion_hex": "#FF0000",
+  "files": {
+    "webp": "assets/glyphs/archetypal/webp/test_dragon.webp",
+    "svg": "assets/glyphs/archetypal/svg/test_dragon.svg",
+    "colored": "assets/glyphs/archetypal/colored/test_dragon_colored.svg"
+  }
+}

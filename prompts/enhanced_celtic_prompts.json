@@ -1,0 +1,27 @@
+{
+  "celtic_enhanced": {
+    "description": "Enhanced Celtic style with Midjourney-quality aesthetics",
+    "prompt": "Create a mythic glyph featuring {subject}. Use only bold, hand-drawn golden lines on a pure black background. The design should be highly abstract yet recognizable, with flowing organic forms, intricate swirling patterns, spiral motifs, and stylized eyes. Incorporate dynamic movement, sacred geometry, and tribal ornamentation. Channel the energy of ancient illuminated manuscripts, visionary art, and ritual symbols. The composition should be balanced, with strong contrast between the golden lines and black background. No text, no color except gold, create a powerful silhouette suitable for sacred art and spiritual practice. Make it beautiful, detailed, and evocative like high-quality Midjourney art.",
+    "variations": [
+      "Create a sacred glyph representing {subject}. Use flowing golden lines on pure black background. Design should be abstract yet recognizable, with organic curves, spiral patterns, and mystical elements. Channel ancient Celtic art, sacred geometry, and visionary aesthetics. Make it beautiful and detailed.",
+      "Design a mythic symbol for {subject}. Use bold golden strokes on black background. Create flowing, organic forms with intricate patterns, spiral motifs, and stylized eyes. Evoke ancient ritual art, tribal ornamentation, and sacred geometry. Make it abstract but meaningful, with dynamic movement and spiritual energy.",
+      "Craft a visionary glyph featuring {subject}. Use golden lines on pure black background. Incorporate swirling patterns, spiral forms, and mystical elements. Design should be abstract yet recognizable, with flowing organic shapes and sacred geometry. Channel ancient art traditions and spiritual symbolism. Make it beautiful and evocative."
+    ]
+  },
+  "gold_on_black": {
+    "description": "Classic gold on black aesthetic with enhanced quality",
+    "prompt": "Create a mythic glyph in the style of ancient ritual symbols and sacred geometry, featuring {subject}. Use only bold, hand-drawn golden lines on a pure black background. The design should be symmetrical or near-symmetrical, highly abstract but still recognizable, and richly ornamented with intricate patterns, geometric and floral motifs. Channel the energy of shamanic art, visionary illustrations, and illuminated manuscripts. Make it beautiful, detailed, and powerful. No text, no color except gold, strong silhouette, suitable for sacred art and spiritual practice. Create flowing, organic forms with dynamic movement and spiritual energy.",
+    "variations": [
+      "Design a sacred symbol representing {subject}. Use golden lines on black background. Create symmetrical, abstract forms with intricate patterns and geometric motifs. Channel ancient ritual art and spiritual symbolism. Make it beautiful and meaningful.",
+      "Craft a mythic glyph for {subject}. Use bold golden strokes on pure black background. Design should be balanced, abstract yet recognizable, with flowing patterns and sacred geometry. Evoke ancient art traditions and spiritual energy. Make it detailed and powerful."
+    ]
+  },
+  "tribal_enhanced": {
+    "description": "Enhanced tribal style with flowing organic forms",
+    "prompt": "Create a tribal glyph featuring {subject}. Use bold golden lines on pure black background. Design should be organic and flowing, with dynamic curves, spiral patterns, and stylized elements. Channel ancient tribal art, shamanic symbols, and ritual ornamentation. Make it abstract yet recognizable, with strong movement and spiritual energy. The composition should be balanced and powerful, with intricate details and flowing forms. No text, no color except gold, create a beautiful and evocative sacred symbol.",
+    "variations": [
+      "Design a tribal symbol for {subject}. Use golden lines on black background. Create organic, flowing forms with spiral patterns and mystical elements. Channel ancient tribal art and spiritual symbolism. Make it dynamic and meaningful.",
+      "Craft a shamanic glyph representing {subject}. Use bold golden strokes on pure black background. Design should be organic and flowing, with intricate patterns and spiritual energy. Evoke ancient ritual art and tribal ornamentation. Make it beautiful and powerful."
+    ]
+  }
+}

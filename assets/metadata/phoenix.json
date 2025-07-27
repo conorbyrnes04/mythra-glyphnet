@@ -1,0 +1,13 @@
+{
+  "name": "Phoenix",
+  "meaning": "rebirth and transformation",
+  "interpretation": "rising from ashes with renewed strength",
+  "emotion_hex": "#FF6600",
+  "model_used": "CelticInterface",
+  "style": "celtic_celtic_enhanced",
+  "files": {
+    "png": "assets/glyphs/archetypal/png/phoenix.png",
+    "svg": "assets/glyphs/archetypal/svg/phoenix.svg",
+    "colored": "assets/glyphs/archetypal/png/phoenix.png"
+  }
+}
