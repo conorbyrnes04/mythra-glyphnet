@@ -242,24 +242,66 @@ class CelticInterface(ModelInterface):
                 variants.append(variant_path)
                 print(f"📥 Downloaded Celtic variant {i+1} to: {variant_path}")
             
-            # Let user select the best variant
-            selected_path = self._select_best_variant(variants, output_path)
-            
-            if selected_path:
-                if str(selected_path) == "__REGENERATE__":
-                    # User wants to regenerate, call this method again
-                    print("🔄 Regenerating variants...")
-                    return self.generate_glyph(prompt, output_path)
-                else:
-                    print(f"✅ Selected variant saved as: {output_path}")
-                    return True
-            else:
-                print("❌ No variant selected")
-                return False
+            # For API usage, don't require interactive selection
+            # Just save the first variant as the main output and keep all variants
+            import shutil
+            shutil.copy2(variants[0], output_path)
+            print(f"✅ Generated {len(variants)} variants, using first as default")
+            return True
             
         except Exception as e:
             print(f"❌ Error generating Celtic glyph: {e}")
             return False
+    
+    def generate_glyph_for_api(self, prompt: str, output_path: Path) -> dict:
+        """Generate glyph variants for API usage - returns all variants without interactive selection."""
+        try:
+            print(f"🎨 Generating Celtic glyph for API: {prompt}")
+            
+            # Generate 4 variants with Celtic model
+            output = replicate.run(
+                self.model_id,
+                input={
+                    "model": "dev",
+                    "go_fast": False,
+                    "lora_scale": 1,
+                    "megapixels": "1",
+                    "num_outputs": 4,  # Generate 4 variants
+                    "aspect_ratio": "1:1",
+                    "output_format": "png",  # Changed to PNG for better quality
+                    "guidance_scale": 3,
+                    "output_quality": 80,
+                    "prompt_strength": 0.8,
+                    "extra_lora_scale": 1,
+                    "num_inference_steps": 28,
+                    "prompt": prompt
+                }
+            )
+            
+            if not output or len(output) == 0:
+                print("❌ Celtic generation failed to produce output")
+                return {"success": False, "error": "Generation failed"}
+            
+            # Save all 4 variants
+            variants = []
+            for i, variant in enumerate(output):
+                # Change extension to .png and use PNG directory
+                variant_path = output_path.parent.parent / "png" / f"{output_path.stem}_variant_{i+1}.png"
+                import urllib.request
+                urllib.request.urlretrieve(variant.url, variant_path)
+                variants.append(variant_path)
+                print(f"📥 Downloaded Celtic variant {i+1} to: {variant_path}")
+            
+            # Return all variants for API
+            return {
+                "success": True,
+                "variants": [{"path": str(variant), "index": i+1} for i, variant in enumerate(variants)],
+                "message": f"Generated {len(variants)} variants successfully"
+            }
+            
+        except Exception as e:
+            print(f"❌ Error generating Celtic glyph: {e}")
+            return {"success": False, "error": str(e)}
     
     def _select_best_variant(self, variant_paths: list, final_path: Path) -> Optional[Path]:
         """Let user select the best variant from 4 options."""

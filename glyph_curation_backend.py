@@ -93,14 +93,63 @@ class GlyphCurationBackend:
             # Generate variants using the appropriate model
             if style.startswith('celtic'):
                 generator = self.celtic_generator
-                success = generator.generate_celtic_glyph(
-                    name=name,
-                    style=style,
-                    meaning=meaning,
-                    interpretation=interpretation,
-                    emotion_hex=emotion_hex
-                )
+                # Use the API-specific method for Celtic
+                if hasattr(generator.model, 'generate_glyph_for_api'):
+                    # Create the output path
+                    name_lower = name.lower().replace(' ', '_')
+                    output_path = generator.png_path / f"{name_lower}.png"
+                    
+                    # Create Celtic prompt
+                    if hasattr(generator.model, 'create_celtic_prompt'):
+                        prompt = generator.model.create_celtic_prompt(name, style, meaning, interpretation)
+                    else:
+                        prompt = generator.model.create_archetypal_prompt(name, meaning, interpretation)
+                    
+                    # Generate variants using API method
+                    result = generator.model.generate_glyph_for_api(prompt, output_path)
+                    
+                    if result['success']:
+                        return {
+                            'success': True,
+                            'variants': result['variants'],
+                            'message': result['message']
+                        }
+                    else:
+                        return {
+                            'success': False,
+                            'error': result.get('error', 'Generation failed')
+                        }
+                else:
+                    # Fallback to regular generation
+                    success = generator.generate_celtic_glyph(
+                        name=name,
+                        style=style,
+                        meaning=meaning,
+                        interpretation=interpretation,
+                        emotion_hex=emotion_hex
+                    )
+                    
+                    if success:
+                        # Return the generated variants (they should be in the png directory)
+                        name_lower = name.lower().replace(' ', '_')
+                        variants = []
+                        for i in range(1, 5):  # 4 variants
+                            variant_path = generator.png_path / f"{name_lower}_variant_{i}.png"
+                            if variant_path.exists():
+                                variants.append({"path": str(variant_path), "index": i})
+                        
+                        return {
+                            'success': True,
+                            'variants': variants,
+                            'message': f'Generated {len(variants)} variants for {name}'
+                        }
+                    else:
+                        return {
+                            'success': False,
+                            'error': f'Failed to generate {name} variants'
+                        }
             else:
+                # Use MERU for non-Celtic styles
                 generator = self.meru_generator
                 success = generator.generate_glyph(
                     name=name,
@@ -109,25 +158,29 @@ class GlyphCurationBackend:
                     emotion_hex=emotion_hex,
                     style=style
                 )
-            
-            if success:
-                # Return variant information
-                return {
-                    "success": True,
-                    "glyph_name": name,
-                    "variants": [
-                        {"id": 1, "path": f"assets/glyphs/archetypal/png/{name.lower()}_variant_1.png"},
-                        {"id": 2, "path": f"assets/glyphs/archetypal/png/{name.lower()}_variant_2.png"},
-                        {"id": 3, "path": f"assets/glyphs/archetypal/png/{name.lower()}_variant_3.png"},
-                        {"id": 4, "path": f"assets/glyphs/archetypal/png/{name.lower()}_variant_4.png"}
-                    ],
-                    "metadata": glyph_info
-                }
-            else:
-                return {"success": False, "error": "Failed to generate variants"}
                 
+                if success:
+                    # For MERU, we only get one variant
+                    name_lower = name.lower().replace(' ', '_')
+                    variant_path = generator.png_path / f"{name_lower}.png"
+                    
+                    return {
+                        'success': True,
+                        'variants': [{"path": str(variant_path), "index": 1}],
+                        'message': f'Generated {name} variant'
+                    }
+                else:
+                    return {
+                        'success': False,
+                        'error': f'Failed to generate {name} variant'
+                    }
+                    
         except Exception as e:
-            return {"success": False, "error": str(e)}
+            print(f"❌ Error in generate_glyph_variants: {e}")
+            return {
+                'success': False,
+                'error': str(e)
+            }
     
     def record_selection(self, glyph_info: Dict, selected_variant: int, 
                         feedback: Optional[str] = None, regeneration_count: int = 0,
